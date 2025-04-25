@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.4 on darwin)" generated="2025-04-25T23:42:06.542897" rpa="false" schemaversion="5">
+<suite id="s1" name="Logo" source="/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/logo.robot">
+<test id="s1-t1" name="Check IDN Times Logo Is Visible" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-25T23:42:06.590370" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/7daab8aa-77eb-40e6-a44a-c769bfcdb65a"}</msg>
+<msg time="2025-04-25T23:42:06.609702" level="INFO">Starting Browser process /Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js using port 51585</msg>
+<msg time="2025-04-25T23:42:06.609821" level="INFO">Node startup parameters: ['node', '/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js', '51585']</msg>
+<msg time="2025-04-25T23:42:08.129149" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/7daab8aa-77eb-40e6-a44a-c769bfcdb65a"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-25T23:42:06.590111" elapsed="1.539217"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-04-25T23:42:08.130669" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  }
+}</msg>
+<msg time="2025-04-25T23:42:08.138674" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-25T23:42:08.138725" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-04-25T23:42:08.129717" elapsed="0.009094"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-25T23:42:10.825573" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-25T23:42:08.139065" elapsed="2.687104"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-25T23:42:10.874858" level="INFO">Waited for Element with selector img[alt="IDN Times"] at state visible</msg>
+<arg>${LOGO_SEL}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-25T23:42:10.828286" elapsed="0.046680"/>
+</kw>
+<kw name="Get Element States" owner="Browser">
+<msg time="2025-04-25T23:42:10.900744" level="INFO">States are: ['attached', 'visible', 'enabled', 'defocused']</msg>
+<msg time="2025-04-25T23:42:10.900852" level="INFO">${states} = ['attached', 'visible', 'enabled', 'defocused']</msg>
+<var>${states}</var>
+<arg>${LOGO_SEL}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-25T23:42:10.875132" elapsed="0.025732"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${states}</arg>
+<arg>visible</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-25T23:42:10.901015" elapsed="0.000471"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-04-25T23:42:10.979443" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-25T23:42:10.901589" elapsed="0.077931"/>
+</kw>
+<status status="PASS" start="2025-04-25T23:42:06.589776" elapsed="4.389879"/>
+</test>
+<status status="PASS" start="2025-04-25T23:42:06.543624" elapsed="4.439970"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Logo" id="s1" pass="1" fail="0" skip="0">Logo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

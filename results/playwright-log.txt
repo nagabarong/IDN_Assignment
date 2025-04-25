@@ -1,0 +1,61 @@
+{"level":30,"time":"2025-04-25T16:42:06.770Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Listening on 51585"}
+(node:10972) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-04-25T16:42:07.829Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-25T16:42:08.128Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-25T16:42:08.128Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-25T16:42:08.128Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-25T16:42:08.131Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-25T16:42:08.131Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1920,\"height\":1080}}"}
+{"level":30,"time":"2025-04-25T16:42:08.131Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-25T16:42:08.131Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Trace file: "}
+{"level":30,"time":"2025-04-25T16:42:08.136Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Changed active context"}
+{"level":30,"time":"2025-04-25T16:42:08.137Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-25T16:42:08.140Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-25T16:42:08.140Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-25T16:42:08.304Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-25T16:42:08.304Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Changed active page"}
+{"level":30,"time":"2025-04-25T16:42:10.824Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-25T16:42:10.837Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-04-25T16:42:10.838Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with img[alt=\"IDN Times\"] in page."}
+{"level":30,"time":"2025-04-25T16:42:10.874Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-04-25T16:42:10.876Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElementStates"}
+{"level":30,"time":"2025-04-25T16:42:10.876Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with img[alt=\"IDN Times\"] in page."}
+{"level":30,"time":"2025-04-25T16:42:10.890Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Element img[alt=\"IDN Times\"] is not editable: Error: locator.isEditable: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('img[alt=\"IDN Times\"]')\u001b[22m\n"}
+{"level":30,"time":"2025-04-25T16:42:10.890Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Checking checked state"}
+{"level":30,"time":"2025-04-25T16:42:10.900Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElementStates"}
+{"level":30,"time":"2025-04-25T16:42:10.902Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-04-25T16:42:10.908Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Removed page=4d999464-90bf-472f-8fac-1cd9bdfd62ad from context=21c29295-87dc-4532-8ca8-e057f12bc00b page stack"}
+{"level":30,"time":"2025-04-25T16:42:10.979Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:12223:15)
+    at PlaywrightServer.getActiveBrowser (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13119:59)
+    at PlaywrightServer.setTimeout (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13367:57)
+    at Object.onReceiveHalfClose (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:532:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-25T16:42:10.982Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-25T16:42:10.982Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:12223:15)
+    at PlaywrightServer.getActiveBrowser (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13119:59)
+    at PlaywrightServer.setTimeout (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13367:57)
+    at Object.onReceiveHalfClose (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:532:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-04-25T16:42:10.984Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-25T16:42:10.984Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-25T16:42:10.996Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-25T16:42:10.996Z","pid":10972,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method closeAllBrowsers"}
