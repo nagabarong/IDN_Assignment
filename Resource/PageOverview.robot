@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       Page Objects for Checkout Overview Page
+Documentation       PageOverview Data
 
 
 *** Variables ***

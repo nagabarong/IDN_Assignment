@@ -1,30 +1,171 @@
-{"level":30,"time":"2025-04-26T07:04:27.998Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Listening on 61960"}
-(node:14072) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2025-04-26T07:28:42.698Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Listening on 51875"}
+(node:15552) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2025-04-26T07:04:29.097Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2025-04-26T07:04:29.654Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
-{"level":30,"time":"2025-04-26T07:04:29.654Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method newBrowser"}
-{"level":30,"time":"2025-04-26T07:04:29.654Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2025-04-26T07:04:29.658Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method newContext"}
-{"level":30,"time":"2025-04-26T07:04:29.658Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1920,\"height\":1080}}"}
-{"level":30,"time":"2025-04-26T07:04:29.658Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2025-04-26T07:04:29.658Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Trace file: "}
-{"level":30,"time":"2025-04-26T07:04:29.685Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Changed active context"}
-{"level":30,"time":"2025-04-26T07:04:29.685Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method newContext"}
-{"level":30,"time":"2025-04-26T07:04:29.687Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method newPage"}
-{"level":30,"time":"2025-04-26T07:04:29.688Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2025-04-26T07:04:29.974Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Video path: undefined"}
-{"level":30,"time":"2025-04-26T07:04:29.974Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Changed active page"}
-{"level":30,"time":"2025-04-26T07:04:30.677Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method newPage"}
-{"level":30,"time":"2025-04-26T07:04:30.681Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
-{"level":30,"time":"2025-04-26T07:04:30.682Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"join-btn\"] in page."}
-{"level":30,"time":"2025-04-26T07:04:30.751Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
-{"level":30,"time":"2025-04-26T07:04:30.755Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-26T07:04:30.755Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"join-btn\"] in page."}
-{"level":30,"time":"2025-04-26T07:04:31.420Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method click"}
-{"level":30,"time":"2025-04-26T07:04:31.425Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2025-04-26T07:04:31.434Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Removed page=c83a5488-bdfd-445d-877f-443823cf97eb from context=4a826fd1-6865-4614-b345-f26577cd9944 page stack"}
-{"level":30,"time":"2025-04-26T07:04:31.519Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2025-04-26T07:28:43.787Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-26T07:28:44.332Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-26T07:28:44.332Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-26T07:28:44.332Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-26T07:28:44.336Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-26T07:28:44.337Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}}"}
+{"level":30,"time":"2025-04-26T07:28:44.337Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-26T07:28:44.337Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Trace file: "}
+{"level":30,"time":"2025-04-26T07:28:44.358Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Changed active context"}
+{"level":30,"time":"2025-04-26T07:28:44.358Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-26T07:28:44.360Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-26T07:28:44.360Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-26T07:28:44.853Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-26T07:28:44.853Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Changed active page"}
+{"level":30,"time":"2025-04-26T07:28:45.609Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-26T07:28:45.613Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.613Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-quiz\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.674Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.676Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.676Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-quiz-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.694Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.700Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.700Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-quiz-img\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.725Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.727Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.727Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-quiz\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.791Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-quiz\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:45.791Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.794Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.794Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-quiz-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.830Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-quiz-link\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:45.830Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.832Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.832Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-quiz-img\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.839Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-quiz-img\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:45.839Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.841Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.841Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-news\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.842Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.844Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.844Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-news-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.845Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.846Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.846Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-news\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.849Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-news\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:45.849Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.850Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.850Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-news-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.853Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-news-link\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:45.854Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.855Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.855Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-business\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.856Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.858Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.858Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-business-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.860Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.862Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.862Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-business\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.864Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-business\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:45.864Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.866Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.866Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-business-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.886Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-business-link\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:45.886Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.887Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.887Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-sport\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.888Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.890Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.890Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-sport-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.969Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.971Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.971Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-sport\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.974Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-sport\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:45.974Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.975Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.975Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-sport-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.977Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-sport-link\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:45.977Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.978Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.979Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-tech\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.982Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.984Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.984Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-tech-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.985Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.986Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.986Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-tech\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.988Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-tech\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:45.988Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.989Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.989Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-tech-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.991Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-tech-link\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:45.991Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.993Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.993Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-hype\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.994Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.995Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.995Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-hype-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.996Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:45.997Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:45.997Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-hype\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:45.999Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-hype\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:45.999Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.000Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.000Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-hype-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.003Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-hype-link\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:46.003Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.004Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.004Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-korea\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.005Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.007Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.007Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-korea-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.008Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.009Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.009Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-korea\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.011Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-korea\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:46.011Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.012Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.012Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-korea-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.016Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-korea-link\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:46.016Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.017Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.017Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-life\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.018Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.019Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.019Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-life-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.020Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.021Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.021Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-life\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.023Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-life\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:46.023Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.024Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.024Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-life-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.026Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-life-link\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:46.026Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.027Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.027Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-health-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.028Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.029Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.029Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-health\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.029Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.030Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.030Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-health-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.032Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-health-link\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:46.032Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.034Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.034Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-health\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.035Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-health\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:46.035Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.036Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.036Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-community\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.037Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.038Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.038Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-community-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.039Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-26T07:28:46.040Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.040Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-community\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.042Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-community\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:46.042Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.043Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.043Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"menu-community-link\"] in page."}
+{"level":30,"time":"2025-04-26T07:28:46.045Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"menu-community-link\"] containing undefined"}
+{"level":30,"time":"2025-04-26T07:28:46.045Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2025-04-26T07:28:46.046Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-04-26T07:28:46.051Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Removed page=478ab87b-2bab-4a73-bc88-8989099d9e08 from context=4efb28c9-6744-4f4b-8951-d74beed44b4a page stack"}
+{"level":30,"time":"2025-04-26T07:28:46.131Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method closeBrowser"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:12223:15)
@@ -38,8 +179,8 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1696:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2025-04-26T07:04:31.522Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-26T07:04:31.522Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-26T07:28:46.134Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-26T07:28:46.134Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:12223:15)
@@ -53,7 +194,7 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1696:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 =============================================================
-{"level":30,"time":"2025-04-26T07:04:31.524Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-26T07:04:31.524Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-26T07:04:31.535Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2025-04-26T07:04:31.535Z","pid":14072,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-26T07:28:46.135Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-26T07:28:46.135Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-26T07:28:46.148Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-26T07:28:46.148Z","pid":15552,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method closeAllBrowsers"}
