@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.4 on darwin)" generated="2025-04-28T04:16:21.005192" rpa="false" schemaversion="5">
-<suite id="s1" name="TrendingNews" source="/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/TrendingNews.robot">
-<test id="s1-t1" name="Verify Trending News Section" line="7">
+<robot generator="Robot 7.2.2 (Python 3.12.4 on darwin)" generated="2025-04-28T05:47:58.477613" rpa="false" schemaversion="5">
+<suite id="s1" name="LatestNews" source="/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/LatestNews.robot">
+<test id="s1-t1" name="Verify Latest News Article Count" line="6">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-28T04:16:21.084758" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/11326d5b-3157-46fa-a226-7f38e3927103"}</msg>
-<msg time="2025-04-28T04:16:21.142008" level="INFO">Starting Browser process /Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js using port 51026</msg>
-<msg time="2025-04-28T04:16:21.142109" level="INFO">Node startup parameters: ['node', '/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js', '51026']</msg>
-<msg time="2025-04-28T04:16:23.129610" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/11326d5b-3157-46fa-a226-7f38e3927103"}</msg>
+<msg time="2025-04-28T05:47:58.555433" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/86c1ca3b-710f-4a30-9803-3738013297bb"}</msg>
+<msg time="2025-04-28T05:47:58.608297" level="INFO">Starting Browser process /Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js using port 56202</msg>
+<msg time="2025-04-28T05:47:58.608398" level="INFO">Node startup parameters: ['node', '/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js', '56202']</msg>
+<msg time="2025-04-28T05:48:00.539309" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/86c1ca3b-710f-4a30-9803-3738013297bb"}</msg>
 <arg>chromium</arg>
 <arg>headless=false</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-28T04:16:21.084513" elapsed="2.045351"/>
+<status status="PASS" start="2025-04-28T05:47:58.555192" elapsed="1.984368"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2025-04-28T04:16:23.131715" level="INFO">{
+<msg time="2025-04-28T05:48:00.541354" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -25,748 +25,1394 @@
   "reducedMotion": "no-preference",
   "serviceWorkers": "allow",
   "viewport": {
-    "height": 1080,
-    "width": 1920
+    "width": 1920,
+    "height": 1080
   }
 }</msg>
-<msg time="2025-04-28T04:16:23.163803" level="INFO">Successfully created context. </msg>
-<msg time="2025-04-28T04:16:23.163847" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<msg time="2025-04-28T05:48:00.570121" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-28T05:48:00.570166" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
 <arg>viewport={'width': 1920, 'height': 1080}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2025-04-28T04:16:23.130284" elapsed="0.033603"/>
+<status status="PASS" start="2025-04-28T05:48:00.539981" elapsed="0.030226"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-28T04:16:26.091125" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com/</msg>
+<msg time="2025-04-28T05:48:03.737903" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com</msg>
 <arg>${URL}</arg>
 <arg>wait_until=domcontentloaded</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-28T04:16:23.164020" elapsed="2.927283"/>
+<status status="PASS" start="2025-04-28T05:48:00.570341" elapsed="3.167679"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-28T04:16:31.092524" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-28T04:16:26.091495" elapsed="5.001237"/>
-</kw>
-<kw name="Get Element" owner="Browser">
-<msg time="2025-04-28T04:16:31.119539" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-28T04:16:31.119785" level="INFO">${trending_element} = .list-trending</msg>
-<var>${trending_element}</var>
-<arg>${LIST_TRENDING}</arg>
-<tag>Getter</tag>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:03.769630" level="INFO">Waited for Element with selector [data-testid="section-latest1"] at state visible</msg>
+<arg>${SECTION_LATEST}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
 <tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-28T04:16:31.093100" elapsed="0.026705"/>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:03.738169" elapsed="0.031583"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
-<arg>${trending_element}</arg>
+<arg>${SECTION_LATEST}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2025-04-28T04:16:31.120078" elapsed="0.062550"/>
+<status status="PASS" start="2025-04-28T05:48:03.769941" elapsed="0.139157"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.183296" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-28T04:16:31.182817" elapsed="2.000662"/>
-</kw>
-<kw name="Verify Trending Section Title" owner="TrendingNews">
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-04-28T04:16:33.197570" level="INFO">Waited for Element with selector [data-testid="title-berita-terpopuler"] span at state visible</msg>
-<arg>${TRENDING_SECTION_TITLE}</arg>
-<arg>visible</arg>
-<arg>timeout=10s</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.184960" elapsed="0.012749"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2025-04-28T04:16:33.209490" level="INFO">Text: 'BERITA TERPOPULER'</msg>
-<msg time="2025-04-28T04:16:33.209983" level="INFO">${actual_text} = BERITA TERPOPULER</msg>
-<var>${actual_text}</var>
-<arg>${TRENDING_SECTION_TITLE}</arg>
-<tag>Assertion</tag>
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-04-28T05:48:03.913865" level="INFO">Found locator('[data-testid="box-main-latest1"]').first(),locator('[data-testid="box-main-latest1"]').nth(1) Locators successfully.</msg>
+<msg time="2025-04-28T05:48:03.913982" level="INFO">${main_articles} = ['[data-testid="box-main-latest1"] &gt;&gt; nth=0', '[data-testid="box-main-latest1"] &gt;&gt; nth=1']</msg>
+<var>${main_articles}</var>
+<arg>${BOX_MAIN_LATEST}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.197871" elapsed="0.012139"/>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:03.909242" elapsed="0.004754"/>
 </kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.210431" level="INFO">Actual text found: "BERITA TERPOPULER"</msg>
-<arg>Actual text found: "${actual_text}"</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.210254" elapsed="0.000226"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.210803" level="INFO">${actual_text} = BERITA TERPOPULER</msg>
-<var>${actual_text}</var>
-<arg>"""${actual_text}""".strip()</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.210581" elapsed="0.000237"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.210961" level="INFO">Stripped text: "BERITA TERPOPULER"</msg>
-<arg>Stripped text: "${actual_text}"</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.210876" elapsed="0.000107"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<arg>${actual_text}</arg>
-<arg>BERITA TERPOPULER</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.211060" elapsed="0.000143"/>
-</kw>
-<status status="PASS" start="2025-04-28T04:16:33.184116" elapsed="0.027134"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-04-28T04:16:33.216449" level="INFO">Waited for Element with selector .list-trending at state visible</msg>
-<arg>${LIST_TRENDING}</arg>
-<arg>visible</arg>
-<arg>timeout=10s</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.211365" elapsed="0.005174"/>
-</kw>
-<kw name="Get Non Cloned Slides Count" owner="TrendingNews">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.217290" level="INFO">${count} = 0</msg>
-<var>${count}</var>
-<arg>0</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.217187" elapsed="0.000118"/>
-</kw>
-<for flavor="IN RANGE">
-<iter>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.217743" level="INFO">${locator} = div.slick-slide:not(.slick-cloned) div[data-testid="box-trending1"]</msg>
-<var>${locator}</var>
-<arg>div.slick-slide:not(.slick-cloned) div[data-testid="box-trending${index}"]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.217623" elapsed="0.000134"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Get Element" owner="Browser">
-<msg time="2025-04-28T04:16:33.221996" level="INFO">Locator found successfully.</msg>
-<arg>${locator}</arg>
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-04-28T05:48:03.918079" level="INFO">Found locator('[data-testid="box-latest-news"]').first(),locator('[data-testid="box-latest-news"]').nth(1),locator('[data-testid="box-latest-news"]').nth(2),locator('[data-testid="box-latest-news"]').nth(3),locator('[data-testid="box-latest-news"]').nth(4),locator('[data-testid="box-latest-news"]').nth(5),locator('[data-testid="box-latest-news"]').nth(6),locator('[data-testid="box-latest-news"]').nth(7) Locators successfully.</msg>
+<msg time="2025-04-28T05:48:03.918211" level="INFO">${latest_articles} = ['[data-testid="box-latest-news"] &gt;&gt; nth=0', '[data-testid="box-latest-news"] &gt;&gt; nth=1', '[data-testid="box-latest-news"] &gt;&gt; nth=2', '[data-testid="box-latest-news"] &gt;&gt; nth=3', '[data-testid="box-late...</msg>
+<var>${latest_articles}</var>
+<arg>${BOX_LATEST_NEWS}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-28T04:16:33.217979" elapsed="0.004091"/>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:03.914101" elapsed="0.004124"/>
 </kw>
-<msg time="2025-04-28T04:16:33.222141" level="INFO">${exists} = True</msg>
-<var>${exists}</var>
-<arg>Get Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.217876" elapsed="0.004277"/>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-04-28T05:48:03.918505" level="INFO">Length is 2.</msg>
+<msg time="2025-04-28T05:48:03.918531" level="INFO">${main_count} = 2</msg>
+<var>${main_count}</var>
+<arg>${main_articles}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-04-28T05:48:03.918360" elapsed="0.000179"/>
 </kw>
-<if>
-<branch type="IF" condition="${exists}">
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-04-28T05:48:03.918666" level="INFO">Length is 8.</msg>
+<msg time="2025-04-28T05:48:03.918689" level="INFO">${latest_count} = 8</msg>
+<var>${latest_count}</var>
+<arg>${latest_articles}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-04-28T05:48:03.918598" elapsed="0.000098"/>
+</kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.222486" level="INFO">${count} = 1</msg>
-<var>${count}</var>
-<arg>${count} + 1</arg>
+<msg time="2025-04-28T05:48:03.918871" level="INFO">${total_articles} = 10</msg>
+<var>${total_articles}</var>
+<arg>${main_count} + ${latest_count}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.222364" elapsed="0.000135"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.222612" level="INFO">Found non-cloned article 1</msg>
-<arg>Found non-cloned article ${index}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.222547" elapsed="0.000083"/>
-</kw>
-<status status="PASS" start="2025-04-28T04:16:33.222230" elapsed="0.000420"/>
-</branch>
-<status status="PASS" start="2025-04-28T04:16:33.222203" elapsed="0.000470"/>
-</if>
-<var name="${index}">1</var>
-<status status="PASS" start="2025-04-28T04:16:33.217549" elapsed="0.005138"/>
-</iter>
-<iter>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.222912" level="INFO">${locator} = div.slick-slide:not(.slick-cloned) div[data-testid="box-trending2"]</msg>
-<var>${locator}</var>
-<arg>div.slick-slide:not(.slick-cloned) div[data-testid="box-trending${index}"]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.222823" elapsed="0.000101"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Get Element" owner="Browser">
-<msg time="2025-04-28T04:16:33.226132" level="INFO">Locator found successfully.</msg>
-<arg>${locator}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-28T04:16:33.223059" elapsed="0.003154"/>
-</kw>
-<msg time="2025-04-28T04:16:33.226293" level="INFO">${exists} = True</msg>
-<var>${exists}</var>
-<arg>Get Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.222977" elapsed="0.003329"/>
-</kw>
-<if>
-<branch type="IF" condition="${exists}">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.226651" level="INFO">${count} = 2</msg>
-<var>${count}</var>
-<arg>${count} + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.226509" elapsed="0.000154"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.226777" level="INFO">Found non-cloned article 2</msg>
-<arg>Found non-cloned article ${index}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.226711" elapsed="0.000083"/>
-</kw>
-<status status="PASS" start="2025-04-28T04:16:33.226367" elapsed="0.000445"/>
-</branch>
-<status status="PASS" start="2025-04-28T04:16:33.226349" elapsed="0.000486"/>
-</if>
-<var name="${index}">2</var>
-<status status="PASS" start="2025-04-28T04:16:33.222769" elapsed="0.004077"/>
-</iter>
-<iter>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.227061" level="INFO">${locator} = div.slick-slide:not(.slick-cloned) div[data-testid="box-trending3"]</msg>
-<var>${locator}</var>
-<arg>div.slick-slide:not(.slick-cloned) div[data-testid="box-trending${index}"]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.226971" elapsed="0.000101"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Get Element" owner="Browser">
-<msg time="2025-04-28T04:16:33.229827" level="INFO">Locator found successfully.</msg>
-<arg>${locator}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-28T04:16:33.227194" elapsed="0.002686"/>
-</kw>
-<msg time="2025-04-28T04:16:33.229938" level="INFO">${exists} = True</msg>
-<var>${exists}</var>
-<arg>Get Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.227121" elapsed="0.002829"/>
-</kw>
-<if>
-<branch type="IF" condition="${exists}">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.230206" level="INFO">${count} = 3</msg>
-<var>${count}</var>
-<arg>${count} + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.230093" elapsed="0.000124"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.230321" level="INFO">Found non-cloned article 3</msg>
-<arg>Found non-cloned article ${index}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.230261" elapsed="0.000076"/>
-</kw>
-<status status="PASS" start="2025-04-28T04:16:33.229993" elapsed="0.000360"/>
-</branch>
-<status status="PASS" start="2025-04-28T04:16:33.229981" elapsed="0.000391"/>
-</if>
-<var name="${index}">3</var>
-<status status="PASS" start="2025-04-28T04:16:33.226920" elapsed="0.003462"/>
-</iter>
-<iter>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.230568" level="INFO">${locator} = div.slick-slide:not(.slick-cloned) div[data-testid="box-trending4"]</msg>
-<var>${locator}</var>
-<arg>div.slick-slide:not(.slick-cloned) div[data-testid="box-trending${index}"]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.230491" elapsed="0.000087"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Get Element" owner="Browser">
-<msg time="2025-04-28T04:16:33.232961" level="INFO">Locator found successfully.</msg>
-<arg>${locator}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-28T04:16:33.230689" elapsed="0.002340"/>
-</kw>
-<msg time="2025-04-28T04:16:33.233094" level="INFO">${exists} = True</msg>
-<var>${exists}</var>
-<arg>Get Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.230623" elapsed="0.002483"/>
-</kw>
-<if>
-<branch type="IF" condition="${exists}">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.233398" level="INFO">${count} = 4</msg>
-<var>${count}</var>
-<arg>${count} + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.233270" elapsed="0.000140"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.233525" level="INFO">Found non-cloned article 4</msg>
-<arg>Found non-cloned article ${index}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.233455" elapsed="0.000085"/>
-</kw>
-<status status="PASS" start="2025-04-28T04:16:33.233165" elapsed="0.000392"/>
-</branch>
-<status status="PASS" start="2025-04-28T04:16:33.233147" elapsed="0.000428"/>
-</if>
-<var name="${index}">4</var>
-<status status="PASS" start="2025-04-28T04:16:33.230445" elapsed="0.003173"/>
-</iter>
-<iter>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.233816" level="INFO">${locator} = div.slick-slide:not(.slick-cloned) div[data-testid="box-trending5"]</msg>
-<var>${locator}</var>
-<arg>div.slick-slide:not(.slick-cloned) div[data-testid="box-trending${index}"]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.233729" elapsed="0.000097"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Get Element" owner="Browser">
-<msg time="2025-04-28T04:16:33.236164" level="INFO">Locator found successfully.</msg>
-<arg>${locator}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-28T04:16:33.233937" elapsed="0.002267"/>
-</kw>
-<msg time="2025-04-28T04:16:33.236245" level="INFO">${exists} = True</msg>
-<var>${exists}</var>
-<arg>Get Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.233871" elapsed="0.002384"/>
-</kw>
-<if>
-<branch type="IF" condition="${exists}">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.236442" level="INFO">${count} = 5</msg>
-<var>${count}</var>
-<arg>${count} + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.236359" elapsed="0.000093"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.236549" level="INFO">Found non-cloned article 5</msg>
-<arg>Found non-cloned article ${index}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.236498" elapsed="0.000065"/>
-</kw>
-<status status="PASS" start="2025-04-28T04:16:33.236288" elapsed="0.000290"/>
-</branch>
-<status status="PASS" start="2025-04-28T04:16:33.236280" elapsed="0.000313"/>
-</if>
-<var name="${index}">5</var>
-<status status="PASS" start="2025-04-28T04:16:33.233683" elapsed="0.002918"/>
-</iter>
-<iter>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.236761" level="INFO">${locator} = div.slick-slide:not(.slick-cloned) div[data-testid="box-trending6"]</msg>
-<var>${locator}</var>
-<arg>div.slick-slide:not(.slick-cloned) div[data-testid="box-trending${index}"]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.236693" elapsed="0.000078"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Get Element" owner="Browser">
-<msg time="2025-04-28T04:16:33.238689" level="INFO">Locator found successfully.</msg>
-<arg>${locator}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-28T04:16:33.236868" elapsed="0.001869"/>
-</kw>
-<msg time="2025-04-28T04:16:33.238788" level="INFO">${exists} = True</msg>
-<var>${exists}</var>
-<arg>Get Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.236810" elapsed="0.001989"/>
-</kw>
-<if>
-<branch type="IF" condition="${exists}">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.239057" level="INFO">${count} = 6</msg>
-<var>${count}</var>
-<arg>${count} + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.238934" elapsed="0.000134"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.239193" level="INFO">Found non-cloned article 6</msg>
-<arg>Found non-cloned article ${index}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.239114" elapsed="0.000100"/>
-</kw>
-<status status="PASS" start="2025-04-28T04:16:33.238838" elapsed="0.000392"/>
-</branch>
-<status status="PASS" start="2025-04-28T04:16:33.238827" elapsed="0.000422"/>
-</if>
-<var name="${index}">6</var>
-<status status="PASS" start="2025-04-28T04:16:33.236654" elapsed="0.002605"/>
-</iter>
-<iter>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.239446" level="INFO">${locator} = div.slick-slide:not(.slick-cloned) div[data-testid="box-trending7"]</msg>
-<var>${locator}</var>
-<arg>div.slick-slide:not(.slick-cloned) div[data-testid="box-trending${index}"]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.239369" elapsed="0.000087"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Get Element" owner="Browser">
-<msg time="2025-04-28T04:16:33.241575" level="INFO">Locator found successfully.</msg>
-<arg>${locator}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-28T04:16:33.239567" elapsed="0.002050"/>
-</kw>
-<msg time="2025-04-28T04:16:33.241659" level="INFO">${exists} = True</msg>
-<var>${exists}</var>
-<arg>Get Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.239500" elapsed="0.002167"/>
-</kw>
-<if>
-<branch type="IF" condition="${exists}">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.241858" level="INFO">${count} = 7</msg>
-<var>${count}</var>
-<arg>${count} + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.241773" elapsed="0.000095"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.241958" level="INFO">Found non-cloned article 7</msg>
-<arg>Found non-cloned article ${index}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.241905" elapsed="0.000087"/>
-</kw>
-<status status="PASS" start="2025-04-28T04:16:33.241701" elapsed="0.000314"/>
-</branch>
-<status status="PASS" start="2025-04-28T04:16:33.241692" elapsed="0.000487"/>
-</if>
-<var name="${index}">7</var>
-<status status="PASS" start="2025-04-28T04:16:33.239321" elapsed="0.002871"/>
-</iter>
-<iter>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.242397" level="INFO">${locator} = div.slick-slide:not(.slick-cloned) div[data-testid="box-trending8"]</msg>
-<var>${locator}</var>
-<arg>div.slick-slide:not(.slick-cloned) div[data-testid="box-trending${index}"]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.242316" elapsed="0.000091"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Get Element" owner="Browser">
-<msg time="2025-04-28T04:16:33.244503" level="INFO">Locator found successfully.</msg>
-<arg>${locator}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-28T04:16:33.242512" elapsed="0.002033"/>
-</kw>
-<msg time="2025-04-28T04:16:33.244589" level="INFO">${exists} = True</msg>
-<var>${exists}</var>
-<arg>Get Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.242449" elapsed="0.002150"/>
-</kw>
-<if>
-<branch type="IF" condition="${exists}">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.244781" level="INFO">${count} = 8</msg>
-<var>${count}</var>
-<arg>${count} + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.244700" elapsed="0.000091"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.244914" level="INFO">Found non-cloned article 8</msg>
-<arg>Found non-cloned article ${index}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.244860" elapsed="0.000068"/>
-</kw>
-<status status="PASS" start="2025-04-28T04:16:33.244631" elapsed="0.000312"/>
-</branch>
-<status status="PASS" start="2025-04-28T04:16:33.244623" elapsed="0.000335"/>
-</if>
-<var name="${index}">8</var>
-<status status="PASS" start="2025-04-28T04:16:33.242262" elapsed="0.002705"/>
-</iter>
-<iter>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.245130" level="INFO">${locator} = div.slick-slide:not(.slick-cloned) div[data-testid="box-trending9"]</msg>
-<var>${locator}</var>
-<arg>div.slick-slide:not(.slick-cloned) div[data-testid="box-trending${index}"]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.245060" elapsed="0.000080"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Get Element" owner="Browser">
-<msg time="2025-04-28T04:16:33.246914" level="INFO">Locator found successfully.</msg>
-<arg>${locator}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-28T04:16:33.245239" elapsed="0.001710"/>
-</kw>
-<msg time="2025-04-28T04:16:33.246996" level="INFO">${exists} = True</msg>
-<var>${exists}</var>
-<arg>Get Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.245180" elapsed="0.001825"/>
-</kw>
-<if>
-<branch type="IF" condition="${exists}">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.247176" level="INFO">${count} = 9</msg>
-<var>${count}</var>
-<arg>${count} + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.247102" elapsed="0.000083"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.247271" level="INFO">Found non-cloned article 9</msg>
-<arg>Found non-cloned article ${index}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.247224" elapsed="0.000060"/>
-</kw>
-<status status="PASS" start="2025-04-28T04:16:33.247041" elapsed="0.000258"/>
-</branch>
-<status status="PASS" start="2025-04-28T04:16:33.247034" elapsed="0.000279"/>
-</if>
-<var name="${index}">9</var>
-<status status="PASS" start="2025-04-28T04:16:33.245020" elapsed="0.002301"/>
-</iter>
-<iter>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.247471" level="INFO">${locator} = div.slick-slide:not(.slick-cloned) div[data-testid="box-trending10"]</msg>
-<var>${locator}</var>
-<arg>div.slick-slide:not(.slick-cloned) div[data-testid="box-trending${index}"]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.247407" elapsed="0.000073"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Get Element" owner="Browser">
-<msg time="2025-04-28T04:16:33.249096" level="INFO">Locator found successfully.</msg>
-<arg>${locator}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-28T04:16:33.247573" elapsed="0.001568"/>
-</kw>
-<msg time="2025-04-28T04:16:33.249186" level="INFO">${exists} = True</msg>
-<var>${exists}</var>
-<arg>Get Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.247517" elapsed="0.001679"/>
-</kw>
-<if>
-<branch type="IF" condition="${exists}">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.249381" level="INFO">${count} = 10</msg>
-<var>${count}</var>
-<arg>${count} + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.249301" elapsed="0.000090"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.249481" level="INFO">Found non-cloned article 10</msg>
-<arg>Found non-cloned article ${index}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.249428" elapsed="0.000067"/>
-</kw>
-<status status="PASS" start="2025-04-28T04:16:33.249230" elapsed="0.000280"/>
-</branch>
-<status status="PASS" start="2025-04-28T04:16:33.249221" elapsed="0.000304"/>
-</if>
-<var name="${index}">10</var>
-<status status="PASS" start="2025-04-28T04:16:33.247369" elapsed="0.002165"/>
-</iter>
-<var>${index}</var>
-<value>1</value>
-<value>11</value>
-<status status="PASS" start="2025-04-28T04:16:33.217368" elapsed="0.032185"/>
-</for>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.249657" level="INFO">Total non-cloned articles: 10</msg>
-<arg>Total non-cloned articles: ${count}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.249604" elapsed="0.000068"/>
-</kw>
-<return>
-<value>${count}</value>
-<status status="PASS" start="2025-04-28T04:16:33.249695" elapsed="0.000071"/>
-</return>
-<msg time="2025-04-28T04:16:33.249829" level="INFO">${slide_count} = 10</msg>
-<var>${slide_count}</var>
-<status status="PASS" start="2025-04-28T04:16:33.216915" elapsed="0.032924"/>
+<status status="PASS" start="2025-04-28T05:48:03.918766" elapsed="0.000114"/>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.249972" level="INFO">Argument types are:
+<msg time="2025-04-28T05:48:03.919012" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<arg>${slide_count}</arg>
-<arg>10</arg>
+<arg>${total_articles}</arg>
+<arg>${EXPECTED_ARTICLE_COUNT}</arg>
+<arg>The latest news section should contain exactly 10 articles</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.249907" elapsed="0.000100"/>
+<status status="PASS" start="2025-04-28T05:48:03.918932" elapsed="0.000105"/>
 </kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.250130" level="INFO">Found 10 non-cloned trending articles</msg>
-<arg>Found ${slide_count} non-cloned trending articles</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.250068" elapsed="0.000077"/>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2025-04-28T05:48:03.919146" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${main_count}</arg>
+<arg>2</arg>
+<arg>The main latest section should contain exactly 2 articles</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2025-04-28T05:48:03.919086" elapsed="0.000078"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-04-28T05:48:04.012685" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-28T05:48:03.919214" elapsed="0.093547"/>
+</kw>
+<tag>article_count</tag>
+<tag>latest_news</tag>
+<status status="PASS" start="2025-04-28T05:47:58.554834" elapsed="5.458090"/>
+</test>
+<test id="s1-t2" name="Verify Main Articles Navigation" line="37">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-28T05:48:04.016972" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/069fa1e2-8d61-4fc3-819c-1a0b637dade4"}</msg>
+<msg time="2025-04-28T05:48:04.246585" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/069fa1e2-8d61-4fc3-819c-1a0b637dade4"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-28T05:48:04.016622" elapsed="0.230101"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-04-28T05:48:04.247937" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  }
+}</msg>
+<msg time="2025-04-28T05:48:04.255443" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-28T05:48:04.255488" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-04-28T05:48:04.247058" elapsed="0.008467"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-28T05:48:07.481926" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-28T05:48:04.255821" elapsed="3.226218"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:07.517435" level="INFO">Waited for Element with selector [data-testid="section-latest1"] at state visible</msg>
+<arg>${SECTION_LATEST}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:07.482185" elapsed="0.035338"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${SECTION_LATEST}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:07.517658" elapsed="0.148604"/>
+</kw>
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-04-28T05:48:07.697227" level="INFO">Found locator('[data-testid="box-main-latest1"]').first(),locator('[data-testid="box-main-latest1"]').nth(1) Locators successfully.</msg>
+<msg time="2025-04-28T05:48:07.697344" level="INFO">${main_articles} = ['[data-testid="box-main-latest1"] &gt;&gt; nth=0', '[data-testid="box-main-latest1"] &gt;&gt; nth=1']</msg>
+<var>${main_articles}</var>
+<arg>${BOX_MAIN_LATEST}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:07.666540" elapsed="0.030816"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-04-28T05:48:07.697599" level="INFO">Length is 2.</msg>
+<msg time="2025-04-28T05:48:07.697625" level="INFO">${main_count} = 2</msg>
+<var>${main_count}</var>
+<arg>${main_articles}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-04-28T05:48:07.697480" elapsed="0.000153"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
-<kw name="Get Article Link Locator" owner="TrendingNews">
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.250514" level="INFO">${locator} = div.slick-slide:not(.slick-cloned) div[data-testid="box-trending1"] a.box-panel</msg>
-<var>${locator}</var>
-<arg>"""${ARTICLE_LINK_TEMPLATE}""" % ${index}</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.250434" elapsed="0.000089"/>
-</kw>
-<return>
-<value>${locator}</value>
-<status status="PASS" start="2025-04-28T04:16:33.250543" elapsed="0.000027"/>
-</return>
-<msg time="2025-04-28T04:16:33.250610" level="INFO">${locator} = div.slick-slide:not(.slick-cloned) div[data-testid="box-trending1"] a.box-panel</msg>
-<var>${locator}</var>
-<arg>${index}</arg>
-<status status="PASS" start="2025-04-28T04:16:33.250327" elapsed="0.000291"/>
-</kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-28T04:16:33.252930" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-28T04:16:33.252983" level="INFO">${element} = div.slick-slide:not(.slick-cloned) div[data-testid="box-trending1"] a.box-panel</msg>
-<var>${element}</var>
-<arg>${locator}</arg>
+<msg time="2025-04-28T05:48:07.700179" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T05:48:07.700245" level="INFO">${article} = [data-testid="box-main-latest1"] &gt;&gt; nth=0</msg>
+<var>${article}</var>
+<arg>${BOX_MAIN_LATEST} &gt;&gt; nth=${index}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-28T04:16:33.250655" elapsed="0.002337"/>
+<status status="PASS" start="2025-04-28T05:48:07.697922" elapsed="0.002334"/>
 </kw>
 <kw name="Get Attribute" owner="Browser">
-<msg time="2025-04-28T04:16:33.257401" level="INFO">Attribute is: 'https://www.idntimes.com/news/indonesia/irfanfathurohman/pramono-bakal-buat-patung-mh-thamrin-sebesar-jenderal-sudirman'</msg>
-<msg time="2025-04-28T04:16:33.257468" level="INFO">${href} = https://www.idntimes.com/news/indonesia/irfanfathurohman/pramono-bakal-buat-patung-mh-thamrin-sebesar-jenderal-sudirman</msg>
+<msg time="2025-04-28T05:48:07.704728" level="INFO">Attribute is: 'https://www.idntimes.com/news/indonesia/sandy-firdaus/tnbbs-terancam-gubernur-lampung-lawan-perambah-hutan'</msg>
+<msg time="2025-04-28T05:48:07.704786" level="INFO">${href} = https://www.idntimes.com/news/indonesia/sandy-firdaus/tnbbs-terancam-gubernur-lampung-lawan-perambah-hutan</msg>
 <var>${href}</var>
-<arg>${element}</arg>
+<arg>${article} &gt;&gt; ${LINK_MAIN_LATEST}</arg>
 <arg>href</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.253050" elapsed="0.004459"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-28T04:16:33.257702" level="INFO">Article 1 link: https://www.idntimes.com/news/indonesia/irfanfathurohman/pramono-bakal-buat-patung-mh-thamrin-sebesar-jenderal-sudirman</msg>
-<arg>Article ${index} link: ${href}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.257592" elapsed="0.000126"/>
+<status status="PASS" start="2025-04-28T05:48:07.700318" elapsed="0.004478"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-04-28T04:16:33.257942" level="INFO">Clicks the element 'div.slick-slide:not(.slick-cloned) div[data-testid="box-trending1"] a.box-panel'.</msg>
-<arg>${element}</arg>
+<msg time="2025-04-28T05:48:07.705075" level="INFO">Clicks the element '[data-testid="box-main-latest1"] &gt;&gt; nth=0 &gt;&gt; [data-testid="link-main-latest1"]'.</msg>
+<arg>${article} &gt;&gt; ${LINK_MAIN_LATEST}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.257758" elapsed="0.143165"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-28T04:16:35.402323" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-28T04:16:33.401030" elapsed="2.001747"/>
+<status status="PASS" start="2025-04-28T05:48:07.704872" elapsed="0.258693"/>
 </kw>
 <kw name="Get Url" owner="Browser">
-<msg time="2025-04-28T04:16:35.411334" level="INFO">${current_url} = https://www.idntimes.com/#google_vignette</msg>
+<msg time="2025-04-28T05:48:07.964810" level="INFO">${current_url} = https://www.idntimes.com/news/indonesia/sandy-firdaus/tnbbs-terancam-gubernur-lampung-lawan-perambah-hutan</msg>
 <var>${current_url}</var>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" start="2025-04-28T04:16:35.403486" elapsed="0.007907"/>
+<status status="PASS" start="2025-04-28T05:48:07.963688" elapsed="0.001144"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2025-04-28T04:16:35.412996" level="FAIL">https://www.idntimes.com/#google_vignette != https://www.idntimes.com/news/indonesia/irfanfathurohman/pramono-bakal-buat-patung-mh-thamrin-sebesar-jenderal-sudirman</msg>
 <arg>${current_url}</arg>
 <arg>${href}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="FAIL" start="2025-04-28T04:16:35.411634" elapsed="0.001905">https://www.idntimes.com/#google_vignette != https://www.idntimes.com/news/indonesia/irfanfathurohman/pramono-bakal-buat-patung-mh-thamrin-sebesar-jenderal-sudirman</status>
+<status status="PASS" start="2025-04-28T05:48:07.964910" elapsed="0.000134"/>
 </kw>
-<kw name="Log" owner="BuiltIn">
-<arg>Successfully loaded article ${index}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-04-28T04:16:35.413977" elapsed="0.000149"/>
-</kw>
-<kw name="Go Back" owner="Browser">
+<kw name="Go To" owner="Browser">
+<msg time="2025-04-28T05:48:08.340587" level="INFO">Successfully opened URL https://www.idntimes.com</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
-<doc>Navigates to the previous page in history.</doc>
-<status status="NOT RUN" start="2025-04-28T04:16:35.414295" elapsed="0.000094"/>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-04-28T05:48:07.965095" elapsed="0.375587"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-04-28T04:16:35.414506" elapsed="0.000067"/>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:08.362611" level="INFO">Waited for Element with selector [data-testid="section-latest1"] at state visible</msg>
+<arg>${SECTION_LATEST}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:08.340795" elapsed="0.021947"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${SECTION_LATEST}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:08.362861" elapsed="0.124636"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:08.490193" level="INFO">Waited for Element with selector [data-testid="box-main-latest1"] &gt;&gt; nth=0 at state visible</msg>
+<arg>${article}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:08.487643" elapsed="0.002614"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${article}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:08.490332" elapsed="0.060596"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2025-04-28T05:48:07.697863" elapsed="0.853121"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T05:48:08.553438" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T05:48:08.553500" level="INFO">${article} = [data-testid="box-main-latest1"] &gt;&gt; nth=1</msg>
+<var>${article}</var>
+<arg>${BOX_MAIN_LATEST} &gt;&gt; nth=${index}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T05:48:08.551213" elapsed="0.002298"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-28T05:48:08.556927" level="INFO">Attribute is: 'https://www.idntimes.com/news/world/fatimah-8/pemukim-israel-serang-sekolah-palestina-di-tepi-barat-yang-diduduki-c1c2'</msg>
+<msg time="2025-04-28T05:48:08.556996" level="INFO">${href} = https://www.idntimes.com/news/world/fatimah-8/pemukim-israel-serang-sekolah-palestina-di-tepi-barat-yang-diduduki-c1c2</msg>
+<var>${href}</var>
+<arg>${article} &gt;&gt; ${LINK_MAIN_LATEST}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:08.553573" elapsed="0.003435"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T05:48:08.557336" level="INFO">Clicks the element '[data-testid="box-main-latest1"] &gt;&gt; nth=1 &gt;&gt; [data-testid="link-main-latest1"]'.</msg>
+<arg>${article} &gt;&gt; ${LINK_MAIN_LATEST}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:08.557096" elapsed="0.227596"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-28T05:48:08.785985" level="INFO">${current_url} = https://www.idntimes.com/news/world/fatimah-8/pemukim-israel-serang-sekolah-palestina-di-tepi-barat-yang-diduduki-c1c2</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-28T05:48:08.784972" elapsed="0.001033"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${href}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T05:48:08.786068" elapsed="0.000109"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-04-28T05:48:09.222546" level="INFO">Successfully opened URL https://www.idntimes.com</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-04-28T05:48:08.786218" elapsed="0.436418"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:09.242009" level="INFO">Waited for Element with selector [data-testid="section-latest1"] at state visible</msg>
+<arg>${SECTION_LATEST}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:09.222752" elapsed="0.019418"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${SECTION_LATEST}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:09.242295" elapsed="0.088127"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:09.333840" level="INFO">Waited for Element with selector [data-testid="box-main-latest1"] &gt;&gt; nth=1 at state visible</msg>
+<arg>${article}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:09.330549" elapsed="0.003383"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${article}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:09.334041" elapsed="0.059124"/>
 </kw>
 <var name="${index}">1</var>
-<status status="FAIL" start="2025-04-28T04:16:33.250266" elapsed="2.164415">https://www.idntimes.com/#google_vignette != https://www.idntimes.com/news/indonesia/irfanfathurohman/pramono-bakal-buat-patung-mh-thamrin-sebesar-jenderal-sudirman</status>
+<status status="PASS" start="2025-04-28T05:48:08.551087" elapsed="0.842135"/>
 </iter>
 <var>${index}</var>
-<value>1</value>
-<value>11</value>
-<status status="FAIL" start="2025-04-28T04:16:33.250184" elapsed="2.164601">https://www.idntimes.com/#google_vignette != https://www.idntimes.com/news/indonesia/irfanfathurohman/pramono-bakal-buat-patung-mh-thamrin-sebesar-jenderal-sudirman</status>
+<value>${main_count}</value>
+<status status="PASS" start="2025-04-28T05:48:07.697705" elapsed="1.695548"/>
 </for>
 <kw name="Close Browser" owner="Browser">
+<msg time="2025-04-28T05:48:09.488603" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-04-28T04:16:35.415061" elapsed="0.000095"/>
+<status status="PASS" start="2025-04-28T05:48:09.393368" elapsed="0.095316"/>
 </kw>
-<msg time="2025-04-28T04:16:35.419202" level="INFO">Set timeout to: 10000</msg>
-<msg time="2025-04-28T04:16:35.430743" level="INFO">Switching context to context=a7e3a43c-24c9-4de7-aac9-02733e713787 in CURRENT</msg>
-<msg time="2025-04-28T04:16:35.442568" level="INFO">Successfully changed active context: context=a7e3a43c-24c9-4de7-aac9-02733e713787</msg>
-<msg time="2025-04-28T04:16:35.504463" level="INFO">Successfully closed Context</msg>
-<doc>Verify the trending news section displays correctly</doc>
-<tag>regression</tag>
-<tag>trending</tag>
-<status status="FAIL" start="2025-04-28T04:16:21.084110" elapsed="14.331369">https://www.idntimes.com/#google_vignette != https://www.idntimes.com/news/indonesia/irfanfathurohman/pramono-bakal-buat-patung-mh-thamrin-sebesar-jenderal-sudirman</status>
+<tag>latest_news</tag>
+<tag>main_articles</tag>
+<tag>navigation</tag>
+<status status="PASS" start="2025-04-28T05:48:04.015781" elapsed="5.473030"/>
 </test>
-<doc>Test suite for verifying trending news section</doc>
-<status status="FAIL" start="2025-04-28T04:16:21.005632" elapsed="14.499809"/>
+<test id="s1-t3" name="Verify Latest News Articles Navigation" line="75">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-28T05:48:09.491608" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/90fec351-03ce-466b-9eb0-a598e685cf87"}</msg>
+<msg time="2025-04-28T05:48:09.730179" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/90fec351-03ce-466b-9eb0-a598e685cf87"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-28T05:48:09.491278" elapsed="0.239011"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-04-28T05:48:09.731385" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  }
+}</msg>
+<msg time="2025-04-28T05:48:09.738858" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-28T05:48:09.738903" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-04-28T05:48:09.730551" elapsed="0.008387"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-28T05:48:11.837689" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-28T05:48:09.739311" elapsed="2.098507"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:11.866989" level="INFO">Waited for Element with selector [data-testid="section-latest1"] at state visible</msg>
+<arg>${SECTION_LATEST}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:11.837983" elapsed="0.029096"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${SECTION_LATEST}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:11.867226" elapsed="0.139154"/>
+</kw>
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-04-28T05:48:12.010118" level="INFO">Found locator('[data-testid="box-latest-news"]').first(),locator('[data-testid="box-latest-news"]').nth(1),locator('[data-testid="box-latest-news"]').nth(2),locator('[data-testid="box-latest-news"]').nth(3),locator('[data-testid="box-latest-news"]').nth(4),locator('[data-testid="box-latest-news"]').nth(5),locator('[data-testid="box-latest-news"]').nth(6),locator('[data-testid="box-latest-news"]').nth(7) Locators successfully.</msg>
+<msg time="2025-04-28T05:48:12.010230" level="INFO">${latest_articles} = ['[data-testid="box-latest-news"] &gt;&gt; nth=0', '[data-testid="box-latest-news"] &gt;&gt; nth=1', '[data-testid="box-latest-news"] &gt;&gt; nth=2', '[data-testid="box-latest-news"] &gt;&gt; nth=3', '[data-testid="box-late...</msg>
+<var>${latest_articles}</var>
+<arg>${BOX_LATEST_NEWS}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:12.006546" elapsed="0.003696"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-04-28T05:48:12.010463" level="INFO">Length is 8.</msg>
+<msg time="2025-04-28T05:48:12.010489" level="INFO">${latest_count} = 8</msg>
+<var>${latest_count}</var>
+<arg>${latest_articles}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-04-28T05:48:12.010357" elapsed="0.000140"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T05:48:12.012661" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T05:48:12.012755" level="INFO">${article} = [data-testid="box-latest-news"] &gt;&gt; nth=0</msg>
+<var>${article}</var>
+<arg>${BOX_LATEST_NEWS} &gt;&gt; nth=${index}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T05:48:12.010691" elapsed="0.002076"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-28T05:48:12.017269" level="INFO">Attribute is: 'https://www.idntimes.com/news/indonesia/sunariyah/top-5-cak-lontong-jadi-komisaris-ancol-hingga-ledakan-dahsyat-di-iran'</msg>
+<msg time="2025-04-28T05:48:12.017326" level="INFO">${href} = https://www.idntimes.com/news/indonesia/sunariyah/top-5-cak-lontong-jadi-komisaris-ancol-hingga-ledakan-dahsyat-di-iran</msg>
+<var>${href}</var>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:12.012860" elapsed="0.004476"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T05:48:12.017612" level="INFO">Clicks the element '[data-testid="box-latest-news"] &gt;&gt; nth=0 &gt;&gt; [data-testid="link-latest-news"]'.</msg>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:12.017412" elapsed="0.229946"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-28T05:48:12.248431" level="INFO">${current_url} = https://www.idntimes.com/news/indonesia/sunariyah/top-5-cak-lontong-jadi-komisaris-ancol-hingga-ledakan-dahsyat-di-iran</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-28T05:48:12.247499" elapsed="0.000948"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${href}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T05:48:12.248508" elapsed="0.000102"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-04-28T05:48:12.740071" level="INFO">Successfully opened URL https://www.idntimes.com</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-04-28T05:48:12.248650" elapsed="0.491514"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:12.762817" level="INFO">Waited for Element with selector [data-testid="section-latest1"] at state visible</msg>
+<arg>${SECTION_LATEST}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:12.740280" elapsed="0.022619"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${SECTION_LATEST}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:12.763011" elapsed="0.142826"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:12.917606" level="INFO">Waited for Element with selector [data-testid="box-latest-news"] &gt;&gt; nth=0 at state visible</msg>
+<arg>${article}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:12.905964" elapsed="0.011724"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${article}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:12.917789" elapsed="0.046019"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2025-04-28T05:48:12.010643" elapsed="0.953218"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T05:48:12.966188" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T05:48:12.966258" level="INFO">${article} = [data-testid="box-latest-news"] &gt;&gt; nth=1</msg>
+<var>${article}</var>
+<arg>${BOX_LATEST_NEWS} &gt;&gt; nth=${index}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T05:48:12.964073" elapsed="0.002197"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-28T05:48:12.969606" level="INFO">Attribute is: 'https://www.idntimes.com/news/indonesia/sunariyah/jelang-operasional-haji-menag-ingatkan-petugas-fokus-layani-jemaah'</msg>
+<msg time="2025-04-28T05:48:12.969678" level="INFO">${href} = https://www.idntimes.com/news/indonesia/sunariyah/jelang-operasional-haji-menag-ingatkan-petugas-fokus-layani-jemaah</msg>
+<var>${href}</var>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:12.966336" elapsed="0.003352"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T05:48:12.969922" level="INFO">Clicks the element '[data-testid="box-latest-news"] &gt;&gt; nth=1 &gt;&gt; [data-testid="link-latest-news"]'.</msg>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:12.969747" elapsed="0.181924"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-28T05:48:13.152825" level="INFO">${current_url} = https://www.idntimes.com/news/indonesia/sunariyah/jelang-operasional-haji-menag-ingatkan-petugas-fokus-layani-jemaah</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-28T05:48:13.151783" elapsed="0.001067"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${href}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T05:48:13.152920" elapsed="0.000122"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-04-28T05:48:13.487881" level="INFO">Successfully opened URL https://www.idntimes.com</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-04-28T05:48:13.153087" elapsed="0.334898"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:13.510528" level="INFO">Waited for Element with selector [data-testid="section-latest1"] at state visible</msg>
+<arg>${SECTION_LATEST}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:13.488162" elapsed="0.022446"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${SECTION_LATEST}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:13.510703" elapsed="0.131686"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:13.645306" level="INFO">Waited for Element with selector [data-testid="box-latest-news"] &gt;&gt; nth=1 at state visible</msg>
+<arg>${article}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:13.642520" elapsed="0.002853"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${article}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:13.645458" elapsed="0.089763"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2025-04-28T05:48:12.963951" elapsed="0.771340"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T05:48:13.748238" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T05:48:13.748369" level="INFO">${article} = [data-testid="box-latest-news"] &gt;&gt; nth=2</msg>
+<var>${article}</var>
+<arg>${BOX_LATEST_NEWS} &gt;&gt; nth=${index}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T05:48:13.735577" elapsed="0.012808"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-28T05:48:13.752401" level="INFO">Attribute is: 'https://www.idntimes.com/news/indonesia/sunariyah/wamendagri-pastikan-proses-pengangkatan-anggota-dpr-papua-transparan'</msg>
+<msg time="2025-04-28T05:48:13.752466" level="INFO">${href} = https://www.idntimes.com/news/indonesia/sunariyah/wamendagri-pastikan-proses-pengangkatan-anggota-dpr-papua-transparan</msg>
+<var>${href}</var>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:13.748502" elapsed="0.003976"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T05:48:13.752802" level="INFO">Clicks the element '[data-testid="box-latest-news"] &gt;&gt; nth=2 &gt;&gt; [data-testid="link-latest-news"]'.</msg>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:13.752569" elapsed="0.233682"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-28T05:48:13.987416" level="INFO">${current_url} = https://www.idntimes.com/news/indonesia/sunariyah/wamendagri-pastikan-proses-pengangkatan-anggota-dpr-papua-transparan</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-28T05:48:13.986368" elapsed="0.001068"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${href}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T05:48:13.987509" elapsed="0.000122"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-04-28T05:48:14.360570" level="INFO">Successfully opened URL https://www.idntimes.com</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-04-28T05:48:13.987678" elapsed="0.372989"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:14.375260" level="INFO">Waited for Element with selector [data-testid="section-latest1"] at state visible</msg>
+<arg>${SECTION_LATEST}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:14.360780" elapsed="0.014572"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${SECTION_LATEST}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:14.375448" elapsed="0.126776"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:14.505096" level="INFO">Waited for Element with selector [data-testid="box-latest-news"] &gt;&gt; nth=2 at state visible</msg>
+<arg>${article}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:14.502353" elapsed="0.002799"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${article}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:14.505223" elapsed="0.059822"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2025-04-28T05:48:13.735412" elapsed="0.829688"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T05:48:14.567822" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T05:48:14.567887" level="INFO">${article} = [data-testid="box-latest-news"] &gt;&gt; nth=3</msg>
+<var>${article}</var>
+<arg>${BOX_LATEST_NEWS} &gt;&gt; nth=${index}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T05:48:14.565322" elapsed="0.002577"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-28T05:48:14.571303" level="INFO">Attribute is: 'https://www.idntimes.com/news/world/brahm-1/paraguay-tetapkan-tentara-quds-iran-sebagai-teroris-c1c2'</msg>
+<msg time="2025-04-28T05:48:14.571363" level="INFO">${href} = https://www.idntimes.com/news/world/brahm-1/paraguay-tetapkan-tentara-quds-iran-sebagai-teroris-c1c2</msg>
+<var>${href}</var>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:14.567965" elapsed="0.003412"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T05:48:14.571664" level="INFO">Clicks the element '[data-testid="box-latest-news"] &gt;&gt; nth=3 &gt;&gt; [data-testid="link-latest-news"]'.</msg>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:14.571447" elapsed="0.304152"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-28T05:48:14.876649" level="INFO">${current_url} = https://www.idntimes.com/news/world/brahm-1/paraguay-tetapkan-tentara-quds-iran-sebagai-teroris-c1c2</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-28T05:48:14.875712" elapsed="0.000955"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${href}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T05:48:14.876736" elapsed="0.000106"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-04-28T05:48:15.362553" level="INFO">Successfully opened URL https://www.idntimes.com</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-04-28T05:48:14.876882" elapsed="0.485771"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:15.383705" level="INFO">Waited for Element with selector [data-testid="section-latest1"] at state visible</msg>
+<arg>${SECTION_LATEST}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:15.362779" elapsed="0.021013"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${SECTION_LATEST}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:15.383896" elapsed="0.111838"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:15.498895" level="INFO">Waited for Element with selector [data-testid="box-latest-news"] &gt;&gt; nth=3 at state visible</msg>
+<arg>${article}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:15.495848" elapsed="0.003147"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${article}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:15.499141" elapsed="0.064006"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2025-04-28T05:48:14.565194" elapsed="0.998014"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T05:48:15.565880" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T05:48:15.565954" level="INFO">${article} = [data-testid="box-latest-news"] &gt;&gt; nth=4</msg>
+<var>${article}</var>
+<arg>${BOX_LATEST_NEWS} &gt;&gt; nth=${index}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T05:48:15.563449" elapsed="0.002518"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-28T05:48:15.569453" level="INFO">Attribute is: 'https://www.idntimes.com/news/world/leo-manik/virginia-giuffre-penyintas-kasus-epstein-meninggal-bunuh-diri-c1c2'</msg>
+<msg time="2025-04-28T05:48:15.569511" level="INFO">${href} = https://www.idntimes.com/news/world/leo-manik/virginia-giuffre-penyintas-kasus-epstein-meninggal-bunuh-diri-c1c2</msg>
+<var>${href}</var>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:15.566035" elapsed="0.003488"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T05:48:15.569810" level="INFO">Clicks the element '[data-testid="box-latest-news"] &gt;&gt; nth=4 &gt;&gt; [data-testid="link-latest-news"]'.</msg>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:15.569596" elapsed="0.329294"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-28T05:48:15.900120" level="INFO">${current_url} = https://www.idntimes.com/news/world/leo-manik/virginia-giuffre-penyintas-kasus-epstein-meninggal-bunuh-diri-c1c2</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-28T05:48:15.899070" elapsed="0.001066"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${href}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T05:48:15.900196" elapsed="0.000108"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-04-28T05:48:16.231792" level="INFO">Successfully opened URL https://www.idntimes.com</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-04-28T05:48:15.900344" elapsed="0.331530"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:16.247877" level="INFO">Waited for Element with selector [data-testid="section-latest1"] at state visible</msg>
+<arg>${SECTION_LATEST}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:16.231971" elapsed="0.015987"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${SECTION_LATEST}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:16.248050" elapsed="0.140664"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:16.391533" level="INFO">Waited for Element with selector [data-testid="box-latest-news"] &gt;&gt; nth=4 at state visible</msg>
+<arg>${article}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:16.388830" elapsed="0.002771"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${article}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:16.392809" elapsed="0.182013"/>
+</kw>
+<var name="${index}">4</var>
+<status status="PASS" start="2025-04-28T05:48:15.563308" elapsed="1.011602"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T05:48:16.577722" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T05:48:16.577794" level="INFO">${article} = [data-testid="box-latest-news"] &gt;&gt; nth=5</msg>
+<var>${article}</var>
+<arg>${BOX_LATEST_NEWS} &gt;&gt; nth=${index}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T05:48:16.575171" elapsed="0.002634"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-28T05:48:16.581164" level="INFO">Attribute is: 'https://www.idntimes.com/news/world/yumin-lama/pm-greenland-akan-perkuat-kerja-sama-dengan-denmark-c1c2'</msg>
+<msg time="2025-04-28T05:48:16.581213" level="INFO">${href} = https://www.idntimes.com/news/world/yumin-lama/pm-greenland-akan-perkuat-kerja-sama-dengan-denmark-c1c2</msg>
+<var>${href}</var>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:16.577873" elapsed="0.003349"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T05:48:16.581454" level="INFO">Clicks the element '[data-testid="box-latest-news"] &gt;&gt; nth=5 &gt;&gt; [data-testid="link-latest-news"]'.</msg>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:16.581285" elapsed="0.135847"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-28T05:48:16.718548" level="INFO">${current_url} = https://www.idntimes.com/news/world/yumin-lama/pm-greenland-akan-perkuat-kerja-sama-dengan-denmark-c1c2</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-28T05:48:16.717261" elapsed="0.001306"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${href}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T05:48:16.718635" elapsed="0.000114"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-04-28T05:48:17.060070" level="INFO">Successfully opened URL https://www.idntimes.com</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-04-28T05:48:16.718790" elapsed="0.341362"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:17.080616" level="INFO">Waited for Element with selector [data-testid="section-latest1"] at state visible</msg>
+<arg>${SECTION_LATEST}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:17.060245" elapsed="0.020468"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${SECTION_LATEST}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:17.080817" elapsed="0.059342"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:17.247687" level="INFO">Waited for Element with selector [data-testid="box-latest-news"] &gt;&gt; nth=5 at state visible</msg>
+<arg>${article}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:17.140275" elapsed="0.107512"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${article}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:17.247896" elapsed="0.058078"/>
+</kw>
+<var name="${index}">5</var>
+<status status="PASS" start="2025-04-28T05:48:16.575026" elapsed="0.731009"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T05:48:17.308590" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T05:48:17.308675" level="INFO">${article} = [data-testid="box-latest-news"] &gt;&gt; nth=6</msg>
+<var>${article}</var>
+<arg>${BOX_LATEST_NEWS} &gt;&gt; nth=${index}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T05:48:17.306263" elapsed="0.002425"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-28T05:48:17.313727" level="INFO">Attribute is: 'https://www.idntimes.com/news/indonesia/linna-susanti/pemkot-ajukan-rp290-miliar-bangun-jalan-layang-rel-perlintasan-bogor'</msg>
+<msg time="2025-04-28T05:48:17.313935" level="INFO">${href} = https://www.idntimes.com/news/indonesia/linna-susanti/pemkot-ajukan-rp290-miliar-bangun-jalan-layang-rel-perlintasan-bogor</msg>
+<var>${href}</var>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:17.308769" elapsed="0.005237"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T05:48:17.314493" level="INFO">Clicks the element '[data-testid="box-latest-news"] &gt;&gt; nth=6 &gt;&gt; [data-testid="link-latest-news"]'.</msg>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:17.314161" elapsed="0.613275"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-28T05:48:17.928612" level="INFO">${current_url} = https://www.idntimes.com/news/indonesia/linna-susanti/pemkot-ajukan-rp290-miliar-bangun-jalan-layang-rel-perlintasan-bogor</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-28T05:48:17.927555" elapsed="0.001075"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${href}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T05:48:17.928696" elapsed="0.000108"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-04-28T05:48:18.402865" level="INFO">Successfully opened URL https://www.idntimes.com</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-04-28T05:48:17.928844" elapsed="0.474104"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:18.421475" level="INFO">Waited for Element with selector [data-testid="section-latest1"] at state visible</msg>
+<arg>${SECTION_LATEST}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:18.403044" elapsed="0.018506"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${SECTION_LATEST}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:18.421672" elapsed="0.173551"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:18.598399" level="INFO">Waited for Element with selector [data-testid="box-latest-news"] &gt;&gt; nth=6 at state visible</msg>
+<arg>${article}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:18.595332" elapsed="0.003134"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${article}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:18.598546" elapsed="0.200747"/>
+</kw>
+<var name="${index}">6</var>
+<status status="PASS" start="2025-04-28T05:48:17.306142" elapsed="1.493259"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T05:48:18.807408" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T05:48:18.807524" level="INFO">${article} = [data-testid="box-latest-news"] &gt;&gt; nth=7</msg>
+<var>${article}</var>
+<arg>${BOX_LATEST_NEWS} &gt;&gt; nth=${index}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T05:48:18.800095" elapsed="0.007443"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-04-28T05:48:18.811145" level="INFO">Attribute is: 'https://www.idntimes.com/news/world/rahmah-n/pbb-penipuan-siber-asia-tenggara-telah-menyebar-secara-global-c1c2'</msg>
+<msg time="2025-04-28T05:48:18.811198" level="INFO">${href} = https://www.idntimes.com/news/world/rahmah-n/pbb-penipuan-siber-asia-tenggara-telah-menyebar-secara-global-c1c2</msg>
+<var>${href}</var>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:18.807636" elapsed="0.003573"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T05:48:18.811460" level="INFO">Clicks the element '[data-testid="box-latest-news"] &gt;&gt; nth=7 &gt;&gt; [data-testid="link-latest-news"]'.</msg>
+<arg>${article} &gt;&gt; ${LINK_LATEST_NEWS}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:18.811276" elapsed="0.158274"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-28T05:48:18.970538" level="INFO">${current_url} = https://www.idntimes.com/news/world/rahmah-n/pbb-penipuan-siber-asia-tenggara-telah-menyebar-secara-global-c1c2</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-28T05:48:18.969661" elapsed="0.000892"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${href}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T05:48:18.970615" elapsed="0.000101"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-04-28T05:48:19.553998" level="INFO">Successfully opened URL https://www.idntimes.com</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-04-28T05:48:18.970757" elapsed="0.583354"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:19.578038" level="INFO">Waited for Element with selector [data-testid="section-latest1"] at state visible</msg>
+<arg>${SECTION_LATEST}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:19.554243" elapsed="0.023908"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${SECTION_LATEST}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:19.578273" elapsed="0.127187"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:19.708241" level="INFO">Waited for Element with selector [data-testid="box-latest-news"] &gt;&gt; nth=7 at state visible</msg>
+<arg>${article}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:19.705587" elapsed="0.002710"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${article}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:19.708369" elapsed="0.210572"/>
+</kw>
+<var name="${index}">7</var>
+<status status="PASS" start="2025-04-28T05:48:18.799719" elapsed="1.119278"/>
+</iter>
+<var>${index}</var>
+<value>${latest_count}</value>
+<status status="PASS" start="2025-04-28T05:48:12.010542" elapsed="7.908481"/>
+</for>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-04-28T05:48:20.015981" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-28T05:48:19.919183" elapsed="0.096888"/>
+</kw>
+<tag>latest_articles</tag>
+<tag>latest_news</tag>
+<tag>navigation</tag>
+<status status="PASS" start="2025-04-28T05:48:09.490611" elapsed="10.525587"/>
+</test>
+<test id="s1-t4" name="Verify See More Link Navigation" line="113">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-28T05:48:20.018979" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/fc73d0d4-8e95-47a0-ad37-25fe718d2fd2"}</msg>
+<msg time="2025-04-28T05:48:20.265545" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/fc73d0d4-8e95-47a0-ad37-25fe718d2fd2"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-28T05:48:20.018602" elapsed="0.247045"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-04-28T05:48:20.267786" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  }
+}</msg>
+<msg time="2025-04-28T05:48:20.277603" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-28T05:48:20.277650" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-04-28T05:48:20.266265" elapsed="0.011470"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-28T05:48:22.686576" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-28T05:48:20.277856" elapsed="2.408982"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:22.723825" level="INFO">Waited for Element with selector [data-testid="section-latest1"] at state visible</msg>
+<arg>${SECTION_LATEST}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:22.687142" elapsed="0.036781"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${SECTION_LATEST}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:22.724074" elapsed="0.048378"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T05:48:22.785612" level="INFO">Waited for Element with selector [data-testid="section-latest1"] &gt;&gt; [data-testid="see-more-latest"] at state visible</msg>
+<arg>${SEE_MORE_LINK}</arg>
+<arg>visible</arg>
+<arg>timeout=30s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T05:48:22.772768" elapsed="0.013197"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${SEE_MORE_LINK}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-04-28T05:48:22.786440" elapsed="0.079670"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T05:48:22.866832" level="INFO">Clicks the element '[data-testid="section-latest1"] &gt;&gt; [data-testid="see-more-latest"]'.</msg>
+<arg>${SEE_MORE_LINK}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T05:48:22.866332" elapsed="0.186756"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-28T05:48:23.054208" level="INFO">${current_url} = https://www.idntimes.com/news</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-28T05:48:23.053228" elapsed="0.000997"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${NEWS_PAGE_URL}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T05:48:23.054322" elapsed="0.000115"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-04-28T05:48:23.447921" level="INFO">Successfully opened URL https://www.idntimes.com</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-04-28T05:48:23.054500" elapsed="0.393516"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-04-28T05:48:23.544535" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-28T05:48:23.448149" elapsed="0.096467"/>
+</kw>
+<tag>latest_news</tag>
+<tag>navigation</tag>
+<tag>see_more</tag>
+<status status="PASS" start="2025-04-28T05:48:20.017870" elapsed="3.526854"/>
+</test>
+<status status="PASS" start="2025-04-28T05:47:58.478173" elapsed="25.068099"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">regression</stat>
-<stat pass="0" fail="1" skip="0">trending</stat>
+<stat pass="1" fail="0" skip="0">article_count</stat>
+<stat pass="1" fail="0" skip="0">latest_articles</stat>
+<stat pass="4" fail="0" skip="0">latest_news</stat>
+<stat pass="1" fail="0" skip="0">main_articles</stat>
+<stat pass="3" fail="0" skip="0">navigation</stat>
+<stat pass="1" fail="0" skip="0">see_more</stat>
 </tag>
 <suite>
-<stat name="TrendingNews" id="s1" pass="0" fail="1" skip="0">TrendingNews</stat>
+<stat name="LatestNews" id="s1" pass="4" fail="0" skip="0">LatestNews</stat>
 </suite>
 </statistics>
 <errors>
