@@ -1,222 +1,92 @@
-{"level":30,"time":"2025-04-27T19:10:17.464Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Listening on 51234"}
-(node:52410) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2025-04-27T21:16:21.444Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Listening on 51026"}
+(node:62255) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2025-04-27T19:10:18.535Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2025-04-27T19:10:19.197Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
-{"level":30,"time":"2025-04-27T19:10:19.197Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method newBrowser"}
-{"level":30,"time":"2025-04-27T19:10:19.197Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2025-04-27T19:10:19.201Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method newContext"}
-{"level":30,"time":"2025-04-27T19:10:19.201Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}}"}
-{"level":30,"time":"2025-04-27T19:10:19.201Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2025-04-27T19:10:19.201Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Trace file: "}
-{"level":30,"time":"2025-04-27T19:10:19.227Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Changed active context"}
-{"level":30,"time":"2025-04-27T19:10:19.227Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method newContext"}
-{"level":30,"time":"2025-04-27T19:10:19.230Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method newPage"}
-{"level":30,"time":"2025-04-27T19:10:19.230Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2025-04-27T19:10:19.539Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Video path: undefined"}
-{"level":30,"time":"2025-04-27T19:10:19.539Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Changed active page"}
-{"level":30,"time":"2025-04-27T19:10:21.348Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method newPage"}
-{"level":30,"time":"2025-04-27T19:10:21.351Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2025-04-27T19:10:21.351Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"side-headline\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:21.394Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2025-04-27T19:10:21.397Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2025-04-27T19:10:21.397Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"main-headline\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:21.400Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2025-04-27T19:10:21.404Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElementCount"}
-{"level":30,"time":"2025-04-27T19:10:21.405Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is disabled, return Locator: [data-testid^=\"box-side-headline\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:21.416Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElementCount"}
-{"level":30,"time":"2025-04-27T19:10:21.423Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:21.423Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline1\"] h3.title-text in page."}
-{"level":30,"time":"2025-04-27T19:10:21.451Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"box-side-headline1\"] h3.title-text containing Pemkot Ajukan Rp290 Miliar Bangun Jalan Layang Rel Perlintasan Bogor"}
-{"level":30,"time":"2025-04-27T19:10:21.451Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:21.454Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method hover"}
-{"level":30,"time":"2025-04-27T19:10:21.454Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline1\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:21.488Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method hover"}
-{"level":30,"time":"2025-04-27T19:10:22.496Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:22.497Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"box-headline1\"] h3.title-text in page."}
-{"level":30,"time":"2025-04-27T19:10:22.512Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"box-headline1\"] h3.title-text containing Pemkot Ajukan Rp290 Miliar Bangun Jalan Layang Rel Perlintasan Bogor"}
-{"level":30,"time":"2025-04-27T19:10:22.513Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:22.515Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:22.516Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"title-side-headline1\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:22.520Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"title-side-headline1\"] containing Pemkot Ajukan Rp290 Miliar Bangun Jalan Layang Rel Perlintasan Bogor"}
-{"level":30,"time":"2025-04-27T19:10:22.520Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:22.522Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:22.522Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"title-headline1\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:22.526Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"title-headline1\"] containing Pemkot Ajukan Rp290 Miliar Bangun Jalan Layang Rel Perlintasan Bogor"}
-{"level":30,"time":"2025-04-27T19:10:22.526Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:22.528Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
-{"level":30,"time":"2025-04-27T19:10:22.528Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline1\"] a.box-panel in page."}
-{"level":30,"time":"2025-04-27T19:10:22.530Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
-{"level":30,"time":"2025-04-27T19:10:22.532Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
-{"level":30,"time":"2025-04-27T19:10:22.532Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline1\"] a.box-panel in page."}
-{"level":30,"time":"2025-04-27T19:10:22.535Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"box-side-headline1\"] a.box-panel containing https://www.idntimes.com/news/indonesia/linna-susanti/pemkot-ajukan-rp290-miliar-bangun-jalan-layang-rel-perlintasan-bogor"}
-{"level":30,"time":"2025-04-27T19:10:22.535Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
-{"level":30,"time":"2025-04-27T19:10:22.536Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-27T19:10:22.536Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline1\"] a.box-panel in page."}
-{"level":30,"time":"2025-04-27T19:10:22.754Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method click"}
-{"level":30,"time":"2025-04-27T19:10:23.818Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2025-04-27T19:10:23.818Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"side-headline\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:23.828Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2025-04-27T19:10:23.831Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:23.831Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline2\"] h3.title-text in page."}
-{"level":30,"time":"2025-04-27T19:10:23.843Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"box-side-headline2\"] h3.title-text containing PDIP Bantah Pertemuan Mega-Prabowo Penyebab Kongres Belum Ditentukan"}
-{"level":30,"time":"2025-04-27T19:10:23.843Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:23.845Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method hover"}
-{"level":30,"time":"2025-04-27T19:10:23.845Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline2\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:24.021Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method hover"}
-{"level":30,"time":"2025-04-27T19:10:25.024Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:25.024Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"box-headline2\"] h3.title-text in page."}
-{"level":30,"time":"2025-04-27T19:10:25.261Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"box-headline2\"] h3.title-text containing PDIP Bantah Pertemuan Mega-Prabowo Penyebab Kongres Belum Ditentukan"}
-{"level":30,"time":"2025-04-27T19:10:25.261Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:25.263Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:25.263Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"title-side-headline2\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:25.266Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"title-side-headline2\"] containing PDIP Bantah Pertemuan Mega-Prabowo Penyebab Kongres Belum Ditentukan"}
-{"level":30,"time":"2025-04-27T19:10:25.266Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:25.267Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:25.267Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"title-headline2\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:25.269Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"title-headline2\"] containing PDIP Bantah Pertemuan Mega-Prabowo Penyebab Kongres Belum Ditentukan"}
-{"level":30,"time":"2025-04-27T19:10:25.269Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:25.270Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
-{"level":30,"time":"2025-04-27T19:10:25.270Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline2\"] a.box-panel in page."}
-{"level":30,"time":"2025-04-27T19:10:25.271Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
-{"level":30,"time":"2025-04-27T19:10:25.272Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
-{"level":30,"time":"2025-04-27T19:10:25.272Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline2\"] a.box-panel in page."}
-{"level":30,"time":"2025-04-27T19:10:25.273Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"box-side-headline2\"] a.box-panel containing https://www.idntimes.com/news/indonesia/muhammad-ilman-nafian-2/pdip-bantah-pertemuan-mega-prabowo-penyebab-kongres-belum-ditentukan"}
-{"level":30,"time":"2025-04-27T19:10:25.273Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
-{"level":30,"time":"2025-04-27T19:10:25.274Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-27T19:10:25.274Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline2\"] a.box-panel in page."}
-{"level":30,"time":"2025-04-27T19:10:25.424Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method click"}
-{"level":30,"time":"2025-04-27T19:10:26.380Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2025-04-27T19:10:26.380Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"side-headline\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:26.665Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2025-04-27T19:10:26.667Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:26.667Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline3\"] h3.title-text in page."}
-{"level":30,"time":"2025-04-27T19:10:26.702Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"box-side-headline3\"] h3.title-text containing 10 Potret Perayaan Anniversary Pernikahan ke-10 Andien Aisyah dan Ippe"}
-{"level":30,"time":"2025-04-27T19:10:26.702Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:26.703Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method hover"}
-{"level":30,"time":"2025-04-27T19:10:26.703Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline3\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:26.751Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method hover"}
-{"level":30,"time":"2025-04-27T19:10:27.754Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:27.755Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"box-headline3\"] h3.title-text in page."}
-{"level":30,"time":"2025-04-27T19:10:27.881Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"box-headline3\"] h3.title-text containing 10 Potret Perayaan Anniversary Pernikahan ke-10 Andien Aisyah dan Ippe"}
-{"level":30,"time":"2025-04-27T19:10:27.881Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:27.883Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:27.883Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"title-side-headline3\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:27.886Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"title-side-headline3\"] containing 10 Potret Perayaan Anniversary Pernikahan ke-10 Andien Aisyah dan Ippe"}
-{"level":30,"time":"2025-04-27T19:10:27.886Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:27.887Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:27.887Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"title-headline3\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:27.890Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"title-headline3\"] containing 10 Potret Perayaan Anniversary Pernikahan ke-10 Andien Aisyah dan Ippe"}
-{"level":30,"time":"2025-04-27T19:10:27.890Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:27.891Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
-{"level":30,"time":"2025-04-27T19:10:27.891Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline3\"] a.box-panel in page."}
-{"level":30,"time":"2025-04-27T19:10:27.892Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
-{"level":30,"time":"2025-04-27T19:10:27.893Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
-{"level":30,"time":"2025-04-27T19:10:27.893Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline3\"] a.box-panel in page."}
-{"level":30,"time":"2025-04-27T19:10:27.895Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"box-side-headline3\"] a.box-panel containing https://www.idntimes.com/hype/entertainment/alaya-vrida/perayaan-anniversary-pernikahan-ke-10-andien-aisyah-dan-ippe"}
-{"level":30,"time":"2025-04-27T19:10:27.895Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
-{"level":30,"time":"2025-04-27T19:10:27.896Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-27T19:10:27.896Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline3\"] a.box-panel in page."}
-{"level":30,"time":"2025-04-27T19:10:28.219Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method click"}
-{"level":30,"time":"2025-04-27T19:10:29.732Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2025-04-27T19:10:29.733Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"side-headline\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:29.871Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2025-04-27T19:10:29.873Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:29.873Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline4\"] h3.title-text in page."}
-{"level":30,"time":"2025-04-27T19:10:29.886Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"box-side-headline4\"] h3.title-text containing Highlight Konser Boyce Avenue Live in Jakarta, Asyik Karaokean! "}
-{"level":30,"time":"2025-04-27T19:10:29.886Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:29.888Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method hover"}
-{"level":30,"time":"2025-04-27T19:10:29.888Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline4\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:29.904Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method hover"}
-{"level":30,"time":"2025-04-27T19:10:30.930Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:30.930Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"box-headline4\"] h3.title-text in page."}
-{"level":30,"time":"2025-04-27T19:10:30.937Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"box-headline4\"] h3.title-text containing Highlight Konser Boyce Avenue Live in Jakarta, Asyik Karaokean! "}
-{"level":30,"time":"2025-04-27T19:10:30.937Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:30.939Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:30.939Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"title-side-headline4\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:30.943Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"title-side-headline4\"] containing Highlight Konser Boyce Avenue Live in Jakarta, Asyik Karaokean! "}
-{"level":30,"time":"2025-04-27T19:10:30.943Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:30.944Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:30.944Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"title-headline4\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:30.948Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"title-headline4\"] containing Highlight Konser Boyce Avenue Live in Jakarta, Asyik Karaokean! "}
-{"level":30,"time":"2025-04-27T19:10:30.948Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:30.949Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
-{"level":30,"time":"2025-04-27T19:10:30.949Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline4\"] a.box-panel in page."}
-{"level":30,"time":"2025-04-27T19:10:30.951Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
-{"level":30,"time":"2025-04-27T19:10:30.952Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
-{"level":30,"time":"2025-04-27T19:10:30.952Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline4\"] a.box-panel in page."}
-{"level":30,"time":"2025-04-27T19:10:30.954Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"box-side-headline4\"] a.box-panel containing https://www.idntimes.com/hype/entertainment/elizabeth-chiquita-tuedestin-priwiratu/highlight-konser-boyce-avenue-live-in-jakarta"}
-{"level":30,"time":"2025-04-27T19:10:30.954Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
-{"level":30,"time":"2025-04-27T19:10:30.955Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-27T19:10:30.955Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline4\"] a.box-panel in page."}
-{"level":30,"time":"2025-04-27T19:10:31.092Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method click"}
-{"level":30,"time":"2025-04-27T19:10:32.640Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2025-04-27T19:10:32.640Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"side-headline\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:32.983Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2025-04-27T19:10:32.985Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:32.985Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline5\"] h3.title-text in page."}
-{"level":30,"time":"2025-04-27T19:10:33.117Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"box-side-headline5\"] h3.title-text containing Sempat Tertinggal, Liverpool Ungguli Spurs di Babak I"}
-{"level":30,"time":"2025-04-27T19:10:33.118Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:33.120Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method hover"}
-{"level":30,"time":"2025-04-27T19:10:33.120Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline5\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:33.190Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method hover"}
-{"level":30,"time":"2025-04-27T19:10:34.196Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:34.196Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"box-headline5\"] h3.title-text in page."}
-{"level":30,"time":"2025-04-27T19:10:34.201Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"box-headline5\"] h3.title-text containing Sempat Tertinggal, Liverpool Ungguli Spurs di Babak I"}
-{"level":30,"time":"2025-04-27T19:10:34.201Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:34.203Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:34.203Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"title-side-headline5\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:34.206Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"title-side-headline5\"] containing Sempat Tertinggal, Liverpool Ungguli Spurs di Babak I"}
-{"level":30,"time":"2025-04-27T19:10:34.206Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:34.207Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:34.207Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"title-headline5\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:34.209Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"main-headline\"] .slick-slide[aria-hidden=\"false\"] [data-testid=\"title-headline5\"] containing Sempat Tertinggal, Liverpool Ungguli Spurs di Babak I"}
-{"level":30,"time":"2025-04-27T19:10:34.209Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-27T19:10:34.210Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
-{"level":30,"time":"2025-04-27T19:10:34.210Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline5\"] a.box-panel in page."}
-{"level":30,"time":"2025-04-27T19:10:34.211Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
-{"level":30,"time":"2025-04-27T19:10:34.212Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getDomProperty"}
-{"level":30,"time":"2025-04-27T19:10:34.212Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline5\"] a.box-panel in page."}
-{"level":30,"time":"2025-04-27T19:10:34.214Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved dom property for element [data-testid=\"box-side-headline5\"] a.box-panel containing https://www.idntimes.com/sport/soccer/satria-permana-2/sempat-tertinggal-liverpool-ungguli-spurs-di-babak-i"}
-{"level":30,"time":"2025-04-27T19:10:34.214Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getDomProperty"}
-{"level":30,"time":"2025-04-27T19:10:34.215Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-27T19:10:34.215Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"box-side-headline5\"] a.box-panel in page."}
-{"level":30,"time":"2025-04-27T19:10:34.391Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method click"}
-{"level":30,"time":"2025-04-27T19:10:35.191Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2025-04-27T19:10:35.191Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"side-headline\"] in page."}
-{"level":30,"time":"2025-04-27T19:10:35.266Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2025-04-27T19:10:35.268Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2025-04-27T19:10:35.284Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Removed page=a5217738-2dda-41fb-a705-aa522573346c from context=3f85ebe6-f130-49fa-ba6c-2d31cfceba9d page stack"}
-{"level":30,"time":"2025-04-27T19:10:35.415Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method closeBrowser"}
-================= Original suppressed error =================
-Error: Browser has been closed.
-    at PlaywrightState.getActiveBrowser (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:12223:15)
-    at PlaywrightServer.getActiveBrowser (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13119:59)
-    at PlaywrightServer.setTimeout (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13367:57)
-    at Object.onReceiveHalfClose (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
-    at BaseServerInterceptingCall.maybePushNextMessage (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
-    at BaseServerInterceptingCall.handleEndEvent (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
-    at ServerHttp2Stream.<anonymous> (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
-    at ServerHttp2Stream.emit (node:events:532:35)
-    at endReadableNT (node:internal/streams/readable:1696:12)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
-=============================================================
-{"level":30,"time":"2025-04-27T19:10:35.423Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-27T19:10:35.423Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
-================= Original suppressed error =================
-Error: Browser has been closed.
-    at PlaywrightState.getActiveBrowser (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:12223:15)
-    at PlaywrightServer.getActiveBrowser (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13119:59)
-    at PlaywrightServer.setTimeout (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js:13367:57)
-    at Object.onReceiveHalfClose (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1461:25)
-    at BaseServerInterceptingCall.maybePushNextMessage (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:575:31)
-    at BaseServerInterceptingCall.handleEndEvent (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:615:14)
-    at ServerHttp2Stream.<anonymous> (/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:382:18)
-    at ServerHttp2Stream.emit (node:events:532:35)
-    at endReadableNT (node:internal/streams/readable:1696:12)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
-=============================================================
-{"level":30,"time":"2025-04-27T19:10:35.426Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-27T19:10:35.426Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-27T19:10:35.449Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2025-04-27T19:10:35.449Z","pid":52410,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-27T21:16:22.480Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-27T21:16:23.128Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-27T21:16:23.128Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-27T21:16:23.128Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-27T21:16:23.132Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-27T21:16:23.132Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}}"}
+{"level":30,"time":"2025-04-27T21:16:23.132Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-27T21:16:23.132Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Trace file: "}
+{"level":30,"time":"2025-04-27T21:16:23.162Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Changed active context"}
+{"level":30,"time":"2025-04-27T21:16:23.163Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-27T21:16:23.165Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-27T21:16:23.165Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-27T21:16:23.735Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-27T21:16:23.735Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Changed active page"}
+{"level":30,"time":"2025-04-27T21:16:26.090Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-27T21:16:31.095Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:31.095Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with .list-trending in page."}
+{"level":30,"time":"2025-04-27T21:16:31.118Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:31.122Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2025-04-27T21:16:31.122Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with .list-trending in page."}
+{"level":30,"time":"2025-04-27T21:16:31.182Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2025-04-27T21:16:33.188Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-04-27T21:16:33.188Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"title-berita-terpopuler\"] span in page."}
+{"level":30,"time":"2025-04-27T21:16:33.197Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-04-27T21:16:33.199Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getText"}
+{"level":30,"time":"2025-04-27T21:16:33.199Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with [data-testid=\"title-berita-terpopuler\"] span in page."}
+{"level":30,"time":"2025-04-27T21:16:33.208Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved text for element [data-testid=\"title-berita-terpopuler\"] span containing BERITA TERPOPULER"}
+{"level":30,"time":"2025-04-27T21:16:33.208Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getText"}
+{"level":30,"time":"2025-04-27T21:16:33.213Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-04-27T21:16:33.213Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with .list-trending in page."}
+{"level":30,"time":"2025-04-27T21:16:33.215Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-04-27T21:16:33.218Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.219Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with div.slick-slide:not(.slick-cloned) div[data-testid=\"box-trending1\"] in page."}
+{"level":30,"time":"2025-04-27T21:16:33.221Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.223Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.223Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with div.slick-slide:not(.slick-cloned) div[data-testid=\"box-trending2\"] in page."}
+{"level":30,"time":"2025-04-27T21:16:33.225Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.227Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.227Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with div.slick-slide:not(.slick-cloned) div[data-testid=\"box-trending3\"] in page."}
+{"level":30,"time":"2025-04-27T21:16:33.229Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.231Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.231Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with div.slick-slide:not(.slick-cloned) div[data-testid=\"box-trending4\"] in page."}
+{"level":30,"time":"2025-04-27T21:16:33.232Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.234Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.234Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with div.slick-slide:not(.slick-cloned) div[data-testid=\"box-trending5\"] in page."}
+{"level":30,"time":"2025-04-27T21:16:33.235Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.237Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.237Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with div.slick-slide:not(.slick-cloned) div[data-testid=\"box-trending6\"] in page."}
+{"level":30,"time":"2025-04-27T21:16:33.238Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.240Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.240Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with div.slick-slide:not(.slick-cloned) div[data-testid=\"box-trending7\"] in page."}
+{"level":30,"time":"2025-04-27T21:16:33.241Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.243Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.243Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with div.slick-slide:not(.slick-cloned) div[data-testid=\"box-trending8\"] in page."}
+{"level":30,"time":"2025-04-27T21:16:33.244Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.245Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.245Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with div.slick-slide:not(.slick-cloned) div[data-testid=\"box-trending9\"] in page."}
+{"level":30,"time":"2025-04-27T21:16:33.246Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.248Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.248Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with div.slick-slide:not(.slick-cloned) div[data-testid=\"box-trending10\"] in page."}
+{"level":30,"time":"2025-04-27T21:16:33.248Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.251Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.251Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with div.slick-slide:not(.slick-cloned) div[data-testid=\"box-trending1\"] a.box-panel in page."}
+{"level":30,"time":"2025-04-27T21:16:33.252Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElement"}
+{"level":30,"time":"2025-04-27T21:16:33.253Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2025-04-27T21:16:33.253Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with div.slick-slide:not(.slick-cloned) div[data-testid=\"box-trending1\"] a.box-panel in page."}
+{"level":30,"time":"2025-04-27T21:16:33.257Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Retrieved attribute for element div.slick-slide:not(.slick-cloned) div[data-testid=\"box-trending1\"] a.box-panel containing https://www.idntimes.com/news/indonesia/irfanfathurohman/pramono-bakal-buat-patung-mh-thamrin-sebesar-jenderal-sudirman"}
+{"level":30,"time":"2025-04-27T21:16:33.257Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2025-04-27T21:16:33.258Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method click"}
+{"level":30,"time":"2025-04-27T21:16:33.258Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Strict mode is enabled, find Locator with div.slick-slide:not(.slick-cloned) div[data-testid=\"box-trending1\"] a.box-panel in page."}
+{"level":30,"time":"2025-04-27T21:16:33.400Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method click"}
+{"level":30,"time":"2025-04-27T21:16:35.420Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-27T21:16:35.423Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-27T21:16:35.426Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-27T21:16:35.427Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-27T21:16:35.428Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-27T21:16:35.429Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-27T21:16:35.431Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-27T21:16:35.432Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-27T21:16:35.433Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Changed active context"}
+{"level":30,"time":"2025-04-27T21:16:35.433Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Changing current active page: page=0e0392ec-4c23-4046-976a-11a3d999512f"}
+{"level":30,"time":"2025-04-27T21:16:35.433Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Changed active page"}
+{"level":30,"time":"2025-04-27T21:16:35.443Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-04-27T21:16:35.488Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Removed page=2c6130b4-e543-4cd4-8754-4c44d7929b79 from context=a7e3a43c-24c9-4de7-aac9-02733e713787 page stack"}
+{"level":30,"time":"2025-04-27T21:16:35.503Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-04-27T21:16:35.507Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-27T21:16:35.507Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-27T21:16:35.538Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-27T21:16:35.614Z","pid":62255,"hostname":"Henricos-MacBook-Pro.local","msg":"End of node method closeAllBrowsers"}

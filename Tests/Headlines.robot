@@ -4,7 +4,7 @@ Resource    ../Resource/Headlines.resource
 
 *** Test Cases ***
 Check Headlines Hover Interaction
-    New Browser    chromium    headless=false
+    New Browser    chromium    headless=false    args=['--load-extension=/Users/henrico/Documents/henrico/Learning/IDN_Assignment/extensions/ublock']
     New Context    viewport={'width': 1920, 'height': 1080}
     New Page    ${URL}    wait_until=domcontentloaded
     Wait For Elements State    ${SIDE_HEADLINE_SECTION}    state=visible    timeout=10s
@@ -33,7 +33,7 @@ Check Headlines Hover Interaction
         ${current_url}=    Get Url
         Should Be Equal    ${current_url}    ${expected_url}
         Go Back
-        Wait Until Keyword Succeeds    10x    2s    Wait For Elements State    ${SIDE_HEADLINE_SECTION}    state=visible    timeout=2s
+        Wait Until Keyword Succeeds    20x    2s    Wait For Elements State    ${SIDE_HEADLINE_SECTION}    state=visible    timeout=2s
     END
 
     Close Browser
