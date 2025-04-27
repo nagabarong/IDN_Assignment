@@ -156,15 +156,25 @@ Check Menubar Category
         # Handle Google ad vignette
         IF    "#google_vignette" in "${current_url}" or "chrome-error://" in "${current_url}"
             Sleep    5s    # Wait for vignette to fully load
-            ${dismiss_button}=    Get Element    div.btn.skip[role="button"]
+            ${dismiss_button}=    Run Keyword And Return Status    Get Element    [aria-label="Tutup Iklan"]
             IF    ${dismiss_button}
-                Click    ${dismiss_button}
-                Sleep    2s
-                # Wait for the actual page to load
-                Wait For Elements State    body    state=visible    timeout=20s
-                ${current_url}=    Get Url
-                ${normalized_current}=    Normalize URL    ${current_url}
+                Click    [aria-label="Tutup Iklan"]
+            ELSE
+                ${dismiss_button}=    Run Keyword And Return Status    Get Element    div.btn.skip[role="button"]
+                IF    ${dismiss_button}
+                    Click    div.btn.skip[role="button"]
+                ELSE
+                    ${dismiss_button}=    Run Keyword And Return Status    Get Element    [aria-label="Close ad"]
+                    IF    ${dismiss_button}
+                        Click    [aria-label="Close ad"]
+                    END
+                END
             END
+            Sleep    2s
+            # Wait for the actual page to load
+            Wait For Elements State    body    state=visible    timeout=20s
+            ${current_url}=    Get Url
+            ${normalized_current}=    Normalize URL    ${current_url}
         END
         
         Should Be Equal    ${normalized_current}    ${normalized_expected}
@@ -206,15 +216,25 @@ Check Menubar Category
         # Handle Google ad vignette
         IF    "#google_vignette" in "${current_url}" or "chrome-error://" in "${current_url}"
             Sleep    5s    # Wait for vignette to fully load
-            ${dismiss_button}=    Get Element    div.btn.skip[role="button"]
+            ${dismiss_button}=    Run Keyword And Return Status    Get Element    [aria-label="Tutup Iklan"]
             IF    ${dismiss_button}
-                Click    ${dismiss_button}
-                Sleep    2s
-                # Wait for the actual page to load
-                Wait For Elements State    body    state=visible    timeout=20s
-                ${current_url}=    Get Url
-                ${normalized_current}=    Normalize URL    ${current_url}
+                Click    [aria-label="Tutup Iklan"]
+            ELSE
+                ${dismiss_button}=    Run Keyword And Return Status    Get Element    div.btn.skip[role="button"]
+                IF    ${dismiss_button}
+                    Click    div.btn.skip[role="button"]
+                ELSE
+                    ${dismiss_button}=    Run Keyword And Return Status    Get Element    [aria-label="Close ad"]
+                    IF    ${dismiss_button}
+                        Click    [aria-label="Close ad"]
+                    END
+                END
             END
+            Sleep    2s
+            # Wait for the actual page to load
+            Wait For Elements State    body    state=visible    timeout=20s
+            ${current_url}=    Get Url
+            ${normalized_current}=    Normalize URL    ${current_url}
         END
         
         Should Be Equal    ${normalized_current}    ${normalized_expected}
