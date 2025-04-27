@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       PageOverview Data
+Documentation       Content Trending Tags Data
 Library    Browser
 
 *** Variables ***

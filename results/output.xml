@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.4 on darwin)" generated="2025-04-27T19:03:07.447126" rpa="false" schemaversion="5">
-<suite id="s1" name="TrendingContent" source="/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/TrendingContent.robot">
-<test id="s1-t1" name="Check Trending Content" line="9">
+<robot generator="Robot 7.2.2 (Python 3.12.4 on darwin)" generated="2025-04-28T01:06:21.084179" rpa="false" schemaversion="5">
+<suite id="s1" name="MenuBar" source="/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/MenuBar.robot">
+<test id="s1-t1" name="Check Menu Bar Visibility" line="7">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-27T19:03:07.508070" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/1c86a1ef-8b3a-438c-9e8c-aa26bfdf3ec2"}</msg>
-<msg time="2025-04-27T19:03:07.527645" level="INFO">Starting Browser process /Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js using port 49171</msg>
-<msg time="2025-04-27T19:03:07.527749" level="INFO">Node startup parameters: ['node', '/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js', '49171']</msg>
-<msg time="2025-04-27T19:03:09.159166" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/1c86a1ef-8b3a-438c-9e8c-aa26bfdf3ec2"}</msg>
+<msg time="2025-04-28T01:06:21.151498" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/3ed67de1-16e6-4ee6-8cc8-9f45809d3309"}</msg>
+<msg time="2025-04-28T01:06:21.180412" level="INFO">Starting Browser process /Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js using port 59203</msg>
+<msg time="2025-04-28T01:06:21.180547" level="INFO">Node startup parameters: ['node', '/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js', '59203']</msg>
+<msg time="2025-04-28T01:06:22.875347" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/3ed67de1-16e6-4ee6-8cc8-9f45809d3309"}</msg>
 <arg>chromium</arg>
 <arg>headless=false</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-27T19:03:07.507829" elapsed="1.651533"/>
+<status status="PASS" start="2025-04-28T01:06:21.151242" elapsed="1.724340"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2025-04-27T19:03:09.160736" level="INFO">{
+<msg time="2025-04-28T01:06:22.877286" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -29,842 +29,624 @@
     "width": 1920
   }
 }</msg>
-<msg time="2025-04-27T19:03:09.168591" level="INFO">Successfully created context. </msg>
-<msg time="2025-04-27T19:03:09.168644" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<msg time="2025-04-28T01:06:22.885304" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-28T01:06:22.885351" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
 <arg>viewport={'width': 1920, 'height': 1080}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2025-04-27T19:03:09.159687" elapsed="0.009002"/>
+<status status="PASS" start="2025-04-28T01:06:22.875903" elapsed="0.009490"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-27T19:03:10.238073" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com/</msg>
+<msg time="2025-04-28T01:06:24.568646" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com/</msg>
 <arg>${URL}</arg>
 <arg>wait_until=domcontentloaded</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-27T19:03:09.168831" elapsed="1.069401"/>
+<status status="PASS" start="2025-04-28T01:06:22.885577" elapsed="1.683233"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.596687" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.596802" level="INFO">${quiz_menu} = [data-testid="menu-quiz"]</msg>
+<var>${quiz_menu}</var>
+<arg>${MENU_QUIZ}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.569011" elapsed="0.027802"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.599529" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.599609" level="INFO">${quiz_link} = [data-testid="menu-quiz-link"]</msg>
+<var>${quiz_link}</var>
+<arg>${MENU_QUIZ_LINK}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.596936" elapsed="0.002684"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.602160" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.602308" level="INFO">${quiz_img} = [data-testid="menu-quiz-img"]</msg>
+<var>${quiz_img}</var>
+<arg>${MENU_QUIZ_IMG}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.599726" elapsed="0.002597"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${quiz_menu}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.602487" elapsed="0.024307"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${quiz_link}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.626933" elapsed="0.005598"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${quiz_img}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.632666" elapsed="0.004059"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.639786" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.639896" level="INFO">${news_menu} = [data-testid="menu-news"]</msg>
+<var>${news_menu}</var>
+<arg>${MENU_NEWS}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.636877" elapsed="0.003031"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.655715" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.655852" level="INFO">${news_link} = [data-testid="menu-news-link"]</msg>
+<var>${news_link}</var>
+<arg>${MENU_NEWS_LINK}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.640042" elapsed="0.015823"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${news_menu}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.656034" elapsed="0.007209"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${news_link}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.663470" elapsed="0.005884"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.672571" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.672649" level="INFO">${business_menu} = [data-testid="menu-business"]</msg>
+<var>${business_menu}</var>
+<arg>${MENU_BUSINESS}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.669824" elapsed="0.002836"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.674952" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.675057" level="INFO">${business_link} = [data-testid="menu-business-link"]</msg>
+<var>${business_link}</var>
+<arg>${MENU_BUSINESS_LINK}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.672766" elapsed="0.002386"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${business_menu}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.675283" elapsed="0.004466"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${business_link}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.679878" elapsed="0.021578"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.712436" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.712537" level="INFO">${sport_menu} = [data-testid="menu-sport"]</msg>
+<var>${sport_menu}</var>
+<arg>${MENU_SPORT}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.701675" elapsed="0.010872"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.715607" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.715711" level="INFO">${sport_link} = [data-testid="menu-sport-link"]</msg>
+<var>${sport_link}</var>
+<arg>${MENU_SPORT_LINK}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.712688" elapsed="0.003035"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${sport_menu}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.715900" elapsed="0.017330"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${sport_link}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.733507" elapsed="0.004037"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.739980" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.740106" level="INFO">${tech_menu} = [data-testid="menu-tech"]</msg>
+<var>${tech_menu}</var>
+<arg>${MENU_TECH}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.737680" elapsed="0.002438"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.742281" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.742350" level="INFO">${tech_link} = [data-testid="menu-tech-link"]</msg>
+<var>${tech_link}</var>
+<arg>${MENU_TECH_LINK}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.740239" elapsed="0.002120"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${tech_menu}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.742455" elapsed="0.003298"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${tech_link}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.745855" elapsed="0.003465"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.752184" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.752274" level="INFO">${hype_menu} = [data-testid="menu-hype"]</msg>
+<var>${hype_menu}</var>
+<arg>${MENU_HYPE}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.749471" elapsed="0.002814"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.754155" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.754216" level="INFO">${hype_link} = [data-testid="menu-hype-link"]</msg>
+<var>${hype_link}</var>
+<arg>${MENU_HYPE_LINK}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.752401" elapsed="0.001825"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${hype_menu}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.754311" elapsed="0.002666"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${hype_link}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.757071" elapsed="0.003702"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.762611" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.762667" level="INFO">${korea_menu} = [data-testid="menu-korea"]</msg>
+<var>${korea_menu}</var>
+<arg>${MENU_KOREA}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.760909" elapsed="0.001768"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.764475" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.764552" level="INFO">${korea_link} = [data-testid="menu-korea-link"]</msg>
+<var>${korea_link}</var>
+<arg>${MENU_KOREA_LINK}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.762750" elapsed="0.001813"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${korea_menu}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.764658" elapsed="0.003645"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${korea_link}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.768505" elapsed="0.003267"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.773829" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.773943" level="INFO">${life_menu} = [data-testid="menu-life"]</msg>
+<var>${life_menu}</var>
+<arg>${MENU_LIFE}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.771990" elapsed="0.001968"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.776986" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.777085" level="INFO">${life_link} = [data-testid="menu-life-link"]</msg>
+<var>${life_link}</var>
+<arg>${MENU_LIFE_LINK}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.774092" elapsed="0.003004"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${life_menu}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.777223" elapsed="0.003151"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${life_link}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.780484" elapsed="0.004548"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.787195" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.787258" level="INFO">${health_menu} = [data-testid="menu-health"]</msg>
+<var>${health_menu}</var>
+<arg>${MENU_HEALTH}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.785216" elapsed="0.002052"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:24.789031" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:24.789101" level="INFO">${health_link} = [data-testid="menu-health-link"]</msg>
+<var>${health_link}</var>
+<arg>${MENU_HEALTH_LINK}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:24.787355" elapsed="0.001755"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${health_menu}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.789311" elapsed="0.004625"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${health_link}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.794069" elapsed="0.002547"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-04-28T01:06:24.877899" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.796722" elapsed="0.081254"/>
+</kw>
+<status status="PASS" start="2025-04-28T01:06:21.150858" elapsed="3.727248"/>
+</test>
+<test id="s1-t2" name="Check Menu # (GenZMemilih) Link" line="70">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-28T01:06:24.881738" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/38ae35d6-d10c-46c3-b27c-28a037a41387"}</msg>
+<msg time="2025-04-28T01:06:25.116520" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/38ae35d6-d10c-46c3-b27c-28a037a41387"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-28T01:06:24.881385" elapsed="0.235245"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-04-28T01:06:25.118202" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 1080,
+    "width": 1920
+  }
+}</msg>
+<msg time="2025-04-28T01:06:25.125183" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-28T01:06:25.125367" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-04-28T01:06:25.116892" elapsed="0.008613"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-28T01:06:26.663984" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com/</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-28T01:06:25.125858" elapsed="1.538242"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:26.957827" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:26.957965" level="INFO">${genz_link} = a[href="https://genzmemilih.idntimes.com"]</msg>
+<var>${genz_link}</var>
+<arg>${GENZ_MEMILIH_LINK}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:26.664244" elapsed="0.293737"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${genz_link}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:26.958134" elapsed="0.022797"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2025-04-28T01:06:26.986518" level="INFO">Property: 'https://genzmemilih.idntimes.com/'</msg>
+<msg time="2025-04-28T01:06:26.986603" level="INFO">${href} = https://genzmemilih.idntimes.com/</msg>
+<var>${href}</var>
+<arg>${genz_link}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:26.981076" elapsed="0.005539"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${href}</arg>
+<arg>genzmemilih</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-28T01:06:26.986785" elapsed="0.000421"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T01:06:26.987672" level="INFO">Clicks the element 'a[href="https://genzmemilih.idntimes.com"]'.</msg>
+<arg>${genz_link}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:26.987312" elapsed="0.125551"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-04-27T19:03:10.297414" level="INFO">Waited for Element with selector body at state visible</msg>
-<arg>body</arg>
-<arg>state=visible</arg>
-<arg>timeout=20s</arg>
+<msg time="2025-04-28T01:06:27.124869" level="INFO">Waited for Element with selector a[href="https://genzmemilih.idntimes.com"] at state attached</msg>
+<arg>${GENZ_MEMILIH_LINK}</arg>
+<arg>state=attached</arg>
+<arg>timeout=10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-04-27T19:03:10.238598" elapsed="0.058920"/>
+<status status="PASS" start="2025-04-28T01:06:27.113124" elapsed="0.011872"/>
 </kw>
 <kw name="Get Page Ids" owner="Browser">
-<msg time="2025-04-27T19:03:10.303383" level="INFO">${pages} = ['page=762110af-d307-4850-af4b-ac3dfec8d8b9']</msg>
-<var>${pages}</var>
+<msg time="2025-04-28T01:06:27.126883" level="INFO">@{pages} = [ page=03d719ea-c533-41a7-82c4-e9cfaa9ffea8 ]</msg>
+<var>@{pages}</var>
 <tag>BrowserControl</tag>
 <tag>Getter</tag>
 <doc>Returns a list of page ids based on the context and browser selection.
 See `Browser, Context and Page` for more information about Page and related concepts.</doc>
-<status status="PASS" start="2025-04-27T19:03:10.297736" elapsed="0.005715"/>
+<status status="PASS" start="2025-04-28T01:06:27.125164" elapsed="0.001735"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-27T19:03:10.304249" level="INFO">${main_page} = page=762110af-d307-4850-af4b-ac3dfec8d8b9</msg>
-<var>${main_page}</var>
-<arg>${pages}[0]</arg>
+<msg time="2025-04-28T01:06:27.127095" level="INFO">${last_page} = page=03d719ea-c533-41a7-82c4-e9cfaa9ffea8</msg>
+<var>${last_page}</var>
+<arg>${pages}[-1]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-27T19:03:10.303835" elapsed="0.000434"/>
-</kw>
-<kw name="Create List" owner="BuiltIn">
-<msg time="2025-04-27T19:03:10.304607" level="INFO">@{trending_tags} = [ SNBT 2025 | https://www.idntimes.com/tag/snbt-2025 | paus fransiskus | https://www.idntimes.com/tag/paus-fransiskus | iPhone 16 | https://www.idntimes.com/tag/iphone-16 | Prabowo Subianto | https://...</msg>
-<var>@{trending_tags}</var>
-<arg>${TAG_SNBT}</arg>
-<arg>${TAG_SNBT_URL}</arg>
-<arg>${TAG_PAUS}</arg>
-<arg>${TAG_PAUS_URL}</arg>
-<arg>${TAG_IPHONE}</arg>
-<arg>${TAG_IPHONE_URL}</arg>
-<arg>${TAG_PRABOWO}</arg>
-<arg>${TAG_PRABOWO_URL}</arg>
-<arg>${TAG_DOKTER}</arg>
-<arg>${TAG_DOKTER_URL}</arg>
-<doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-04-27T19:03:10.304427" elapsed="0.000193"/>
-</kw>
-<for flavor="IN">
-<iter>
-<kw name="New Page" owner="Browser">
-<msg time="2025-04-27T19:03:10.732175" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com/tag/snbt-2025</msg>
-<arg>${expected_url}</arg>
-<arg>wait_until=domcontentloaded</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-27T19:03:10.305282" elapsed="0.427033"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-04-27T19:03:10.796583" level="INFO">Waited for Element with selector body at state visible</msg>
-<arg>body</arg>
-<arg>state=visible</arg>
-<arg>timeout=20s</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-04-27T19:03:10.732421" elapsed="0.064324"/>
-</kw>
-<kw name="Get Url" owner="Browser">
-<msg time="2025-04-27T19:03:10.799776" level="INFO">${current_url} = https://www.idntimes.com/tag/snbt-2025</msg>
-<var>${current_url}</var>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the current URL.</doc>
-<status status="PASS" start="2025-04-27T19:03:10.796937" elapsed="0.002862"/>
-</kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${current_url}</arg>
-<arg>${expected_url}</arg>
-<arg>URL should match expected</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-04-27T19:03:10.800008" elapsed="0.000157"/>
-</kw>
-<kw name="Get Elements" owner="Browser">
-<msg time="2025-04-27T19:03:11.210659" level="INFO">Found locator('body').first() Locators successfully.</msg>
-<msg time="2025-04-27T19:03:11.210960" level="INFO">${page_content} = ['body &gt;&gt; nth=0']</msg>
-<var>${page_content}</var>
-<arg>body</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2025-04-27T19:03:10.800213" elapsed="0.410770"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2025-04-27T19:03:11.211381" level="INFO">Length is 1.</msg>
-<arg>${page_content}</arg>
-<arg>Page content should be present</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2025-04-27T19:03:11.211113" elapsed="0.000386"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-27T19:03:11.212066" level="INFO">${is_profile_page} = False</msg>
-<var>${is_profile_page}</var>
-<arg>'profil.idntimes.com' in '${current_url}'</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-27T19:03:11.211724" elapsed="0.000358"/>
-</kw>
-<if>
-<branch type="IF" condition="${is_profile_page}">
-<kw name="Get Elements" owner="Browser">
-<var>${doctor_list}</var>
-<arg>css=${DOCTOR_LIST}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:11.212254" elapsed="0.000024"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<arg>${doctor_list}</arg>
-<arg>Doctor list should be present</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:11.212521" elapsed="0.000089"/>
-</kw>
-<status status="NOT RUN" start="2025-04-27T19:03:11.212156" elapsed="0.000503"/>
-</branch>
-<branch type="ELSE">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-27T19:03:11.212992" level="INFO">${tag_selector} = css=a.btn.btn-tag.trending-tag-tracker[href="https://www.idntimes.com/tag/snbt-2025"]</msg>
-<var>${tag_selector}</var>
-<arg>css=${TRENDING_TAG}\[href="${expected_url}"\]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-27T19:03:11.212841" elapsed="0.000165"/>
-</kw>
-<kw name="Get Elements" owner="Browser">
-<msg time="2025-04-27T19:03:11.218144" level="INFO">Found locator('a.btn.btn-tag.trending-tag-tracker[href="https://www.idntimes.com/tag/snbt-2025"]').first() Locators successfully.</msg>
-<msg time="2025-04-27T19:03:11.218313" level="INFO">${tag_element} = ['css=a.btn.btn-tag.trending-tag-tracker[href="https://www.idntimes.com/tag/snbt-2025"] &gt;&gt; nth=0']</msg>
-<var>${tag_element}</var>
-<arg>${tag_selector}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2025-04-27T19:03:11.213052" elapsed="0.005276"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2025-04-27T19:03:11.218707" level="INFO">Length is 1.</msg>
-<arg>${tag_element}</arg>
-<arg>Tag element should be present on the page</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2025-04-27T19:03:11.218507" elapsed="0.000223"/>
-</kw>
-<status status="PASS" start="2025-04-27T19:03:11.212740" elapsed="0.006013"/>
-</branch>
-<status status="PASS" start="2025-04-27T19:03:11.212134" elapsed="0.006641"/>
-</if>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-27T19:03:13.219507" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-27T19:03:11.218818" elapsed="2.000841"/>
-</kw>
-<kw name="Close Page" owner="Browser">
-<msg time="2025-04-27T19:03:13.222081" level="INFO">Switching browser to CURRENT</msg>
-<msg time="2025-04-27T19:03:13.222812" level="INFO">Returned active browser id. CURRENT</msg>
-<msg time="2025-04-27T19:03:13.223034" level="INFO">Switching browser to browser=aa80e15f-8a4e-4baa-92d3-2c4034cbadf5</msg>
-<msg time="2025-04-27T19:03:13.223734" level="INFO">Successfully changed active browser: browser=aa80e15f-8a4e-4baa-92d3-2c4034cbadf5</msg>
-<msg time="2025-04-27T19:03:13.223779" level="INFO">Switching context to CURRENT in CURRENT</msg>
-<msg time="2025-04-27T19:03:13.226450" level="INFO">Returned active context id: CURRENT</msg>
-<msg time="2025-04-27T19:03:13.226493" level="INFO">Switching context to context=44078b7e-6745-4e40-b643-5708a8fec6b7 in CURRENT</msg>
-<msg time="2025-04-27T19:03:13.231143" level="INFO">Successfully changed active context: context=44078b7e-6745-4e40-b643-5708a8fec6b7</msg>
-<msg time="2025-04-27T19:03:13.254317" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2025-04-27T19:03:13.219871" elapsed="0.034581"/>
+<status status="PASS" start="2025-04-28T01:06:27.126997" elapsed="0.000107"/>
 </kw>
 <kw name="Switch Page" owner="Browser">
-<msg time="2025-04-27T19:03:13.256492" level="INFO">Switching to page page=762110af-d307-4850-af4b-ac3dfec8d8b9,context CURRENT, browser CURRENT</msg>
-<msg time="2025-04-27T19:03:13.274727" level="INFO">Successfully changed active page: page=762110af-d307-4850-af4b-ac3dfec8d8b9</msg>
-<arg>${main_page}</arg>
+<msg time="2025-04-28T01:06:27.127367" level="INFO">Switching to page page=03d719ea-c533-41a7-82c4-e9cfaa9ffea8,context CURRENT, browser CURRENT</msg>
+<msg time="2025-04-28T01:06:27.133767" level="INFO">Successfully changed active page: page=03d719ea-c533-41a7-82c4-e9cfaa9ffea8</msg>
+<arg>${last_page}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<status status="PASS" start="2025-04-27T19:03:13.254761" elapsed="0.020089"/>
+<status status="PASS" start="2025-04-28T01:06:27.127160" elapsed="0.006811"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-27T19:03:14.275596" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-27T19:03:13.274970" elapsed="1.000709"/>
-</kw>
-<var name="${tag_text}">SNBT 2025</var>
-<var name="${expected_url}">https://www.idntimes.com/tag/snbt-2025</var>
-<status status="PASS" start="2025-04-27T19:03:10.305191" elapsed="3.970535"/>
-</iter>
-<iter>
-<kw name="New Page" owner="Browser">
-<msg time="2025-04-27T19:03:14.731026" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com/tag/paus-fransiskus</msg>
-<arg>${expected_url}</arg>
-<arg>wait_until=domcontentloaded</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-27T19:03:14.276055" elapsed="0.455086"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-04-27T19:03:14.758528" level="INFO">Waited for Element with selector body at state visible</msg>
-<arg>body</arg>
-<arg>state=visible</arg>
-<arg>timeout=20s</arg>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:27.136887" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:27.136964" level="INFO">${link_element} = a[href="https://genzmemilih.idntimes.com"]</msg>
+<var>${link_element}</var>
+<arg>${GENZ_MEMILIH_LINK}</arg>
+<tag>Getter</tag>
 <tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-04-27T19:03:14.731254" elapsed="0.027358"/>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:27.134185" elapsed="0.002789"/>
 </kw>
-<kw name="Get Url" owner="Browser">
-<msg time="2025-04-27T19:03:14.759671" level="INFO">${current_url} = https://www.idntimes.com/tag/paus-fransiskus</msg>
-<var>${current_url}</var>
+<kw name="Get Property" owner="Browser">
+<msg time="2025-04-28T01:06:27.140176" level="INFO">Property: 'https://genzmemilih.idntimes.com/'</msg>
+<msg time="2025-04-28T01:06:27.140242" level="INFO">${href} = https://genzmemilih.idntimes.com/</msg>
+<var>${href}</var>
+<arg>${link_element}</arg>
+<arg>href</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns the current URL.</doc>
-<status status="PASS" start="2025-04-27T19:03:14.758710" elapsed="0.000984"/>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:27.137086" elapsed="0.003165"/>
 </kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${current_url}</arg>
-<arg>${expected_url}</arg>
-<arg>URL should match expected</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-04-27T19:03:14.759769" elapsed="0.000117"/>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:06:27.140556" level="INFO">${href} = https://genzmemilih.idntimes.com/</msg>
+<var>${href}</var>
+<arg>${href}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:06:27.140369" elapsed="0.000201"/>
 </kw>
-<kw name="Get Elements" owner="Browser">
-<msg time="2025-04-27T19:03:14.771851" level="INFO">Found locator('body').first() Locators successfully.</msg>
-<msg time="2025-04-27T19:03:14.771999" level="INFO">${page_content} = ['body &gt;&gt; nth=0']</msg>
-<var>${page_content}</var>
-<arg>body</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2025-04-27T19:03:14.759938" elapsed="0.012074"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2025-04-27T19:03:14.772259" level="INFO">Length is 1.</msg>
-<arg>${page_content}</arg>
-<arg>Page content should be present</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2025-04-27T19:03:14.772112" elapsed="0.000166"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-27T19:03:14.772450" level="INFO">${is_profile_page} = False</msg>
-<var>${is_profile_page}</var>
-<arg>'profil.idntimes.com' in '${current_url}'</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-27T19:03:14.772326" elapsed="0.000134"/>
-</kw>
-<if>
-<branch type="IF" condition="${is_profile_page}">
-<kw name="Get Elements" owner="Browser">
-<var>${doctor_list}</var>
-<arg>css=${DOCTOR_LIST}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:14.772572" elapsed="0.000020"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<arg>${doctor_list}</arg>
-<arg>Doctor list should be present</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:14.772629" elapsed="0.000018"/>
-</kw>
-<status status="NOT RUN" start="2025-04-27T19:03:14.772502" elapsed="0.000199"/>
-</branch>
-<branch type="ELSE">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-27T19:03:14.772848" level="INFO">${tag_selector} = css=a.btn.btn-tag.trending-tag-tracker[href="https://www.idntimes.com/tag/paus-fransiskus"]</msg>
-<var>${tag_selector}</var>
-<arg>css=${TRENDING_TAG}\[href="${expected_url}"\]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-27T19:03:14.772760" elapsed="0.000098"/>
-</kw>
-<kw name="Get Elements" owner="Browser">
-<msg time="2025-04-27T19:03:14.861685" level="INFO">Found locator('a.btn.btn-tag.trending-tag-tracker[href="https://www.idntimes.com/tag/paus-fransiskus"]').first() Locators successfully.</msg>
-<msg time="2025-04-27T19:03:14.861809" level="INFO">${tag_element} = ['css=a.btn.btn-tag.trending-tag-tracker[href="https://www.idntimes.com/tag/paus-fransiskus"] &gt;&gt; nth=0']</msg>
-<var>${tag_element}</var>
-<arg>${tag_selector}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2025-04-27T19:03:14.772895" elapsed="0.088925"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2025-04-27T19:03:14.862064" level="INFO">Length is 1.</msg>
-<arg>${tag_element}</arg>
-<arg>Tag element should be present on the page</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2025-04-27T19:03:14.861909" elapsed="0.000171"/>
-</kw>
-<status status="PASS" start="2025-04-27T19:03:14.772718" elapsed="0.089382"/>
-</branch>
-<status status="PASS" start="2025-04-27T19:03:14.772490" elapsed="0.089626"/>
-</if>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-27T19:03:16.884554" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-27T19:03:14.862150" elapsed="2.025241"/>
-</kw>
-<kw name="Close Page" owner="Browser">
-<msg time="2025-04-27T19:03:16.921567" level="INFO">Switching browser to CURRENT</msg>
-<msg time="2025-04-27T19:03:16.933014" level="INFO">Returned active browser id. CURRENT</msg>
-<msg time="2025-04-27T19:03:16.933522" level="INFO">Switching browser to browser=aa80e15f-8a4e-4baa-92d3-2c4034cbadf5</msg>
-<msg time="2025-04-27T19:03:16.952624" level="INFO">Successfully changed active browser: browser=aa80e15f-8a4e-4baa-92d3-2c4034cbadf5</msg>
-<msg time="2025-04-27T19:03:16.952831" level="INFO">Switching context to CURRENT in CURRENT</msg>
-<msg time="2025-04-27T19:03:16.979093" level="INFO">Returned active context id: CURRENT</msg>
-<msg time="2025-04-27T19:03:16.979241" level="INFO">Switching context to context=44078b7e-6745-4e40-b643-5708a8fec6b7 in CURRENT</msg>
-<msg time="2025-04-27T19:03:17.069637" level="INFO">Successfully changed active context: context=44078b7e-6745-4e40-b643-5708a8fec6b7</msg>
-<msg time="2025-04-27T19:03:17.133358" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2025-04-27T19:03:16.889128" elapsed="0.244561"/>
-</kw>
-<kw name="Switch Page" owner="Browser">
-<msg time="2025-04-27T19:03:17.135094" level="INFO">Switching to page page=762110af-d307-4850-af4b-ac3dfec8d8b9,context CURRENT, browser CURRENT</msg>
-<msg time="2025-04-27T19:03:17.141695" level="INFO">Successfully changed active page: page=762110af-d307-4850-af4b-ac3dfec8d8b9</msg>
-<arg>${main_page}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<status status="PASS" start="2025-04-27T19:03:17.134047" elapsed="0.007718"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-27T19:03:18.142450" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-27T19:03:17.141859" elapsed="1.000881"/>
-</kw>
-<var name="${tag_text}">paus fransiskus</var>
-<var name="${expected_url}">https://www.idntimes.com/tag/paus-fransiskus</var>
-<status status="PASS" start="2025-04-27T19:03:14.275895" elapsed="3.867048"/>
-</iter>
-<iter>
-<kw name="New Page" owner="Browser">
-<msg time="2025-04-27T19:03:18.556181" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com/tag/iphone-16</msg>
-<arg>${expected_url}</arg>
-<arg>wait_until=domcontentloaded</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-27T19:03:18.144489" elapsed="0.411822"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-04-27T19:03:18.590342" level="INFO">Waited for Element with selector body at state visible</msg>
-<arg>body</arg>
-<arg>state=visible</arg>
-<arg>timeout=20s</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-04-27T19:03:18.556424" elapsed="0.034008"/>
-</kw>
-<kw name="Get Url" owner="Browser">
-<msg time="2025-04-27T19:03:18.592072" level="INFO">${current_url} = https://www.idntimes.com/tag/iphone-16</msg>
-<var>${current_url}</var>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the current URL.</doc>
-<status status="PASS" start="2025-04-27T19:03:18.590577" elapsed="0.001512"/>
-</kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${current_url}</arg>
-<arg>${expected_url}</arg>
-<arg>URL should match expected</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-04-27T19:03:18.592158" elapsed="0.000128"/>
-</kw>
-<kw name="Get Elements" owner="Browser">
-<msg time="2025-04-27T19:03:18.675588" level="INFO">Found locator('body').first() Locators successfully.</msg>
-<msg time="2025-04-27T19:03:18.675722" level="INFO">${page_content} = ['body &gt;&gt; nth=0']</msg>
-<var>${page_content}</var>
-<arg>body</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2025-04-27T19:03:18.592329" elapsed="0.083405"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2025-04-27T19:03:18.676026" level="INFO">Length is 1.</msg>
-<arg>${page_content}</arg>
-<arg>Page content should be present</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2025-04-27T19:03:18.675826" elapsed="0.000226"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-27T19:03:18.676269" level="INFO">${is_profile_page} = False</msg>
-<var>${is_profile_page}</var>
-<arg>'profil.idntimes.com' in '${current_url}'</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-27T19:03:18.676125" elapsed="0.000155"/>
-</kw>
-<if>
-<branch type="IF" condition="${is_profile_page}">
-<kw name="Get Elements" owner="Browser">
-<var>${doctor_list}</var>
-<arg>css=${DOCTOR_LIST}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:18.676399" elapsed="0.000020"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<arg>${doctor_list}</arg>
-<arg>Doctor list should be present</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:18.676455" elapsed="0.000018"/>
-</kw>
-<status status="NOT RUN" start="2025-04-27T19:03:18.676325" elapsed="0.000162"/>
-</branch>
-<branch type="ELSE">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-27T19:03:18.676644" level="INFO">${tag_selector} = css=a.btn.btn-tag.trending-tag-tracker[href="https://www.idntimes.com/tag/iphone-16"]</msg>
-<var>${tag_selector}</var>
-<arg>css=${TRENDING_TAG}\[href="${expected_url}"\]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-27T19:03:18.676547" elapsed="0.000843"/>
-</kw>
-<kw name="Get Elements" owner="Browser">
-<msg time="2025-04-27T19:03:18.681306" level="INFO">Found locator('a.btn.btn-tag.trending-tag-tracker[href="https://www.idntimes.com/tag/iphone-16"]').first() Locators successfully.</msg>
-<msg time="2025-04-27T19:03:18.681404" level="INFO">${tag_element} = ['css=a.btn.btn-tag.trending-tag-tracker[href="https://www.idntimes.com/tag/iphone-16"] &gt;&gt; nth=0']</msg>
-<var>${tag_element}</var>
-<arg>${tag_selector}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2025-04-27T19:03:18.677428" elapsed="0.003987"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2025-04-27T19:03:18.681605" level="INFO">Length is 1.</msg>
-<arg>${tag_element}</arg>
-<arg>Tag element should be present on the page</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2025-04-27T19:03:18.681492" elapsed="0.000127"/>
-</kw>
-<status status="PASS" start="2025-04-27T19:03:18.676503" elapsed="0.005135"/>
-</branch>
-<status status="PASS" start="2025-04-27T19:03:18.676311" elapsed="0.005344"/>
-</if>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-27T19:03:20.682198" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-27T19:03:18.681685" elapsed="2.000741"/>
-</kw>
-<kw name="Close Page" owner="Browser">
-<msg time="2025-04-27T19:03:20.691675" level="INFO">Switching browser to CURRENT</msg>
-<msg time="2025-04-27T19:03:20.696513" level="INFO">Returned active browser id. CURRENT</msg>
-<msg time="2025-04-27T19:03:20.698705" level="INFO">Switching browser to browser=aa80e15f-8a4e-4baa-92d3-2c4034cbadf5</msg>
-<msg time="2025-04-27T19:03:20.701488" level="INFO">Successfully changed active browser: browser=aa80e15f-8a4e-4baa-92d3-2c4034cbadf5</msg>
-<msg time="2025-04-27T19:03:20.701621" level="INFO">Switching context to CURRENT in CURRENT</msg>
-<msg time="2025-04-27T19:03:20.704964" level="INFO">Returned active context id: CURRENT</msg>
-<msg time="2025-04-27T19:03:20.705124" level="INFO">Switching context to context=44078b7e-6745-4e40-b643-5708a8fec6b7 in CURRENT</msg>
-<msg time="2025-04-27T19:03:20.712273" level="INFO">Successfully changed active context: context=44078b7e-6745-4e40-b643-5708a8fec6b7</msg>
-<msg time="2025-04-27T19:03:20.733959" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2025-04-27T19:03:20.682789" elapsed="0.051310"/>
-</kw>
-<kw name="Switch Page" owner="Browser">
-<msg time="2025-04-27T19:03:20.734911" level="INFO">Switching to page page=762110af-d307-4850-af4b-ac3dfec8d8b9,context CURRENT, browser CURRENT</msg>
-<msg time="2025-04-27T19:03:20.750094" level="INFO">Successfully changed active page: page=762110af-d307-4850-af4b-ac3dfec8d8b9</msg>
-<arg>${main_page}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<status status="PASS" start="2025-04-27T19:03:20.734268" elapsed="0.016705"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-27T19:03:21.752256" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-27T19:03:20.751260" elapsed="1.001286"/>
-</kw>
-<var name="${tag_text}">iPhone 16</var>
-<var name="${expected_url}">https://www.idntimes.com/tag/iphone-16</var>
-<status status="PASS" start="2025-04-27T19:03:18.143918" elapsed="3.608817"/>
-</iter>
-<iter>
-<kw name="New Page" owner="Browser">
-<msg time="2025-04-27T19:03:22.127899" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com/tag/prabowo-subianto</msg>
-<arg>${expected_url}</arg>
-<arg>wait_until=domcontentloaded</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-27T19:03:21.753948" elapsed="0.374046"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-04-27T19:03:22.171073" level="INFO">Waited for Element with selector body at state visible</msg>
-<arg>body</arg>
-<arg>state=visible</arg>
-<arg>timeout=20s</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-04-27T19:03:22.128099" elapsed="0.043061"/>
-</kw>
-<kw name="Get Url" owner="Browser">
-<msg time="2025-04-27T19:03:22.172465" level="INFO">${current_url} = https://www.idntimes.com/tag/prabowo-subianto</msg>
-<var>${current_url}</var>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the current URL.</doc>
-<status status="PASS" start="2025-04-27T19:03:22.171264" elapsed="0.001220"/>
-</kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${current_url}</arg>
-<arg>${expected_url}</arg>
-<arg>URL should match expected</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-04-27T19:03:22.172603" elapsed="0.000129"/>
-</kw>
-<kw name="Get Elements" owner="Browser">
-<msg time="2025-04-27T19:03:22.264020" level="INFO">Found locator('body').first() Locators successfully.</msg>
-<msg time="2025-04-27T19:03:22.264153" level="INFO">${page_content} = ['body &gt;&gt; nth=0']</msg>
-<var>${page_content}</var>
-<arg>body</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2025-04-27T19:03:22.172780" elapsed="0.091385"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2025-04-27T19:03:22.264437" level="INFO">Length is 1.</msg>
-<arg>${page_content}</arg>
-<arg>Page content should be present</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2025-04-27T19:03:22.264261" elapsed="0.000194"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-27T19:03:22.264641" level="INFO">${is_profile_page} = False</msg>
-<var>${is_profile_page}</var>
-<arg>'profil.idntimes.com' in '${current_url}'</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-27T19:03:22.264504" elapsed="0.000146"/>
-</kw>
-<if>
-<branch type="IF" condition="${is_profile_page}">
-<kw name="Get Elements" owner="Browser">
-<var>${doctor_list}</var>
-<arg>css=${DOCTOR_LIST}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:22.264796" elapsed="0.000020"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<arg>${doctor_list}</arg>
-<arg>Doctor list should be present</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:22.264852" elapsed="0.000036"/>
-</kw>
-<status status="NOT RUN" start="2025-04-27T19:03:22.264693" elapsed="0.000210"/>
-</branch>
-<branch type="ELSE">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-04-27T19:03:22.265144" level="INFO">${tag_selector} = css=a.btn.btn-tag.trending-tag-tracker[href="https://www.idntimes.com/tag/prabowo-subianto"]</msg>
-<var>${tag_selector}</var>
-<arg>css=${TRENDING_TAG}\[href="${expected_url}"\]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-04-27T19:03:22.265013" elapsed="0.000145"/>
-</kw>
-<kw name="Get Elements" owner="Browser">
-<msg time="2025-04-27T19:03:22.268901" level="INFO">Found locator('a.btn.btn-tag.trending-tag-tracker[href="https://www.idntimes.com/tag/prabowo-subianto"]').first() Locators successfully.</msg>
-<msg time="2025-04-27T19:03:22.268982" level="INFO">${tag_element} = ['css=a.btn.btn-tag.trending-tag-tracker[href="https://www.idntimes.com/tag/prabowo-subianto"] &gt;&gt; nth=0']</msg>
-<var>${tag_element}</var>
-<arg>${tag_selector}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2025-04-27T19:03:22.265205" elapsed="0.003787"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2025-04-27T19:03:22.269147" level="INFO">Length is 1.</msg>
-<arg>${tag_element}</arg>
-<arg>Tag element should be present on the page</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2025-04-27T19:03:22.269057" elapsed="0.000103"/>
-</kw>
-<status status="PASS" start="2025-04-27T19:03:22.264921" elapsed="0.004255"/>
-</branch>
-<status status="PASS" start="2025-04-27T19:03:22.264681" elapsed="0.004510"/>
-</if>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-27T19:03:24.270530" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-27T19:03:22.269221" elapsed="2.001623"/>
-</kw>
-<kw name="Close Page" owner="Browser">
-<msg time="2025-04-27T19:03:24.279713" level="INFO">Switching browser to CURRENT</msg>
-<msg time="2025-04-27T19:03:24.282666" level="INFO">Returned active browser id. CURRENT</msg>
-<msg time="2025-04-27T19:03:24.283588" level="INFO">Switching browser to browser=aa80e15f-8a4e-4baa-92d3-2c4034cbadf5</msg>
-<msg time="2025-04-27T19:03:24.286315" level="INFO">Successfully changed active browser: browser=aa80e15f-8a4e-4baa-92d3-2c4034cbadf5</msg>
-<msg time="2025-04-27T19:03:24.286433" level="INFO">Switching context to CURRENT in CURRENT</msg>
-<msg time="2025-04-27T19:03:24.289769" level="INFO">Returned active context id: CURRENT</msg>
-<msg time="2025-04-27T19:03:24.289868" level="INFO">Switching context to context=44078b7e-6745-4e40-b643-5708a8fec6b7 in CURRENT</msg>
-<msg time="2025-04-27T19:03:24.295030" level="INFO">Successfully changed active context: context=44078b7e-6745-4e40-b643-5708a8fec6b7</msg>
-<msg time="2025-04-27T19:03:24.315801" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2025-04-27T19:03:24.271306" elapsed="0.044652"/>
-</kw>
-<kw name="Switch Page" owner="Browser">
-<msg time="2025-04-27T19:03:24.316969" level="INFO">Switching to page page=762110af-d307-4850-af4b-ac3dfec8d8b9,context CURRENT, browser CURRENT</msg>
-<msg time="2025-04-27T19:03:24.326197" level="INFO">Successfully changed active page: page=762110af-d307-4850-af4b-ac3dfec8d8b9</msg>
-<arg>${main_page}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<status status="PASS" start="2025-04-27T19:03:24.316126" elapsed="0.010171"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-27T19:03:25.328076" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-27T19:03:24.326406" elapsed="1.001874"/>
-</kw>
-<var name="${tag_text}">Prabowo Subianto</var>
-<var name="${expected_url}">https://www.idntimes.com/tag/prabowo-subianto</var>
-<status status="PASS" start="2025-04-27T19:03:21.753421" elapsed="3.574995"/>
-</iter>
-<iter>
-<kw name="New Page" owner="Browser">
-<msg time="2025-04-27T19:03:25.814331" level="INFO">Successfully initialized new page object and opened url: https://profil.idntimes.com/</msg>
-<arg>${expected_url}</arg>
-<arg>wait_until=domcontentloaded</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-27T19:03:25.329329" elapsed="0.485105"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-04-27T19:03:25.842138" level="INFO">Waited for Element with selector body at state visible</msg>
-<arg>body</arg>
-<arg>state=visible</arg>
-<arg>timeout=20s</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-04-27T19:03:25.814551" elapsed="0.027671"/>
-</kw>
-<kw name="Get Url" owner="Browser">
-<msg time="2025-04-27T19:03:25.843354" level="INFO">${current_url} = https://profil.idntimes.com/</msg>
-<var>${current_url}</var>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the current URL.</doc>
-<status status="PASS" start="2025-04-27T19:03:25.842317" elapsed="0.001053"/>
-</kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${current_url}</arg>
-<arg>${expected_url}</arg>
-<arg>URL should match expected</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-04-27T19:03:25.843434" elapsed="0.000115"/>
-</kw>
-<kw name="Get Elements" owner="Browser">
-<msg time="2025-04-27T19:03:25.846283" level="INFO">Found locator('body').first() Locators successfully.</msg>
-<msg time="2025-04-27T19:03:25.846376" level="INFO">${page_content} = ['body &gt;&gt; nth=0']</msg>
-<var>${page_content}</var>
-<arg>body</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2025-04-27T19:03:25.843594" elapsed="0.002793"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2025-04-27T19:03:25.846571" level="INFO">Length is 1.</msg>
-<arg>${page_content}</arg>
-<arg>Page content should be present</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2025-04-27T19:03:25.846457" elapsed="0.000131"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-04-27T19:03:25.846735" level="INFO">${is_profile_page} = True</msg>
-<var>${is_profile_page}</var>
-<arg>'profil.idntimes.com' in '${current_url}'</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-04-27T19:03:25.846631" elapsed="0.000124"/>
-</kw>
-<if>
-<branch type="IF" condition="${is_profile_page}">
-<kw name="Get Elements" owner="Browser">
-<msg time="2025-04-27T19:03:25.850175" level="INFO">Found locator('div[role="list"] div[role="listitem"]').first(),locator('div[role="list"] div[role="listitem"]').nth(1),locator('div[role="list"] div[role="listitem"]').nth(2),locator('div[role="list"] div[role="listitem"]').nth(3),locator('div[role="list"] div[role="listitem"]').nth(4),locator('div[role="list"] div[role="listitem"]').nth(5),locator('div[role="list"] div[role="listitem"]').nth(6),locator('div[role="list"] div[role="listitem"]').nth(7),locator('div[role="list"] div[role="listitem"]').nth(8),locator('div[role="list"] div[role="listitem"]').nth(9),locator('div[role="list"] div[role="listitem"]').nth(10),locator('div[role="list"] div[role="listitem"]').nth(11),locator('div[role="list"] div[role="listitem"]').nth(12),locator('div[role="list"] div[role="listitem"]').nth(13),locator('div[role="list"] div[role="listitem"]').nth(14),locator('div[role="list"] div[role="listitem"]').nth(15),locator('div[role="list"] div[role="listitem"]').nth(16),locator('div[role="list"] div[role="listitem"]').nth(17),locator('div[role="list"] div[role="listitem"]').nth(18) Locators successfully.</msg>
-<msg time="2025-04-27T19:03:25.850257" level="INFO">${doctor_list} = ['css=div[role="list"] div[role="listitem"] &gt;&gt; nth=0', 'css=div[role="list"] div[role="listitem"] &gt;&gt; nth=1', 'css=div[role="list"] div[role="listitem"] &gt;&gt; nth=2', 'css=div[role="list"] div[role="listi...</msg>
-<var>${doctor_list}</var>
-<arg>css=${DOCTOR_LIST}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2025-04-27T19:03:25.846964" elapsed="0.003305"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2025-04-27T19:03:25.850437" level="INFO">Length is 19.</msg>
-<arg>${doctor_list}</arg>
-<arg>Doctor list should be present</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2025-04-27T19:03:25.850355" elapsed="0.000099"/>
-</kw>
-<status status="PASS" start="2025-04-27T19:03:25.846866" elapsed="0.003604"/>
-</branch>
-<branch type="ELSE">
-<kw name="Set Variable" owner="BuiltIn">
-<var>${tag_selector}</var>
-<arg>css=${TRENDING_TAG}\[href="${expected_url}"\]</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:25.850535" elapsed="0.000017"/>
-</kw>
-<kw name="Get Elements" owner="Browser">
-<var>${tag_element}</var>
-<arg>${tag_selector}</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:25.850584" elapsed="0.000015"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<arg>${tag_element}</arg>
-<arg>Tag element should be present on the page</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:25.850627" elapsed="0.000013"/>
-</kw>
-<status status="NOT RUN" start="2025-04-27T19:03:25.850489" elapsed="0.000163"/>
-</branch>
-<status status="PASS" start="2025-04-27T19:03:25.846852" elapsed="0.003812"/>
-</if>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-27T19:03:27.853013" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-27T19:03:25.850688" elapsed="2.002621"/>
-</kw>
-<kw name="Close Page" owner="Browser">
-<msg time="2025-04-27T19:03:27.876735" level="INFO">Switching browser to CURRENT</msg>
-<msg time="2025-04-27T19:03:27.878056" level="INFO">Returned active browser id. CURRENT</msg>
-<msg time="2025-04-27T19:03:27.878468" level="INFO">Switching browser to browser=aa80e15f-8a4e-4baa-92d3-2c4034cbadf5</msg>
-<msg time="2025-04-27T19:03:27.879669" level="INFO">Successfully changed active browser: browser=aa80e15f-8a4e-4baa-92d3-2c4034cbadf5</msg>
-<msg time="2025-04-27T19:03:27.879720" level="INFO">Switching context to CURRENT in CURRENT</msg>
-<msg time="2025-04-27T19:03:27.881445" level="INFO">Returned active context id: CURRENT</msg>
-<msg time="2025-04-27T19:03:27.881490" level="INFO">Switching context to context=44078b7e-6745-4e40-b643-5708a8fec6b7 in CURRENT</msg>
-<msg time="2025-04-27T19:03:27.884102" level="INFO">Successfully changed active context: context=44078b7e-6745-4e40-b643-5708a8fec6b7</msg>
-<msg time="2025-04-27T19:03:27.896533" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2025-04-27T19:03:27.853772" elapsed="0.042878"/>
-</kw>
-<kw name="Switch Page" owner="Browser">
-<msg time="2025-04-27T19:03:27.897175" level="INFO">Switching to page page=762110af-d307-4850-af4b-ac3dfec8d8b9,context CURRENT, browser CURRENT</msg>
-<msg time="2025-04-27T19:03:27.901974" level="INFO">Successfully changed active page: page=762110af-d307-4850-af4b-ac3dfec8d8b9</msg>
-<arg>${main_page}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<status status="PASS" start="2025-04-27T19:03:27.896790" elapsed="0.005260"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-27T19:03:28.902840" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-27T19:03:27.902151" elapsed="1.000982"/>
-</kw>
-<var name="${tag_text}">Profil Dokter</var>
-<var name="${expected_url}">https://profil.idntimes.com/</var>
-<status status="PASS" start="2025-04-27T19:03:25.328965" elapsed="3.574359"/>
-</iter>
-<var>${tag_text}</var>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:06:27.140759" level="INFO">${expected_url} = https://genzmemilih.idntimes.com/</msg>
 <var>${expected_url}</var>
-<value>@{trending_tags}</value>
-<status status="PASS" start="2025-04-27T19:03:10.304744" elapsed="18.598751"/>
-</for>
+<arg>${GENZ_MEMILIH_URL}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:06:27.140641" elapsed="0.000128"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${href}</arg>
+<arg>${expected_url}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T01:06:27.140824" elapsed="0.000109"/>
+</kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2025-04-27T19:03:29.048411" level="INFO">Closed browser</msg>
+<msg time="2025-04-28T01:06:27.232046" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-27T19:03:28.904103" elapsed="0.144394"/>
+<status status="PASS" start="2025-04-28T01:06:27.140992" elapsed="0.091138"/>
 </kw>
-<status status="PASS" start="2025-04-27T19:03:07.507500" elapsed="21.541141"/>
+<status status="PASS" start="2025-04-28T01:06:24.880692" elapsed="2.351554"/>
 </test>
-<test id="s1-t2" name="Check Trending Content Scroll" line="68">
+<test id="s1-t3" name="Check MenuBar Community" line="98">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-27T19:03:29.052489" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/0e7e5ae3-d4ff-40b6-8200-96ef23c8f47a"}</msg>
-<msg time="2025-04-27T19:03:29.330271" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/0e7e5ae3-d4ff-40b6-8200-96ef23c8f47a"}</msg>
+<msg time="2025-04-28T01:06:27.243143" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/0e888dc8-4f50-4e19-bd47-8a4e70b1a446"}</msg>
+<msg time="2025-04-28T01:06:27.458767" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/0e888dc8-4f50-4e19-bd47-8a4e70b1a446"}</msg>
 <arg>chromium</arg>
 <arg>headless=false</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-27T19:03:29.052088" elapsed="0.278368"/>
+<status status="PASS" start="2025-04-28T01:06:27.242809" elapsed="0.216154"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2025-04-27T19:03:29.331684" level="INFO">{
+<msg time="2025-04-28T01:06:27.461594" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -878,221 +660,2403 @@ for all matched elements by ``selector``.</doc>
     "width": 1920
   }
 }</msg>
-<msg time="2025-04-27T19:03:29.339533" level="INFO">Successfully created context. </msg>
-<msg time="2025-04-27T19:03:29.339599" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<msg time="2025-04-28T01:06:27.465282" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-28T01:06:27.465418" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
 <arg>viewport={'width': 1920, 'height': 1080}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2025-04-27T19:03:29.330768" elapsed="0.008873"/>
+<status status="PASS" start="2025-04-28T01:06:27.459239" elapsed="0.006250"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-27T19:03:30.383408" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com/</msg>
+<msg time="2025-04-28T01:06:29.580057" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com/</msg>
 <arg>${URL}</arg>
 <arg>wait_until=domcontentloaded</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-27T19:03:29.339794" elapsed="1.043762"/>
+<status status="PASS" start="2025-04-28T01:06:27.465629" elapsed="2.114706"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:29.639137" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:29.639262" level="INFO">${community_menu} = [data-testid="menu-community"]</msg>
+<var>${community_menu}</var>
+<arg>${MENU_COMMUNITY}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:29.580668" elapsed="0.058607"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:29.641527" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:29.641601" level="INFO">${community_link} = [data-testid="menu-community-link"]</msg>
+<var>${community_link}</var>
+<arg>${MENU_COMMUNITY_LINK}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:29.639410" elapsed="0.002203"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${community_menu}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:29.641704" elapsed="0.007220"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${community_link}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:29.649122" elapsed="0.003341"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T01:06:29.652812" level="INFO">Clicks the element '[data-testid="menu-community-link"]'.</msg>
+<arg>${MENU_COMMUNITY_LINK}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:29.652580" elapsed="1.407801"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>*=</arg>
+<arg>${IDN_CONNECT_URL}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-28T01:06:31.060916" elapsed="0.003095"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-04-28T01:06:31.150104" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-28T01:06:31.064321" elapsed="0.085868"/>
+</kw>
+<status status="PASS" start="2025-04-28T01:06:27.241973" elapsed="3.908337"/>
+</test>
+<test id="s1-t4" name="Check Menubar Category" line="112">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-28T01:06:31.153081" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/89b9ee6a-246d-4935-825b-920f427b43cf"}</msg>
+<msg time="2025-04-28T01:06:31.380015" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/89b9ee6a-246d-4935-825b-920f427b43cf"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-28T01:06:31.152749" elapsed="0.227361"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-04-28T01:06:31.381902" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 1080,
+    "width": 1920
+  }
+}</msg>
+<msg time="2025-04-28T01:06:31.389039" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-28T01:06:31.389091" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-04-28T01:06:31.380338" elapsed="0.008791"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-28T01:06:34.081241" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com/</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-28T01:06:31.389278" elapsed="2.692105"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:34.136603" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:34.136757" level="INFO">${lainnya_menu} = [data-testid="dropdown-submenu-more"]</msg>
+<var>${lainnya_menu}</var>
+<arg>${MENU_LAINNYA}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:34.081588" elapsed="0.055182"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${lainnya_menu}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:34.136925" elapsed="0.009860"/>
+</kw>
+<kw name="Show Dropdown Menu">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-28T01:06:34.147458" level="INFO">${max_retries} = 3</msg>
+<var>${max_retries}</var>
+<arg>3</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-28T01:06:34.147382" elapsed="0.000088"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Hover" owner="Browser">
+<arg>${MENU_LAINNYA_LINK}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:34.147688" elapsed="0.064208"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-28T01:06:36.214866" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-28T01:06:34.212200" elapsed="2.002792"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:06:51.231796" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+TimeoutError: page.screenshot: Timeout 10000ms exceeded.
+Call log:
+[2m  - taking page screenshot[22m
+[2m  - waiting for fonts to load...[22m
+</msg>
+<msg time="2025-04-28T01:06:51.231981" level="INFO">See also file:///Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-28T01:06:51.232486" level="FAIL">TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('[data-testid="dropdown-menu-cat"]') to be visible
+    15 × locator resolved to hidden &lt;div data-testid="dropdown-menu-cat" class="col-xs-6 dropdown-menu-cat"&gt;…&lt;/div&gt;
+</msg>
+<arg>${MENU_CATEGORIES}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2025-04-28T01:06:36.215326" elapsed="15.024010">TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('[data-testid="dropdown-menu-cat"]') to be visible
+    15 × locator resolved to hidden &lt;div data-testid="dropdown-menu-cat" class="col-xs-6 dropdown-menu-cat"&gt;…&lt;/div&gt;
+</status>
+</kw>
+<msg time="2025-04-28T01:06:51.239564" level="INFO">${is_visible} = False</msg>
+<var>${is_visible}</var>
+<arg>Wait For Elements State</arg>
+<arg>${MENU_CATEGORIES}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-04-28T01:06:36.215127" elapsed="15.024467"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_visible}">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${is_events_visible}</var>
+<arg>Wait For Elements State</arg>
+<arg>${MENU_EVENTS}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-28T01:06:51.240005" elapsed="0.000059"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_events_visible}">
+<return>
+<status status="NOT RUN" start="2025-04-28T01:06:51.240212" elapsed="0.000048"/>
+</return>
+<status status="NOT RUN" start="2025-04-28T01:06:51.240142" elapsed="0.000456"/>
+</branch>
+<status status="NOT RUN" start="2025-04-28T01:06:51.240125" elapsed="0.000549"/>
+</if>
+<status status="NOT RUN" start="2025-04-28T01:06:51.239726" elapsed="0.000979"/>
+</branch>
+<status status="PASS" start="2025-04-28T01:06:51.239687" elapsed="0.001053"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-28T01:06:52.243399" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-28T01:06:51.240835" elapsed="1.002787"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2025-04-28T01:06:34.147636" elapsed="18.096142"/>
+</iter>
+<iter>
+<kw name="Hover" owner="Browser">
+<arg>${MENU_LAINNYA_LINK}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:52.244878" elapsed="0.042851"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-28T01:06:54.288352" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-28T01:06:52.287881" elapsed="2.000740"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:06:54.302916" level="INFO">Waited for Element with selector [data-testid="dropdown-menu-cat"] at state visible</msg>
+<arg>${MENU_CATEGORIES}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.289831" elapsed="0.013398"/>
+</kw>
+<msg time="2025-04-28T01:06:54.303562" level="INFO">${is_visible} = True</msg>
+<var>${is_visible}</var>
+<arg>Wait For Elements State</arg>
+<arg>${MENU_CATEGORIES}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.289079" elapsed="0.014520"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_visible}">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:06:54.310855" level="INFO">Waited for Element with selector [data-testid="dropdown-menu-campaign"] at state visible</msg>
+<arg>${MENU_EVENTS}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.304624" elapsed="0.006358"/>
+</kw>
+<msg time="2025-04-28T01:06:54.311124" level="INFO">${is_events_visible} = True</msg>
+<var>${is_events_visible}</var>
+<arg>Wait For Elements State</arg>
+<arg>${MENU_EVENTS}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.304269" elapsed="0.006878"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_events_visible}">
+<return>
+<status status="PASS" start="2025-04-28T01:06:54.311393" elapsed="0.000086"/>
+</return>
+<status status="PASS" start="2025-04-28T01:06:54.311238" elapsed="0.000288"/>
+</branch>
+<status status="PASS" start="2025-04-28T01:06:54.311215" elapsed="0.000344"/>
+</if>
+<status status="PASS" start="2025-04-28T01:06:54.303794" elapsed="0.007794"/>
+</branch>
+<status status="PASS" start="2025-04-28T01:06:54.303740" elapsed="0.007874"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-28T01:06:54.311706" elapsed="0.000049"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2025-04-28T01:06:52.244380" elapsed="2.067410"/>
+</iter>
+<var>${i}</var>
+<value>${max_retries}</value>
+<status status="PASS" start="2025-04-28T01:06:34.147505" elapsed="20.164338"/>
+</for>
+<kw name="Fail" owner="BuiltIn">
+<arg>Could not show dropdown menu after ${max_retries} attempts</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2025-04-28T01:06:54.311951" elapsed="0.000043"/>
+</kw>
+<status status="PASS" start="2025-04-28T01:06:34.147128" elapsed="20.164940"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:54.316573" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:54.316675" level="INFO">${categories_section} = [data-testid="dropdown-menu-cat"]</msg>
+<var>${categories_section}</var>
+<arg>${MENU_CATEGORIES}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:54.312215" elapsed="0.004478"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${categories_section}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.316822" elapsed="0.007470"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2025-04-28T01:06:54.325124" level="INFO">@{category_links} = [ [data-testid="menu-cat-qna"] a | https://tanyajawab.idntimes.com/ | [data-testid="menu-cat-automotive"] a | https://www.idntimes.com/automotive | [data-testid="menu-cat-science"] a | https://www.idn...</msg>
+<var>@{category_links}</var>
+<arg>${MENU_CAT_QNA} a</arg>
+<arg>${URL_CAT_QNA}</arg>
+<arg>${MENU_CAT_AUTOMOTIVE} a</arg>
+<arg>${URL_CAT_AUTOMOTIVE}</arg>
+<arg>${MENU_CAT_SCIENCE} a</arg>
+<arg>${URL_CAT_SCIENCE}</arg>
+<arg>${MENU_CAT_MEN} a</arg>
+<arg>${URL_CAT_MEN}</arg>
+<arg>${MENU_CAT_FOOD} a</arg>
+<arg>${URL_CAT_FOOD}</arg>
+<arg>${MENU_CAT_OPINION} a</arg>
+<arg>${URL_CAT_OPINION}</arg>
+<arg>${MENU_CAT_FICTION} a</arg>
+<arg>${URL_CAT_FICTION}</arg>
+<arg>${MENU_CAT_INDEX} a</arg>
+<arg>${URL_CAT_INDEX}</arg>
+<arg>${MENU_CAT_TRAVEL} a</arg>
+<arg>${URL_CAT_TRAVEL}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.324697" elapsed="0.000448"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:06:54.331167" level="INFO">Waited for Element with selector [data-testid="menu-cat-qna"] a at state visible</msg>
+<arg>${selector}</arg>
+<arg>state=visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.325725" elapsed="0.005538"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:06:54.335732" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:06:54.335857" level="INFO">${element} = [data-testid="menu-cat-qna"] a</msg>
+<var>${element}</var>
+<arg>${selector}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:06:54.331383" elapsed="0.004491"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${element}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.335990" elapsed="0.004763"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2025-04-28T01:06:54.345165" level="INFO">Property: 'https://tanyajawab.idntimes.com/'</msg>
+<msg time="2025-04-28T01:06:54.345237" level="INFO">${href} = https://tanyajawab.idntimes.com/</msg>
+<var>${href}</var>
+<arg>${element}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.340861" elapsed="0.004389"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:06:54.345704" level="INFO">${url} = https://tanyajawab.idntimes.com/</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.345612" elapsed="0.000105"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:06:54.345846" level="INFO">${url} = https://tanyajawab.idntimes.com/</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.345769" elapsed="0.000088"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:06:54.345974" level="INFO">${url} = https://tanyajawab.idntimes.com/</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.345900" elapsed="0.000085"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:06:54.346014" elapsed="0.000037"/>
+</return>
+<msg time="2025-04-28T01:06:54.346111" level="INFO">${normalized_href} = https://tanyajawab.idntimes.com/</msg>
+<var>${normalized_href}</var>
+<arg>${href}</arg>
+<status status="PASS" start="2025-04-28T01:06:54.345415" elapsed="0.000707"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:06:54.346357" level="INFO">${url} = https://tanyajawab.idntimes.com/</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.346290" elapsed="0.000078"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:06:54.346475" level="INFO">${url} = https://tanyajawab.idntimes.com/</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.346408" elapsed="0.000078"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:06:54.346587" level="INFO">${url} = https://tanyajawab.idntimes.com/</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.346525" elapsed="0.000071"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:06:54.346619" elapsed="0.000025"/>
+</return>
+<msg time="2025-04-28T01:06:54.346693" level="INFO">${normalized_expected} = https://tanyajawab.idntimes.com/</msg>
+<var>${normalized_expected}</var>
+<arg>${expected_url}</arg>
+<status status="PASS" start="2025-04-28T01:06:54.346183" elapsed="0.000520"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${normalized_href}</arg>
+<arg>${normalized_expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.346745" elapsed="0.000086"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T01:06:54.347063" level="INFO">Clicks the element '[data-testid="menu-cat-qna"] a'.</msg>
+<arg>${selector}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:54.346876" elapsed="1.971253"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-28T01:06:56.320416" level="INFO">${current_url} = https://tanyajawab.idntimes.com/</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-28T01:06:56.318399" elapsed="0.002058"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:06:56.321158" level="INFO">${url} = https://tanyajawab.idntimes.com/</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:06:56.320981" elapsed="0.000203"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:06:56.321427" level="INFO">${url} = https://tanyajawab.idntimes.com/</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:06:56.321281" elapsed="0.000167"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:06:56.321651" level="INFO">${url} = https://tanyajawab.idntimes.com/</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:06:56.321526" elapsed="0.000144"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:06:56.321718" elapsed="0.000070"/>
+</return>
+<msg time="2025-04-28T01:06:56.321893" level="INFO">${normalized_current} = https://tanyajawab.idntimes.com/</msg>
+<var>${normalized_current}</var>
+<arg>${current_url}</arg>
+<status status="PASS" start="2025-04-28T01:06:56.320655" elapsed="0.001255"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:06:56.322305" level="INFO">${url} = https://tanyajawab.idntimes.com/</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:06:56.322197" elapsed="0.000126"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:06:56.322499" level="INFO">${url} = https://tanyajawab.idntimes.com/</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:06:56.322389" elapsed="0.000126"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:06:56.322680" level="INFO">${url} = https://tanyajawab.idntimes.com/</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:06:56.322577" elapsed="0.000120"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:06:56.322735" elapsed="0.000041"/>
+</return>
+<msg time="2025-04-28T01:06:56.322852" level="INFO">${normalized_expected} = https://tanyajawab.idntimes.com/</msg>
+<var>${normalized_expected}</var>
+<arg>${expected_url}</arg>
+<status status="PASS" start="2025-04-28T01:06:56.322009" elapsed="0.000859"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;#google_vignette&quot; in &quot;${current_url}&quot; or &quot;chrome-error://&quot; in &quot;${current_url}&quot;">
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-28T01:06:56.323124" elapsed="0.000035"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${dismiss_button}</var>
+<arg>Get Element</arg>
+<arg>[aria-label="Tutup Iklan"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-28T01:06:56.323233" elapsed="0.000032"/>
+</kw>
+<if>
+<branch type="IF" condition="${dismiss_button}">
+<kw name="Click" owner="Browser">
+<arg>[aria-label="Tutup Iklan"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:06:56.323396" elapsed="0.000032"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:06:56.323316" elapsed="0.000211"/>
+</branch>
+<branch type="ELSE">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${dismiss_button}</var>
+<arg>Get Element</arg>
+<arg>div.btn.skip[role="button"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-28T01:06:56.323640" elapsed="0.000036"/>
+</kw>
+<if>
+<branch type="IF" condition="${dismiss_button}">
+<kw name="Click" owner="Browser">
+<arg>div.btn.skip[role="button"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:06:56.323799" elapsed="0.000030"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:06:56.323724" elapsed="0.000136"/>
+</branch>
+<branch type="ELSE">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${dismiss_button}</var>
+<arg>Get Element</arg>
+<arg>[aria-label="Close ad"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-28T01:06:56.323956" elapsed="0.000028"/>
+</kw>
+<if>
+<branch type="IF" condition="${dismiss_button}">
+<kw name="Click" owner="Browser">
+<arg>[aria-label="Close ad"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:06:56.324102" elapsed="0.000029"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:06:56.324032" elapsed="0.000129"/>
+</branch>
+<status status="NOT RUN" start="2025-04-28T01:06:56.324021" elapsed="0.000163"/>
+</if>
+<status status="NOT RUN" start="2025-04-28T01:06:56.323886" elapsed="0.000314"/>
+</branch>
+<status status="NOT RUN" start="2025-04-28T01:06:56.323714" elapsed="0.000507"/>
+</if>
+<status status="NOT RUN" start="2025-04-28T01:06:56.323557" elapsed="0.000678"/>
+</branch>
+<status status="NOT RUN" start="2025-04-28T01:06:56.323304" elapsed="0.000950"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-28T01:06:56.324300" elapsed="0.000032"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-04-27T19:03:30.419025" level="INFO">Waited for Element with selector body at state visible</msg>
 <arg>body</arg>
 <arg>state=visible</arg>
 <arg>timeout=20s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-04-27T19:03:30.383817" elapsed="0.035493"/>
+<status status="NOT RUN" start="2025-04-28T01:06:56.324398" elapsed="0.000031"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="NOT RUN" start="2025-04-28T01:06:56.324498" elapsed="0.000033"/>
+</kw>
+<kw name="Normalize URL">
+<var>${normalized_current}</var>
+<arg>${current_url}</arg>
+<status status="NOT RUN" start="2025-04-28T01:06:56.324620" elapsed="0.000034"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:06:56.322930" elapsed="0.001750"/>
+</branch>
+<status status="PASS" start="2025-04-28T01:06:56.322914" elapsed="0.001791"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${normalized_current}</arg>
+<arg>${normalized_expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T01:06:56.324759" elapsed="0.000147"/>
+</kw>
+<kw name="Go Back" owner="Browser">
+<msg time="2025-04-28T01:06:57.394362" level="INFO">Did Go Back</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the previous page in history.</doc>
+<status status="PASS" start="2025-04-28T01:06:56.324973" elapsed="1.069527"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:06:57.719491" level="INFO">Waited for Element with selector [data-testid="menu-cat-qna"] a at state attached</msg>
+<arg>${selector}</arg>
+<arg>state=attached</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T01:06:57.394647" elapsed="0.324948"/>
+</kw>
+<kw name="Show Dropdown Menu">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-28T01:06:57.720247" level="INFO">${max_retries} = 3</msg>
+<var>${max_retries}</var>
+<arg>3</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-28T01:06:57.720143" elapsed="0.000118"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Hover" owner="Browser">
+<arg>${MENU_LAINNYA_LINK}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:06:57.720527" elapsed="0.360743"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-28T01:07:00.083878" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-28T01:06:58.081377" elapsed="2.002793"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:07:00.097204" level="INFO">Waited for Element with selector [data-testid="dropdown-menu-cat"] at state visible</msg>
+<arg>${MENU_CATEGORIES}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.085367" elapsed="0.012082"/>
+</kw>
+<msg time="2025-04-28T01:07:00.097657" level="INFO">${is_visible} = True</msg>
+<var>${is_visible}</var>
+<arg>Wait For Elements State</arg>
+<arg>${MENU_CATEGORIES}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.084654" elapsed="0.013029"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_visible}">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:07:00.104692" level="INFO">Waited for Element with selector [data-testid="dropdown-menu-campaign"] at state visible</msg>
+<arg>${MENU_EVENTS}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.098451" elapsed="0.006396"/>
+</kw>
+<msg time="2025-04-28T01:07:00.105014" level="INFO">${is_events_visible} = True</msg>
+<var>${is_events_visible}</var>
+<arg>Wait For Elements State</arg>
+<arg>${MENU_EVENTS}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.098202" elapsed="0.006838"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_events_visible}">
+<return>
+<status status="PASS" start="2025-04-28T01:07:00.105352" elapsed="0.000092"/>
+</return>
+<status status="PASS" start="2025-04-28T01:07:00.105157" elapsed="0.000340"/>
+</branch>
+<status status="PASS" start="2025-04-28T01:07:00.105128" elapsed="0.000409"/>
+</if>
+<status status="PASS" start="2025-04-28T01:07:00.097845" elapsed="0.007720"/>
+</branch>
+<status status="PASS" start="2025-04-28T01:07:00.097795" elapsed="0.007802"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:00.105708" elapsed="0.000061"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2025-04-28T01:06:57.720435" elapsed="2.385377"/>
+</iter>
+<var>${i}</var>
+<value>${max_retries}</value>
+<status status="PASS" start="2025-04-28T01:06:57.720296" elapsed="2.385571"/>
+</for>
+<kw name="Fail" owner="BuiltIn">
+<arg>Could not show dropdown menu after ${max_retries} attempts</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:00.105976" elapsed="0.000051"/>
+</kw>
+<status status="PASS" start="2025-04-28T01:06:57.719847" elapsed="2.386660"/>
+</kw>
+<var name="${selector}">[data-testid="menu-cat-qna"] a</var>
+<var name="${expected_url}">https://tanyajawab.idntimes.com/</var>
+<status status="PASS" start="2025-04-28T01:06:54.325638" elapsed="5.780911"/>
+</iter>
+<iter>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:07:00.113471" level="INFO">Waited for Element with selector [data-testid="menu-cat-automotive"] a at state visible</msg>
+<arg>${selector}</arg>
+<arg>state=visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.106950" elapsed="0.006652"/>
+</kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-27T19:03:30.673235" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2025-04-27T19:03:30.673326" level="INFO">See also file:///Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/playwright-log.txt for additional details.</msg>
-<msg time="2025-04-27T19:03:30.673518" level="FAIL">Error: locator.waitFor: Unexpected token "" while parsing css selector "". Did you mean to CSS.escape it?
-Call log:
-  - waiting for css=
-</msg>
-<arg>css=${TRENDING_SECTION}</arg>
+<msg time="2025-04-28T01:07:00.118154" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:07:00.118282" level="INFO">${element} = [data-testid="menu-cat-automotive"] a</msg>
+<var>${element}</var>
+<arg>${selector}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="FAIL" start="2025-04-27T19:03:30.419915" elapsed="0.257035">Error: locator.waitFor: Unexpected token "" while parsing css selector "". Did you mean to CSS.escape it?
+<status status="PASS" start="2025-04-28T01:07:00.113760" elapsed="0.004544"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${element}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.118424" elapsed="0.010427"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2025-04-28T01:07:00.133050" level="INFO">Property: 'https://www.idntimes.com/automotive'</msg>
+<msg time="2025-04-28T01:07:00.133105" level="INFO">${href} = https://www.idntimes.com/automotive</msg>
+<var>${href}</var>
+<arg>${element}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.128968" elapsed="0.004150"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:00.133481" level="INFO">${url} = https://idntimes.com/automotive</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.133388" elapsed="0.000107"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:00.133627" level="INFO">${url} = https://idntimes.com/automotive</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.133545" elapsed="0.000094"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:00.133762" level="INFO">${url} = https://idntimes.com/automotive</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.133686" elapsed="0.000089"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:07:00.133803" elapsed="0.000040"/>
+</return>
+<msg time="2025-04-28T01:07:00.133901" level="INFO">${normalized_href} = https://idntimes.com/automotive</msg>
+<var>${normalized_href}</var>
+<arg>${href}</arg>
+<status status="PASS" start="2025-04-28T01:07:00.133220" elapsed="0.000693"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:00.134170" level="INFO">${url} = https://idntimes.com/automotive</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.134094" elapsed="0.000089"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:00.134306" level="INFO">${url} = https://idntimes.com/automotive</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.134229" elapsed="0.000088"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:00.134433" level="INFO">${url} = https://idntimes.com/automotive</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.134361" elapsed="0.000082"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:07:00.134469" elapsed="0.000027"/>
+</return>
+<msg time="2025-04-28T01:07:00.134551" level="INFO">${normalized_expected} = https://idntimes.com/automotive</msg>
+<var>${normalized_expected}</var>
+<arg>${expected_url}</arg>
+<status status="PASS" start="2025-04-28T01:07:00.133976" elapsed="0.000586"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${normalized_href}</arg>
+<arg>${normalized_expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.134609" elapsed="0.000096"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T01:07:00.134932" level="INFO">Clicks the element '[data-testid="menu-cat-automotive"] a'.</msg>
+<arg>${selector}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.134756" elapsed="0.147429"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-28T01:07:00.283378" level="INFO">${current_url} = https://www.idntimes.com/automotive</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.282341" elapsed="0.001056"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:00.283731" level="INFO">${url} = https://idntimes.com/automotive</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.283653" elapsed="0.000089"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:00.283847" level="INFO">${url} = https://idntimes.com/automotive</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.283783" elapsed="0.000073"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:00.283946" level="INFO">${url} = https://idntimes.com/automotive</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.283891" elapsed="0.000064"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:07:00.283977" elapsed="0.000035"/>
+</return>
+<msg time="2025-04-28T01:07:00.284058" level="INFO">${normalized_current} = https://idntimes.com/automotive</msg>
+<var>${normalized_current}</var>
+<arg>${current_url}</arg>
+<status status="PASS" start="2025-04-28T01:07:00.283493" elapsed="0.000574"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:00.284266" level="INFO">${url} = https://idntimes.com/automotive</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.284210" elapsed="0.000065"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:00.284414" level="INFO">${url} = https://idntimes.com/automotive</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.284355" elapsed="0.000067"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:00.284509" level="INFO">${url} = https://idntimes.com/automotive</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.284455" elapsed="0.000063"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:07:00.284538" elapsed="0.000021"/>
+</return>
+<msg time="2025-04-28T01:07:00.284599" level="INFO">${normalized_expected} = https://idntimes.com/automotive</msg>
+<var>${normalized_expected}</var>
+<arg>${expected_url}</arg>
+<status status="PASS" start="2025-04-28T01:07:00.284117" elapsed="0.000490"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;#google_vignette&quot; in &quot;${current_url}&quot; or &quot;chrome-error://&quot; in &quot;${current_url}&quot;">
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:00.284738" elapsed="0.000018"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${dismiss_button}</var>
+<arg>Get Element</arg>
+<arg>[aria-label="Tutup Iklan"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:00.284802" elapsed="0.000017"/>
+</kw>
+<if>
+<branch type="IF" condition="${dismiss_button}">
+<kw name="Click" owner="Browser">
+<arg>[aria-label="Tutup Iklan"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:00.284893" elapsed="0.000017"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:07:00.284846" elapsed="0.000081"/>
+</branch>
+<branch type="ELSE">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${dismiss_button}</var>
+<arg>Get Element</arg>
+<arg>div.btn.skip[role="button"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:00.284980" elapsed="0.000015"/>
+</kw>
+<if>
+<branch type="IF" condition="${dismiss_button}">
+<kw name="Click" owner="Browser">
+<arg>div.btn.skip[role="button"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:00.285056" elapsed="0.000015"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:07:00.285019" elapsed="0.000072"/>
+</branch>
+<branch type="ELSE">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${dismiss_button}</var>
+<arg>Get Element</arg>
+<arg>[aria-label="Close ad"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:00.285140" elapsed="0.000016"/>
+</kw>
+<if>
+<branch type="IF" condition="${dismiss_button}">
+<kw name="Click" owner="Browser">
+<arg>[aria-label="Close ad"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:00.285216" elapsed="0.000015"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:07:00.285180" elapsed="0.000066"/>
+</branch>
+<status status="NOT RUN" start="2025-04-28T01:07:00.285175" elapsed="0.000083"/>
+</if>
+<status status="NOT RUN" start="2025-04-28T01:07:00.285103" elapsed="0.000163"/>
+</branch>
+<status status="NOT RUN" start="2025-04-28T01:07:00.285014" elapsed="0.000263"/>
+</if>
+<status status="NOT RUN" start="2025-04-28T01:07:00.284941" elapsed="0.000342"/>
+</branch>
+<status status="NOT RUN" start="2025-04-28T01:07:00.284840" elapsed="0.000452"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:00.285316" elapsed="0.000016"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>body</arg>
+<arg>state=visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:00.285365" elapsed="0.000015"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:00.285415" elapsed="0.000016"/>
+</kw>
+<kw name="Normalize URL">
+<var>${normalized_current}</var>
+<arg>${current_url}</arg>
+<status status="NOT RUN" start="2025-04-28T01:07:00.285477" elapsed="0.000016"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:07:00.284640" elapsed="0.000867"/>
+</branch>
+<status status="PASS" start="2025-04-28T01:07:00.284631" elapsed="0.000888"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${normalized_current}</arg>
+<arg>${normalized_expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.285546" elapsed="0.000075"/>
+</kw>
+<kw name="Go Back" owner="Browser">
+<msg time="2025-04-28T01:07:01.241446" level="INFO">Did Go Back</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the previous page in history.</doc>
+<status status="PASS" start="2025-04-28T01:07:00.285656" elapsed="0.955921"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:07:01.536872" level="INFO">Waited for Element with selector [data-testid="menu-cat-automotive"] a at state attached</msg>
+<arg>${selector}</arg>
+<arg>state=attached</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T01:07:01.241728" elapsed="0.295352"/>
+</kw>
+<kw name="Show Dropdown Menu">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-28T01:07:01.538090" level="INFO">${max_retries} = 3</msg>
+<var>${max_retries}</var>
+<arg>3</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-28T01:07:01.537948" elapsed="0.000165"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Hover" owner="Browser">
+<arg>${MENU_LAINNYA_LINK}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:07:01.538504" elapsed="0.051393"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-28T01:07:03.592224" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-28T01:07:01.590028" elapsed="2.002485"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:07:03.603033" level="INFO">Waited for Element with selector [data-testid="dropdown-menu-cat"] at state visible</msg>
+<arg>${MENU_CATEGORIES}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.593775" elapsed="0.009402"/>
+</kw>
+<msg time="2025-04-28T01:07:03.603332" level="INFO">${is_visible} = True</msg>
+<var>${is_visible}</var>
+<arg>Wait For Elements State</arg>
+<arg>${MENU_CATEGORIES}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.592995" elapsed="0.010361"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_visible}">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:07:03.607691" level="INFO">Waited for Element with selector [data-testid="dropdown-menu-campaign"] at state visible</msg>
+<arg>${MENU_EVENTS}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.603991" elapsed="0.003785"/>
+</kw>
+<msg time="2025-04-28T01:07:03.607870" level="INFO">${is_events_visible} = True</msg>
+<var>${is_events_visible}</var>
+<arg>Wait For Elements State</arg>
+<arg>${MENU_EVENTS}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.603797" elapsed="0.004092"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_events_visible}">
+<return>
+<status status="PASS" start="2025-04-28T01:07:03.608064" elapsed="0.000061"/>
+</return>
+<status status="PASS" start="2025-04-28T01:07:03.607959" elapsed="0.000202"/>
+</branch>
+<status status="PASS" start="2025-04-28T01:07:03.607942" elapsed="0.000247"/>
+</if>
+<status status="PASS" start="2025-04-28T01:07:03.603540" elapsed="0.004671"/>
+</branch>
+<status status="PASS" start="2025-04-28T01:07:03.603510" elapsed="0.004726"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:03.608304" elapsed="0.000039"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2025-04-28T01:07:01.538406" elapsed="2.069968"/>
+</iter>
+<var>${i}</var>
+<value>${max_retries}</value>
+<status status="PASS" start="2025-04-28T01:07:01.538171" elapsed="2.070242"/>
+</for>
+<kw name="Fail" owner="BuiltIn">
+<arg>Could not show dropdown menu after ${max_retries} attempts</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:03.608485" elapsed="0.000033"/>
+</kw>
+<status status="PASS" start="2025-04-28T01:07:01.537582" elapsed="2.070987"/>
+</kw>
+<var name="${selector}">[data-testid="menu-cat-automotive"] a</var>
+<var name="${expected_url}">https://www.idntimes.com/automotive</var>
+<status status="PASS" start="2025-04-28T01:07:00.106845" elapsed="3.501751"/>
+</iter>
+<iter>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:07:03.614103" level="INFO">Waited for Element with selector [data-testid="menu-cat-science"] a at state visible</msg>
+<arg>${selector}</arg>
+<arg>state=visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.608921" elapsed="0.005296"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:07:03.618120" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:07:03.618220" level="INFO">${element} = [data-testid="menu-cat-science"] a</msg>
+<var>${element}</var>
+<arg>${selector}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:07:03.614367" elapsed="0.003871"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${element}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.618332" elapsed="0.009348"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2025-04-28T01:07:03.631694" level="INFO">Property: 'https://www.idntimes.com/science'</msg>
+<msg time="2025-04-28T01:07:03.631742" level="INFO">${href} = https://www.idntimes.com/science</msg>
+<var>${href}</var>
+<arg>${element}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.627788" elapsed="0.003966"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:03.632102" level="INFO">${url} = https://idntimes.com/science</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.632015" elapsed="0.000099"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:03.632241" level="INFO">${url} = https://idntimes.com/science</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.632163" elapsed="0.000088"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:03.632362" level="INFO">${url} = https://idntimes.com/science</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.632294" elapsed="0.000079"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:07:03.632399" elapsed="0.000040"/>
+</return>
+<msg time="2025-04-28T01:07:03.632495" level="INFO">${normalized_href} = https://idntimes.com/science</msg>
+<var>${normalized_href}</var>
+<arg>${href}</arg>
+<status status="PASS" start="2025-04-28T01:07:03.631854" elapsed="0.000651"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:03.632748" level="INFO">${url} = https://idntimes.com/science</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.632678" elapsed="0.000081"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:03.632873" level="INFO">${url} = https://idntimes.com/science</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.632803" elapsed="0.000080"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:03.632989" level="INFO">${url} = https://idntimes.com/science</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.632923" elapsed="0.000077"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:07:03.633025" elapsed="0.000026"/>
+</return>
+<msg time="2025-04-28T01:07:03.633098" level="INFO">${normalized_expected} = https://idntimes.com/science</msg>
+<var>${normalized_expected}</var>
+<arg>${expected_url}</arg>
+<status status="PASS" start="2025-04-28T01:07:03.632566" elapsed="0.000541"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${normalized_href}</arg>
+<arg>${normalized_expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.633150" elapsed="0.000092"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T01:07:03.633455" level="INFO">Clicks the element '[data-testid="menu-cat-science"] a'.</msg>
+<arg>${selector}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.633290" elapsed="0.153794"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-28T01:07:03.788304" level="INFO">${current_url} = https://www.idntimes.com/science</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.787266" elapsed="0.001057"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:03.788644" level="INFO">${url} = https://idntimes.com/science</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.788569" elapsed="0.000086"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:03.788755" level="INFO">${url} = https://idntimes.com/science</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.788695" elapsed="0.000069"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:03.788854" level="INFO">${url} = https://idntimes.com/science</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.788800" elapsed="0.000063"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:07:03.788885" elapsed="0.000035"/>
+</return>
+<msg time="2025-04-28T01:07:03.788965" level="INFO">${normalized_current} = https://idntimes.com/science</msg>
+<var>${normalized_current}</var>
+<arg>${current_url}</arg>
+<status status="PASS" start="2025-04-28T01:07:03.788416" elapsed="0.000557"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:03.789165" level="INFO">${url} = https://idntimes.com/science</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.789110" elapsed="0.000064"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:03.789262" level="INFO">${url} = https://idntimes.com/science</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.789208" elapsed="0.000062"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:03.789354" level="INFO">${url} = https://idntimes.com/science</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.789302" elapsed="0.000061"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:07:03.789383" elapsed="0.000021"/>
+</return>
+<msg time="2025-04-28T01:07:03.789441" level="INFO">${normalized_expected} = https://idntimes.com/science</msg>
+<var>${normalized_expected}</var>
+<arg>${expected_url}</arg>
+<status status="PASS" start="2025-04-28T01:07:03.789022" elapsed="0.000427"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;#google_vignette&quot; in &quot;${current_url}&quot; or &quot;chrome-error://&quot; in &quot;${current_url}&quot;">
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:03.789585" elapsed="0.000018"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${dismiss_button}</var>
+<arg>Get Element</arg>
+<arg>[aria-label="Tutup Iklan"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:03.789641" elapsed="0.000016"/>
+</kw>
+<if>
+<branch type="IF" condition="${dismiss_button}">
+<kw name="Click" owner="Browser">
+<arg>[aria-label="Tutup Iklan"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:03.789722" elapsed="0.000016"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:07:03.789683" elapsed="0.000071"/>
+</branch>
+<branch type="ELSE">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${dismiss_button}</var>
+<arg>Get Element</arg>
+<arg>div.btn.skip[role="button"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:03.789807" elapsed="0.000015"/>
+</kw>
+<if>
+<branch type="IF" condition="${dismiss_button}">
+<kw name="Click" owner="Browser">
+<arg>div.btn.skip[role="button"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:03.789882" elapsed="0.000016"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:07:03.789846" elapsed="0.000066"/>
+</branch>
+<branch type="ELSE">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${dismiss_button}</var>
+<arg>Get Element</arg>
+<arg>[aria-label="Close ad"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:03.789961" elapsed="0.000015"/>
+</kw>
+<if>
+<branch type="IF" condition="${dismiss_button}">
+<kw name="Click" owner="Browser">
+<arg>[aria-label="Close ad"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:03.790035" elapsed="0.000016"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:07:03.789999" elapsed="0.000067"/>
+</branch>
+<status status="NOT RUN" start="2025-04-28T01:07:03.789994" elapsed="0.000084"/>
+</if>
+<status status="NOT RUN" start="2025-04-28T01:07:03.789924" elapsed="0.000162"/>
+</branch>
+<status status="NOT RUN" start="2025-04-28T01:07:03.789841" elapsed="0.000254"/>
+</if>
+<status status="NOT RUN" start="2025-04-28T01:07:03.789768" elapsed="0.000334"/>
+</branch>
+<status status="NOT RUN" start="2025-04-28T01:07:03.789677" elapsed="0.000434"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:03.790133" elapsed="0.000016"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>body</arg>
+<arg>state=visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:03.790181" elapsed="0.000015"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:03.790229" elapsed="0.000015"/>
+</kw>
+<kw name="Normalize URL">
+<var>${normalized_current}</var>
+<arg>${current_url}</arg>
+<status status="NOT RUN" start="2025-04-28T01:07:03.790291" elapsed="0.000016"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:07:03.789482" elapsed="0.000838"/>
+</branch>
+<status status="PASS" start="2025-04-28T01:07:03.789474" elapsed="0.000859"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${normalized_current}</arg>
+<arg>${normalized_expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.790362" elapsed="0.000077"/>
+</kw>
+<kw name="Go Back" owner="Browser">
+<msg time="2025-04-28T01:07:04.726421" level="INFO">Did Go Back</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the previous page in history.</doc>
+<status status="PASS" start="2025-04-28T01:07:03.790474" elapsed="0.936112"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:07:04.969793" level="INFO">Waited for Element with selector [data-testid="menu-cat-science"] a at state attached</msg>
+<arg>${selector}</arg>
+<arg>state=attached</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T01:07:04.726801" elapsed="0.243080"/>
+</kw>
+<kw name="Show Dropdown Menu">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-28T01:07:04.970503" level="INFO">${max_retries} = 3</msg>
+<var>${max_retries}</var>
+<arg>3</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-28T01:07:04.970424" elapsed="0.000091"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Hover" owner="Browser">
+<arg>${MENU_LAINNYA_LINK}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:07:04.970837" elapsed="0.033903"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-28T01:07:07.005877" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-28T01:07:05.004854" elapsed="2.001335"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:07:07.018331" level="INFO">Waited for Element with selector [data-testid="dropdown-menu-cat"] at state visible</msg>
+<arg>${MENU_CATEGORIES}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.007445" elapsed="0.011133"/>
+</kw>
+<msg time="2025-04-28T01:07:07.018798" level="INFO">${is_visible} = True</msg>
+<var>${is_visible}</var>
+<arg>Wait For Elements State</arg>
+<arg>${MENU_CATEGORIES}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.006678" elapsed="0.012147"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_visible}">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:07:07.025168" level="INFO">Waited for Element with selector [data-testid="dropdown-menu-campaign"] at state visible</msg>
+<arg>${MENU_EVENTS}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.019620" elapsed="0.005709"/>
+</kw>
+<msg time="2025-04-28T01:07:07.025499" level="INFO">${is_events_visible} = True</msg>
+<var>${is_events_visible}</var>
+<arg>Wait For Elements State</arg>
+<arg>${MENU_EVENTS}</arg>
+<arg>state=visible</arg>
+<arg>timeout=5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.019352" elapsed="0.006175"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_events_visible}">
+<return>
+<status status="PASS" start="2025-04-28T01:07:07.025789" elapsed="0.000076"/>
+</return>
+<status status="PASS" start="2025-04-28T01:07:07.025631" elapsed="0.000276"/>
+</branch>
+<status status="PASS" start="2025-04-28T01:07:07.025606" elapsed="0.000335"/>
+</if>
+<status status="PASS" start="2025-04-28T01:07:07.018987" elapsed="0.006980"/>
+</branch>
+<status status="PASS" start="2025-04-28T01:07:07.018939" elapsed="0.007053"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:07.026087" elapsed="0.000049"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2025-04-28T01:07:04.970773" elapsed="2.055400"/>
+</iter>
+<var>${i}</var>
+<value>${max_retries}</value>
+<status status="PASS" start="2025-04-28T01:07:04.970585" elapsed="2.055635"/>
+</for>
+<kw name="Fail" owner="BuiltIn">
+<arg>Could not show dropdown menu after ${max_retries} attempts</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:07.026305" elapsed="0.000040"/>
+</kw>
+<status status="PASS" start="2025-04-28T01:07:04.970204" elapsed="2.056217"/>
+</kw>
+<var name="${selector}">[data-testid="menu-cat-science"] a</var>
+<var name="${expected_url}">https://www.idntimes.com/science</var>
+<status status="PASS" start="2025-04-28T01:07:03.608839" elapsed="3.417613"/>
+</iter>
+<iter>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:07:07.032981" level="INFO">Waited for Element with selector [data-testid="menu-cat-men"] a at state visible</msg>
+<arg>${selector}</arg>
+<arg>state=visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.026826" elapsed="0.006283"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:07:07.037410" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-28T01:07:07.037531" level="INFO">${element} = [data-testid="menu-cat-men"] a</msg>
+<var>${element}</var>
+<arg>${selector}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-28T01:07:07.033269" elapsed="0.004282"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${element}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.037662" elapsed="0.010171"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2025-04-28T01:07:07.052055" level="INFO">Property: 'https://www.idntimes.com/men'</msg>
+<msg time="2025-04-28T01:07:07.052111" level="INFO">${href} = https://www.idntimes.com/men</msg>
+<var>${href}</var>
+<arg>${element}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.047962" elapsed="0.004163"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:07.052519" level="INFO">${url} = https://idntimes.com/men</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.052420" elapsed="0.000113"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:07.052672" level="INFO">${url} = https://idntimes.com/men</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.052587" elapsed="0.000098"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:07.052807" level="INFO">${url} = https://idntimes.com/men</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.052733" elapsed="0.000086"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:07:07.052848" elapsed="0.000042"/>
+</return>
+<msg time="2025-04-28T01:07:07.052955" level="INFO">${normalized_href} = https://idntimes.com/men</msg>
+<var>${normalized_href}</var>
+<arg>${href}</arg>
+<status status="PASS" start="2025-04-28T01:07:07.052235" elapsed="0.000733"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:07.053271" level="INFO">${url} = https://idntimes.com/men</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.053191" elapsed="0.000093"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:07.053414" level="INFO">${url} = https://idntimes.com/men</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.053333" elapsed="0.000094"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:07.053548" level="INFO">${url} = https://idntimes.com/men</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.053473" elapsed="0.000087"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:07:07.053588" elapsed="0.000030"/>
+</return>
+<msg time="2025-04-28T01:07:07.053672" level="INFO">${normalized_expected} = https://idntimes.com/men</msg>
+<var>${normalized_expected}</var>
+<arg>${expected_url}</arg>
+<status status="PASS" start="2025-04-28T01:07:07.053068" elapsed="0.000616"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${normalized_href}</arg>
+<arg>${normalized_expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.053733" elapsed="0.000100"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-28T01:07:07.054077" level="INFO">Clicks the element '[data-testid="menu-cat-men"] a'.</msg>
+<arg>${selector}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.053885" elapsed="0.095315"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-04-28T01:07:07.151109" level="INFO">${current_url} = https://www.idntimes.com/#google_vignette</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.149347" elapsed="0.001799"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:07.151984" level="INFO">${url} = https://idntimes.com/#google_vignette</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.151664" elapsed="0.000337"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:07.152224" level="INFO">${url} = https://idntimes.com/#google_vignette</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.152096" elapsed="0.000143"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:07.152391" level="INFO">${url} = https://idntimes.com/#google_vignette</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.152290" elapsed="0.000113"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:07:07.152433" elapsed="0.000048"/>
+</return>
+<msg time="2025-04-28T01:07:07.152576" level="INFO">${normalized_current} = https://idntimes.com/#google_vignette</msg>
+<var>${normalized_current}</var>
+<arg>${current_url}</arg>
+<status status="PASS" start="2025-04-28T01:07:07.151393" elapsed="0.001193"/>
+</kw>
+<kw name="Normalize URL">
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:07.152875" level="INFO">${url} = https://idntimes.com/men</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.152812" elapsed="0.000073"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:07.152977" level="INFO">${url} = https://idntimes.com/men</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://www.</arg>
+<arg>http://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.152922" elapsed="0.000063"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-28T01:07:07.153076" level="INFO">${url} = https://idntimes.com/men</msg>
+<var>${url}</var>
+<arg>${url}</arg>
+<arg>http://</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.153019" elapsed="0.000066"/>
+</kw>
+<return>
+<value>${url}</value>
+<status status="PASS" start="2025-04-28T01:07:07.153106" elapsed="0.000022"/>
+</return>
+<msg time="2025-04-28T01:07:07.153170" level="INFO">${normalized_expected} = https://idntimes.com/men</msg>
+<var>${normalized_expected}</var>
+<arg>${expected_url}</arg>
+<status status="PASS" start="2025-04-28T01:07:07.152699" elapsed="0.000481"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;#google_vignette&quot; in &quot;${current_url}&quot; or &quot;chrome-error://&quot; in &quot;${current_url}&quot;">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-28T01:07:12.155778" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-28T01:07:07.153315" elapsed="5.003147"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:07:22.314996" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-28T01:07:22.315075" level="INFO">See also file:///Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-28T01:07:22.315196" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
 Call log:
-  - waiting for css=
+  - waiting for locator('[aria-label="Tutup Iklan"]')
+    - waiting for" https://www.idntimes.com/men" navigation to finish...
+    - navigated to "https://www.idntimes.com/men"
+</msg>
+<arg>[aria-label="Tutup Iklan"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="FAIL" start="2025-04-28T01:07:12.157961" elapsed="10.159187">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Tutup Iklan"]')
+    - waiting for" https://www.idntimes.com/men" navigation to finish...
+    - navigated to "https://www.idntimes.com/men"
 </status>
 </kw>
-<msg time="2025-04-27T19:03:30.677035" level="INFO">${trending_exists} = False</msg>
-<var>${trending_exists}</var>
+<msg time="2025-04-28T01:07:22.317259" level="INFO">${dismiss_button} = False</msg>
+<var>${dismiss_button}</var>
 <arg>Get Element</arg>
-<arg>css=${TRENDING_SECTION}</arg>
+<arg>[aria-label="Tutup Iklan"]</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-04-27T19:03:30.419661" elapsed="0.257386"/>
+<status status="PASS" start="2025-04-28T01:07:12.157340" elapsed="10.159932"/>
 </kw>
 <if>
-<branch type="IF" condition="not ${trending_exists}">
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-04-27T19:03:30.677362" level="INFO">Trending section not found, skipping scroll test</msg>
-<arg>Trending section not found, skipping scroll test</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-04-27T19:03:30.677286" elapsed="0.000098"/>
-</kw>
-<kw name="Close Browser" owner="Browser">
-<msg time="2025-04-27T19:03:30.823521" level="INFO">Closed browser</msg>
-<tag>BrowserControl</tag>
+<branch type="IF" condition="${dismiss_button}">
+<kw name="Click" owner="Browser">
+<arg>[aria-label="Tutup Iklan"]</arg>
+<tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-27T19:03:30.677431" elapsed="0.146171"/>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:22.317569" elapsed="0.000058"/>
 </kw>
-<kw name="Pass Execution" owner="BuiltIn">
-<msg time="2025-04-27T19:03:30.823806" level="INFO">Execution passed with message:
-Trending section not found, skipping scroll test</msg>
-<arg>Trending section not found, skipping scroll test</arg>
-<doc>Skips rest of the current test, setup, or teardown with PASS status.</doc>
-<status status="PASS" start="2025-04-27T19:03:30.823695" elapsed="0.000144">Trending section not found, skipping scroll test</status>
-</kw>
-<status status="PASS" start="2025-04-27T19:03:30.677135" elapsed="0.146725">Trending section not found, skipping scroll test</status>
+<status status="NOT RUN" start="2025-04-28T01:07:22.317346" elapsed="0.000310"/>
 </branch>
-<status status="PASS" start="2025-04-27T19:03:30.677116" elapsed="0.146766">Trending section not found, skipping scroll test</status>
-</if>
+<branch type="ELSE">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
-<var>${scroll_exists}</var>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:07:32.481461" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-28T01:07:32.481601" level="INFO">See also file:///Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-28T01:07:32.481793" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('div.btn.skip[role="button"]')
+    - waiting for" https://www.idntimes.com/" navigation to finish...
+    - navigated to "https://www.idntimes.com/"
+</msg>
+<arg>div.btn.skip[role="button"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="FAIL" start="2025-04-28T01:07:22.318047" elapsed="10.164352">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('div.btn.skip[role="button"]')
+    - waiting for" https://www.idntimes.com/" navigation to finish...
+    - navigated to "https://www.idntimes.com/"
+</status>
+</kw>
+<msg time="2025-04-28T01:07:32.482614" level="INFO">${dismiss_button} = False</msg>
+<var>${dismiss_button}</var>
 <arg>Get Element</arg>
-<arg>css=${SCROLL_BUTTONS}</arg>
+<arg>div.btn.skip[role="button"]</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.823957" elapsed="0.000030"/>
+<status status="PASS" start="2025-04-28T01:07:22.317947" elapsed="10.164679"/>
 </kw>
 <if>
-<branch type="IF" condition="not ${scroll_exists}">
-<kw name="Log" owner="BuiltIn">
-<arg>Scroll buttons not present, skipping scroll test</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824093" elapsed="0.000017"/>
-</kw>
-<kw name="Close Browser" owner="Browser">
-<tag>BrowserControl</tag>
+<branch type="IF" condition="${dismiss_button}">
+<kw name="Click" owner="Browser">
+<arg>div.btn.skip[role="button"]</arg>
+<tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824142" elapsed="0.000016"/>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:32.483015" elapsed="0.000028"/>
 </kw>
-<kw name="Pass Execution" owner="BuiltIn">
-<arg>Scroll buttons not present, skipping scroll test</arg>
-<doc>Skips rest of the current test, setup, or teardown with PASS status.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824187" elapsed="0.000014"/>
-</kw>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824038" elapsed="0.000175"/>
+<status status="NOT RUN" start="2025-04-28T01:07:32.482739" elapsed="0.000329"/>
 </branch>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824029" elapsed="0.000196"/>
+<branch type="ELSE">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-28T01:07:41.734166" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-04-28T01:07:41.734227" level="INFO">See also file:///Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-28T01:07:41.734317" level="FAIL">Error: locator.waitFor: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('[aria-label="Close ad"]')
+</msg>
+<arg>[aria-label="Close ad"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="FAIL" start="2025-04-28T01:07:32.483275" elapsed="9.251499">Error: locator.waitFor: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('[aria-label="Close ad"]')
+</status>
+</kw>
+<msg time="2025-04-28T01:07:41.734882" level="INFO">${dismiss_button} = False</msg>
+<var>${dismiss_button}</var>
+<arg>Get Element</arg>
+<arg>[aria-label="Close ad"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-04-28T01:07:32.483147" elapsed="9.251749"/>
+</kw>
+<if>
+<branch type="IF" condition="${dismiss_button}">
+<kw name="Click" owner="Browser">
+<arg>[aria-label="Close ad"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:07:41.735095" elapsed="0.000030"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:07:41.734961" elapsed="0.000193"/>
+</branch>
+<status status="PASS" start="2025-04-28T01:07:41.734943" elapsed="0.000232"/>
 </if>
+<status status="PASS" start="2025-04-28T01:07:32.483086" elapsed="9.252105"/>
+</branch>
+<status status="PASS" start="2025-04-28T01:07:32.482710" elapsed="9.252499"/>
+</if>
+<status status="PASS" start="2025-04-28T01:07:22.317866" elapsed="19.417353"/>
+</branch>
+<status status="PASS" start="2025-04-28T01:07:22.317327" elapsed="19.417906"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-28T01:07:43.737005" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-28T01:07:41.735284" elapsed="2.002040"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-28T01:08:03.741917" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-04-28T01:08:03.741946" level="INFO">See also file:///Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-28T01:08:03.741990" level="FAIL">Error: Could not find active page</msg>
+<arg>body</arg>
+<arg>state=visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2025-04-28T01:07:43.737860" elapsed="20.004517">Error: Could not find active page</status>
+</kw>
+<kw name="Get Url" owner="Browser">
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.742468" elapsed="0.000030"/>
+</kw>
+<kw name="Normalize URL">
+<var>${normalized_current}</var>
+<arg>${current_url}</arg>
+<status status="NOT RUN" start="2025-04-28T01:08:03.742567" elapsed="0.000020"/>
+</kw>
+<status status="FAIL" start="2025-04-28T01:07:07.153215" elapsed="56.589399">Error: Could not find active page</status>
+</branch>
+<status status="FAIL" start="2025-04-28T01:07:07.153206" elapsed="56.589428">Error: Could not find active page</status>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${normalized_current}</arg>
+<arg>${normalized_expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.742675" elapsed="0.000017"/>
+</kw>
+<kw name="Go Back" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the previous page in history.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.742723" elapsed="0.000015"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>${selector}</arg>
+<arg>state=attached</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.742768" elapsed="0.000014"/>
+</kw>
+<kw name="Show Dropdown Menu">
+<status status="NOT RUN" start="2025-04-28T01:08:03.742862" elapsed="0.000017"/>
+</kw>
+<var name="${selector}">[data-testid="menu-cat-men"] a</var>
+<var name="${expected_url}">https://www.idntimes.com/men</var>
+<status status="FAIL" start="2025-04-28T01:07:07.026725" elapsed="56.716172">Error: Could not find active page</status>
+</iter>
+<var>${selector}</var>
+<var>${expected_url}</var>
+<value>@{category_links}</value>
+<status status="FAIL" start="2025-04-28T01:06:54.325254" elapsed="69.417673">Error: Could not find active page</status>
+</for>
 <kw name="Get Element" owner="Browser">
-<var>${left_button}</var>
-<arg>css=${SCROLL_LEFT}</arg>
+<var>${events_section}</var>
+<arg>${MENU_EVENTS}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824264" elapsed="0.000022"/>
+<status status="NOT RUN" start="2025-04-28T01:08:03.743009" elapsed="0.000023"/>
 </kw>
-<kw name="Get Element States" owner="Browser">
-<var>${is_disabled}</var>
-<arg>${left_button}</arg>
-<arg>contains</arg>
-<arg>disabled</arg>
+<kw name="Get Property" owner="Browser">
+<arg>${events_section}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824349" elapsed="0.000021"/>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.743083" elapsed="0.000018"/>
 </kw>
-<kw name="Should Be True" owner="BuiltIn">
-<arg>${is_disabled}</arg>
-<arg>Left scroll button should be disabled initially</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824415" elapsed="0.000021"/>
+<kw name="Create List" owner="BuiltIn">
+<var>@{event_links}</var>
+<arg>${MENU_EVENT1} a</arg>
+<arg>${URL_EVENT1}</arg>
+<arg>${MENU_EVENT2} a</arg>
+<arg>${URL_EVENT2}</arg>
+<arg>${MENU_EVENT3} a</arg>
+<arg>${URL_EVENT3}</arg>
+<arg>${MENU_EVENT4} a</arg>
+<arg>${URL_EVENT4}</arg>
+<arg>${MENU_EVENT5} a</arg>
+<arg>${URL_EVENT5}</arg>
+<arg>${MENU_EVENT6} a</arg>
+<arg>${URL_EVENT6}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744004" elapsed="0.000017"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>${selector}</arg>
+<arg>state=visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744219" elapsed="0.000015"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<var>${right_button}</var>
-<arg>css=${SCROLL_RIGHT}</arg>
+<var>${element}</var>
+<arg>${selector}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824478" elapsed="0.000019"/>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744266" elapsed="0.000015"/>
 </kw>
-<kw name="Click" owner="Browser">
-<arg>${right_button}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824539" elapsed="0.000018"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824597" elapsed="0.000018"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<var>${is_disabled}</var>
-<arg>${left_button}</arg>
-<arg>contains</arg>
-<arg>disabled</arg>
+<kw name="Get Property" owner="Browser">
+<arg>${element}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824659" elapsed="0.000018"/>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744311" elapsed="0.000013"/>
 </kw>
-<kw name="Should Not Be True" owner="BuiltIn">
-<arg>${is_disabled}</arg>
-<arg>Left scroll button should be enabled after scrolling right</arg>
-<doc>Fails if the given condition is true.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824719" elapsed="0.000018"/>
-</kw>
-<kw name="Click" owner="Browser">
-<arg>${left_button}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824777" elapsed="0.000019"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824844" elapsed="0.000019"/>
-</kw>
-<kw name="Get Element States" owner="Browser">
-<var>${is_disabled}</var>
-<arg>${left_button}</arg>
-<arg>contains</arg>
-<arg>disabled</arg>
+<kw name="Get Property" owner="Browser">
+<var>${href}</var>
+<arg>${element}</arg>
+<arg>href</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824903" elapsed="0.000020"/>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744353" elapsed="0.000012"/>
 </kw>
-<kw name="Should Be True" owner="BuiltIn">
-<arg>${is_disabled}</arg>
-<arg>Left scroll button should be disabled after scrolling back</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.824969" elapsed="0.000020"/>
+<kw name="Normalize URL">
+<var>${normalized_href}</var>
+<arg>${href}</arg>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744406" elapsed="0.000016"/>
 </kw>
+<kw name="Normalize URL">
+<var>${normalized_expected}</var>
+<arg>${expected_url}</arg>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744457" elapsed="0.000015"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${normalized_href}</arg>
+<arg>${normalized_expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744500" elapsed="0.000014"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${selector}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744542" elapsed="0.000014"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744585" elapsed="0.000012"/>
+</kw>
+<kw name="Normalize URL">
+<var>${normalized_current}</var>
+<arg>${current_url}</arg>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744633" elapsed="0.000014"/>
+</kw>
+<kw name="Normalize URL">
+<var>${normalized_expected}</var>
+<arg>${expected_url}</arg>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744681" elapsed="0.000015"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;#google_vignette&quot; in &quot;${current_url}&quot; or &quot;chrome-error://&quot; in &quot;${current_url}&quot;">
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744756" elapsed="0.000013"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${dismiss_button}</var>
+<arg>Get Element</arg>
+<arg>[aria-label="Tutup Iklan"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744800" elapsed="0.000015"/>
+</kw>
+<if>
+<branch type="IF" condition="${dismiss_button}">
+<kw name="Click" owner="Browser">
+<arg>[aria-label="Tutup Iklan"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744868" elapsed="0.000013"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744837" elapsed="0.000057"/>
+</branch>
+<branch type="ELSE">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${dismiss_button}</var>
+<arg>Get Element</arg>
+<arg>div.btn.skip[role="button"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744942" elapsed="0.000013"/>
+</kw>
+<if>
+<branch type="IF" condition="${dismiss_button}">
+<kw name="Click" owner="Browser">
+<arg>div.btn.skip[role="button"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.745009" elapsed="0.000014"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744978" elapsed="0.000061"/>
+</branch>
+<branch type="ELSE">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${dismiss_button}</var>
+<arg>Get Element</arg>
+<arg>[aria-label="Close ad"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.745092" elapsed="0.000014"/>
+</kw>
+<if>
+<branch type="IF" condition="${dismiss_button}">
+<kw name="Click" owner="Browser">
+<arg>[aria-label="Close ad"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.745159" elapsed="0.000014"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:08:03.745127" elapsed="0.000059"/>
+</branch>
+<status status="NOT RUN" start="2025-04-28T01:08:03.745122" elapsed="0.000075"/>
+</if>
+<status status="NOT RUN" start="2025-04-28T01:08:03.745053" elapsed="0.000151"/>
+</branch>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744973" elapsed="0.000241"/>
+</if>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744906" elapsed="0.000314"/>
+</branch>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744832" elapsed="0.000397"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.745250" elapsed="0.000016"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>body</arg>
+<arg>state=visible</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.745294" elapsed="0.000015"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.745341" elapsed="0.000014"/>
+</kw>
+<kw name="Normalize URL">
+<var>${normalized_current}</var>
+<arg>${current_url}</arg>
+<status status="NOT RUN" start="2025-04-28T01:08:03.745394" elapsed="0.000016"/>
+</kw>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744720" elapsed="0.000703"/>
+</branch>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744714" elapsed="0.000720"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${normalized_current}</arg>
+<arg>${normalized_expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.745460" elapsed="0.000015"/>
+</kw>
+<kw name="Go Back" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the previous page in history.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.745502" elapsed="0.000014"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>${selector}</arg>
+<arg>state=attached</arg>
+<arg>timeout=20s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-04-28T01:08:03.745544" elapsed="0.000028"/>
+</kw>
+<kw name="Show Dropdown Menu">
+<status status="NOT RUN" start="2025-04-28T01:08:03.745641" elapsed="0.000016"/>
+</kw>
+<var name="${selector}"/>
+<var name="${expected_url}"/>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744178" elapsed="0.001490"/>
+</iter>
+<var>${selector}</var>
+<var>${expected_url}</var>
+<value>@{event_links}</value>
+<status status="NOT RUN" start="2025-04-28T01:08:03.744062" elapsed="0.001621"/>
+</for>
 <kw name="Close Browser" owner="Browser">
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-04-27T19:03:30.825031" elapsed="0.000018"/>
+<status status="NOT RUN" start="2025-04-28T01:08:03.745731" elapsed="0.000019"/>
 </kw>
-<status status="PASS" start="2025-04-27T19:03:29.051229" elapsed="1.773886">Trending section not found, skipping scroll test</status>
+<msg time="2025-04-28T01:08:03.746767" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-04-28T01:08:03.748456" level="INFO">Switching context to context=aeb5f4ce-f56b-4497-8fe8-5e9dcee376bd in CURRENT</msg>
+<msg time="2025-04-28T01:08:03.749469" level="INFO">Successfully changed active context: context=aeb5f4ce-f56b-4497-8fe8-5e9dcee376bd</msg>
+<msg time="2025-04-28T01:08:03.753161" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2025-04-28T01:06:31.152067" elapsed="92.593754">Error: Could not find active page</status>
 </test>
-<status status="PASS" start="2025-04-27T19:03:07.447571" elapsed="23.379383"/>
+<status status="FAIL" start="2025-04-28T01:06:21.084674" elapsed="102.668892"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="TrendingContent" id="s1" pass="2" fail="0" skip="0">TrendingContent</stat>
+<stat name="MenuBar" id="s1" pass="3" fail="1" skip="0">MenuBar</stat>
 </suite>
 </statistics>
 <errors>

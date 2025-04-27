@@ -68,10 +68,11 @@ Check Trending Content
 Check Trending Content Scroll
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}   
-    New Page    ${URL}    wait_until=domcontentloaded
+    New Page    ${URL}    wait_until=networkidle
 
     # Wait for page to be fully loaded
     Wait For Elements State    body    state=visible    timeout=20s
+    Wait For Elements State    ${TRENDING_SECTION}    state=visible    timeout=20s
 
     # Check if trending tags section exists
     ${trending_exists}=    Run Keyword And Return Status    Get Element    css=${TRENDING_SECTION}
@@ -97,7 +98,7 @@ Check Trending Content Scroll
     # Click right button to scroll
     ${right_button}=    Get Element    css=${SCROLL_RIGHT}
     Click    ${right_button}
-    Sleep    1s    # Wait for scroll animation
+    Wait For Elements State    ${left_button}    state=enabled    timeout=5s
 
     # Verify left button is now enabled
     ${is_disabled}=    Get Element States    ${left_button}    contains    disabled
@@ -105,7 +106,7 @@ Check Trending Content Scroll
 
     # Click left button to scroll back
     Click    ${left_button}
-    Sleep    1s    # Wait for scroll animation
+    Wait For Elements State    ${left_button}    state=disabled    timeout=5s
 
     # Verify left button is disabled again
     ${is_disabled}=    Get Element States    ${left_button}    contains    disabled
