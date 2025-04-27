@@ -94,6 +94,7 @@ Check Menu # (GenZMemilih) Link
     Should Be Equal    ${href}    ${expected_url}
 
     Close Browser
+    
 Check MenuBar Community
     New Browser    chromium    headless=false
     New Context    viewport={'width': 1920, 'height': 1080}   
@@ -107,3 +108,146 @@ Check MenuBar Community
     Get Url    *=    ${IDN_CONNECT_URL}
 
     Close Browser
+
+Check Menubar Category
+    New Browser    chromium    headless=false
+    New Context    viewport={'width': 1920, 'height': 1080}   
+    New Page    ${URL}    wait_until=domcontentloaded
+
+    # Check Lainnya dropdown menu
+    ${lainnya_menu}=    Get Element    ${MENU_LAINNYA}
+    Get Property    ${lainnya_menu}    style.display    !=    none
+
+    # Function to show dropdown menu
+    Show Dropdown Menu
+
+    # Check Categories section
+    ${categories_section}=    Get Element    ${MENU_CATEGORIES}
+    Get Property    ${categories_section}    style.display    !=    none
+
+    # Check all category links
+    @{category_links}=    Create List
+    ...    ${MENU_CAT_QNA} a    ${URL_CAT_QNA}
+    ...    ${MENU_CAT_AUTOMOTIVE} a    ${URL_CAT_AUTOMOTIVE}
+    ...    ${MENU_CAT_SCIENCE} a    ${URL_CAT_SCIENCE}
+    ...    ${MENU_CAT_MEN} a    ${URL_CAT_MEN}
+    ...    ${MENU_CAT_FOOD} a    ${URL_CAT_FOOD}
+    ...    ${MENU_CAT_OPINION} a    ${URL_CAT_OPINION}
+    ...    ${MENU_CAT_FICTION} a    ${URL_CAT_FICTION}
+    ...    ${MENU_CAT_INDEX} a    ${URL_CAT_INDEX}
+    ...    ${MENU_CAT_TRAVEL} a    ${URL_CAT_TRAVEL}
+
+    FOR    ${selector}    ${expected_url}    IN    @{category_links}
+        # Wait for element to be visible and stable
+        Wait For Elements State    ${selector}    state=visible    timeout=20s
+        ${element}=    Get Element    ${selector}
+        Get Property    ${element}    style.display    !=    none
+        ${href}=    Get Property    ${element}    href
+        ${normalized_href}=    Normalize URL    ${href}
+        ${normalized_expected}=    Normalize URL    ${expected_url}
+        Should Be Equal    ${normalized_href}    ${normalized_expected}
+        
+        # Click and verify navigation
+        Click    ${selector}
+        ${current_url}=    Get Url
+        ${normalized_current}=    Normalize URL    ${current_url}
+        ${normalized_expected}=    Normalize URL    ${expected_url}
+        
+        # Handle Google ad vignette
+        IF    "#google_vignette" in "${current_url}" or "chrome-error://" in "${current_url}"
+            Sleep    5s    # Wait for vignette to fully load
+            ${dismiss_button}=    Get Element    div.btn.skip[role="button"]
+            IF    ${dismiss_button}
+                Click    ${dismiss_button}
+                Sleep    2s
+                # Wait for the actual page to load
+                Wait For Elements State    body    state=visible    timeout=20s
+                ${current_url}=    Get Url
+                ${normalized_current}=    Normalize URL    ${current_url}
+            END
+        END
+        
+        Should Be Equal    ${normalized_current}    ${normalized_expected}
+        Go Back
+        Wait For Elements State    ${selector}    state=attached    timeout=20s
+        # Show dropdown menu again
+        Show Dropdown Menu
+    END
+
+    # Check Events section
+    ${events_section}=    Get Element    ${MENU_EVENTS}
+    Get Property    ${events_section}    style.display    !=    none
+
+    # Check all event links
+    @{event_links}=    Create List
+    ...    ${MENU_EVENT1} a    ${URL_EVENT1}
+    ...    ${MENU_EVENT2} a    ${URL_EVENT2}
+    ...    ${MENU_EVENT3} a    ${URL_EVENT3}
+    ...    ${MENU_EVENT4} a    ${URL_EVENT4}
+    ...    ${MENU_EVENT5} a    ${URL_EVENT5}
+    ...    ${MENU_EVENT6} a    ${URL_EVENT6}
+
+    FOR    ${selector}    ${expected_url}    IN    @{event_links}
+        # Wait for element to be visible and stable
+        Wait For Elements State    ${selector}    state=visible    timeout=20s
+        ${element}=    Get Element    ${selector}
+        Get Property    ${element}    style.display    !=    none
+        ${href}=    Get Property    ${element}    href
+        ${normalized_href}=    Normalize URL    ${href}
+        ${normalized_expected}=    Normalize URL    ${expected_url}
+        Should Be Equal    ${normalized_href}    ${normalized_expected}
+        
+        # Click and verify navigation
+        Click    ${selector}
+        ${current_url}=    Get Url
+        ${normalized_current}=    Normalize URL    ${current_url}
+        ${normalized_expected}=    Normalize URL    ${expected_url}
+        
+        # Handle Google ad vignette
+        IF    "#google_vignette" in "${current_url}" or "chrome-error://" in "${current_url}"
+            Sleep    5s    # Wait for vignette to fully load
+            ${dismiss_button}=    Get Element    div.btn.skip[role="button"]
+            IF    ${dismiss_button}
+                Click    ${dismiss_button}
+                Sleep    2s
+                # Wait for the actual page to load
+                Wait For Elements State    body    state=visible    timeout=20s
+                ${current_url}=    Get Url
+                ${normalized_current}=    Normalize URL    ${current_url}
+            END
+        END
+        
+        Should Be Equal    ${normalized_current}    ${normalized_expected}
+        Go Back
+        Wait For Elements State    ${selector}    state=attached    timeout=20s
+        # Show dropdown menu again
+        Show Dropdown Menu
+    END
+
+    Close Browser
+
+*** Keywords ***
+Show Dropdown Menu
+    ${max_retries}=    Set Variable    3
+    FOR    ${i}    IN RANGE    ${max_retries}
+        Hover    ${MENU_LAINNYA_LINK}
+        Sleep    2s
+        ${is_visible}=    Run Keyword And Return Status    
+        ...    Wait For Elements State    ${MENU_CATEGORIES}    state=visible    timeout=5s
+        IF    ${is_visible}
+            ${is_events_visible}=    Run Keyword And Return Status    
+            ...    Wait For Elements State    ${MENU_EVENTS}    state=visible    timeout=5s
+            IF    ${is_events_visible}
+                RETURN
+            END
+        END
+        Sleep    1s
+    END
+    Fail    Could not show dropdown menu after ${max_retries} attempts
+
+Normalize URL
+    [Arguments]    ${url}
+    ${url}=    Replace String    ${url}    https://www.    https://
+    ${url}=    Replace String    ${url}    http://www.    http://
+    ${url}=    Replace String    ${url}    http://    https://
+    RETURN    ${url}
