@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.4 on darwin)" generated="2025-04-26T14:28:42.370382" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.12.4 on darwin)" generated="2025-04-27T14:31:37.092230" rpa="false" schemaversion="5">
 <suite id="s1" name="MenuBar" source="/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/MenuBar.robot">
-<test id="s1-t1" name="Check Menu Bar Visibility" line="6">
+<test id="s1-t1" name="Check Menu Bar Visibility" line="7">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-26T14:28:42.440290" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/49a8d92d-9d3f-4a7b-becf-3de85c4f425f"}</msg>
-<msg time="2025-04-26T14:28:42.460081" level="INFO">Starting Browser process /Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js using port 51875</msg>
-<msg time="2025-04-26T14:28:42.460184" level="INFO">Node startup parameters: ['node', '/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js', '51875']</msg>
-<msg time="2025-04-26T14:28:44.333654" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/49a8d92d-9d3f-4a7b-becf-3de85c4f425f"}</msg>
+<msg time="2025-04-27T14:31:37.182821" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/8a13b363-4afd-411c-951c-6cf9690cb2cd"}</msg>
+<msg time="2025-04-27T14:31:37.252560" level="INFO">Starting Browser process /Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js using port 61803</msg>
+<msg time="2025-04-27T14:31:37.252662" level="INFO">Node startup parameters: ['node', '/Users/henrico/Documents/henrico/Learning/IDN_Assignment/.venv/lib/python3.12/site-packages/Browser/wrapper/index.js', '61803']</msg>
+<msg time="2025-04-27T14:31:39.421106" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/8a13b363-4afd-411c-951c-6cf9690cb2cd"}</msg>
 <arg>chromium</arg>
 <arg>headless=false</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-26T14:28:42.440048" elapsed="1.893862"/>
+<status status="PASS" start="2025-04-27T14:31:37.182564" elapsed="2.238718"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2025-04-26T14:28:44.335685" level="INFO">{
+<msg time="2025-04-27T14:31:39.422811" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -25,56 +25,56 @@
   "reducedMotion": "no-preference",
   "serviceWorkers": "allow",
   "viewport": {
-    "height": 1080,
-    "width": 1920
+    "width": 1920,
+    "height": 1080
   }
 }</msg>
-<msg time="2025-04-26T14:28:44.359305" level="INFO">Successfully created context. </msg>
-<msg time="2025-04-26T14:28:44.359351" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<msg time="2025-04-27T14:31:39.454002" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-27T14:31:39.454047" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
 <arg>viewport={'width': 1920, 'height': 1080}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2025-04-26T14:28:44.334512" elapsed="0.024885"/>
+<status status="PASS" start="2025-04-27T14:31:39.421541" elapsed="0.032546"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-26T14:28:45.611316" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com/</msg>
+<msg time="2025-04-27T14:31:40.520945" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com/</msg>
 <arg>${URL}</arg>
 <arg>wait_until=domcontentloaded</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-04-26T14:28:44.359547" elapsed="1.251915"/>
+<status status="PASS" start="2025-04-27T14:31:39.454227" elapsed="1.066831"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:45.675451" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:45.675611" level="INFO">${quiz_menu} = [data-testid="menu-quiz"]</msg>
+<msg time="2025-04-27T14:31:40.592217" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.592397" level="INFO">${quiz_menu} = [data-testid="menu-quiz"]</msg>
 <var>${quiz_menu}</var>
 <arg>${MENU_QUIZ}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:45.611805" elapsed="0.063820"/>
+<status status="PASS" start="2025-04-27T14:31:40.521237" elapsed="0.071174"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:45.695171" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:45.695644" level="INFO">${quiz_link} = [data-testid="menu-quiz-link"]</msg>
+<msg time="2025-04-27T14:31:40.611509" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.611713" level="INFO">${quiz_link} = [data-testid="menu-quiz-link"]</msg>
 <var>${quiz_link}</var>
 <arg>${MENU_QUIZ_LINK}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:45.675785" elapsed="0.019931"/>
+<status status="PASS" start="2025-04-27T14:31:40.592730" elapsed="0.019004"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:45.726090" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:45.726283" level="INFO">${quiz_img} = [data-testid="menu-quiz-img"]</msg>
+<msg time="2025-04-27T14:31:40.628566" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.628923" level="INFO">${quiz_img} = [data-testid="menu-quiz-img"]</msg>
 <var>${quiz_img}</var>
 <arg>${MENU_QUIZ_IMG}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:45.696152" elapsed="0.030159"/>
+<status status="PASS" start="2025-04-27T14:31:40.611976" elapsed="0.017186"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${quiz_menu}</arg>
@@ -85,7 +85,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:45.726488" elapsed="0.065560"/>
+<status status="PASS" start="2025-04-27T14:31:40.629561" elapsed="0.058554"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${quiz_link}</arg>
@@ -96,7 +96,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:45.792194" elapsed="0.039373"/>
+<status status="PASS" start="2025-04-27T14:31:40.688314" elapsed="0.052432"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${quiz_img}</arg>
@@ -107,27 +107,27 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:45.831721" elapsed="0.008666"/>
+<status status="PASS" start="2025-04-27T14:31:40.740888" elapsed="0.007128"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:45.843196" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:45.843284" level="INFO">${news_menu} = [data-testid="menu-news"]</msg>
+<msg time="2025-04-27T14:31:40.750964" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.751051" level="INFO">${news_menu} = [data-testid="menu-news"]</msg>
 <var>${news_menu}</var>
 <arg>${MENU_NEWS}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:45.840621" elapsed="0.002675"/>
+<status status="PASS" start="2025-04-27T14:31:40.748180" elapsed="0.002881"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:45.845499" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:45.845566" level="INFO">${news_link} = [data-testid="menu-news-link"]</msg>
+<msg time="2025-04-27T14:31:40.753407" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.753498" level="INFO">${news_link} = [data-testid="menu-news-link"]</msg>
 <var>${news_link}</var>
 <arg>${MENU_NEWS_LINK}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:45.843397" elapsed="0.002180"/>
+<status status="PASS" start="2025-04-27T14:31:40.751175" elapsed="0.002334"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${news_menu}</arg>
@@ -138,7 +138,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:45.845664" elapsed="0.004058"/>
+<status status="PASS" start="2025-04-27T14:31:40.753610" elapsed="0.003374"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${news_link}</arg>
@@ -149,27 +149,27 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:45.849847" elapsed="0.004425"/>
+<status status="PASS" start="2025-04-27T14:31:40.757086" elapsed="0.003149"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:45.856921" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:45.857055" level="INFO">${business_menu} = [data-testid="menu-business"]</msg>
+<msg time="2025-04-27T14:31:40.762782" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.762860" level="INFO">${business_menu} = [data-testid="menu-business"]</msg>
 <var>${business_menu}</var>
 <arg>${MENU_BUSINESS}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:45.854368" elapsed="0.002703"/>
+<status status="PASS" start="2025-04-27T14:31:40.760377" elapsed="0.002495"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:45.861136" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:45.861236" level="INFO">${business_link} = [data-testid="menu-business-link"]</msg>
+<msg time="2025-04-27T14:31:40.764830" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.764891" level="INFO">${business_link} = [data-testid="menu-business-link"]</msg>
 <var>${business_link}</var>
 <arg>${MENU_BUSINESS_LINK}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:45.857226" elapsed="0.004070"/>
+<status status="PASS" start="2025-04-27T14:31:40.762975" elapsed="0.001962"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${business_menu}</arg>
@@ -180,7 +180,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:45.861428" elapsed="0.003600"/>
+<status status="PASS" start="2025-04-27T14:31:40.765025" elapsed="0.003237"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${business_link}</arg>
@@ -191,27 +191,27 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:45.865418" elapsed="0.021372"/>
+<status status="PASS" start="2025-04-27T14:31:40.768374" elapsed="0.002842"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:45.889387" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:45.889584" level="INFO">${sport_menu} = [data-testid="menu-sport"]</msg>
+<msg time="2025-04-27T14:31:40.773195" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.773265" level="INFO">${sport_menu} = [data-testid="menu-sport"]</msg>
 <var>${sport_menu}</var>
 <arg>${MENU_SPORT}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:45.886953" elapsed="0.002647"/>
+<status status="PASS" start="2025-04-27T14:31:40.771324" elapsed="0.001952"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:45.969905" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:45.970024" level="INFO">${sport_link} = [data-testid="menu-sport-link"]</msg>
+<msg time="2025-04-27T14:31:40.775012" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.775070" level="INFO">${sport_link} = [data-testid="menu-sport-link"]</msg>
 <var>${sport_link}</var>
 <arg>${MENU_SPORT_LINK}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:45.889758" elapsed="0.080279"/>
+<status status="PASS" start="2025-04-27T14:31:40.773361" elapsed="0.001718"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${sport_menu}</arg>
@@ -222,7 +222,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:45.970163" elapsed="0.004257"/>
+<status status="PASS" start="2025-04-27T14:31:40.775159" elapsed="0.002618"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${sport_link}</arg>
@@ -233,27 +233,27 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:45.974536" elapsed="0.003683"/>
+<status status="PASS" start="2025-04-27T14:31:40.777906" elapsed="0.002921"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:45.983235" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:45.983419" level="INFO">${tech_menu} = [data-testid="menu-tech"]</msg>
+<msg time="2025-04-27T14:31:40.782936" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.783051" level="INFO">${tech_menu} = [data-testid="menu-tech"]</msg>
 <var>${tech_menu}</var>
 <arg>${MENU_TECH}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:45.978345" elapsed="0.005098"/>
+<status status="PASS" start="2025-04-27T14:31:40.780934" elapsed="0.002129"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:45.986059" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:45.986120" level="INFO">${tech_link} = [data-testid="menu-tech-link"]</msg>
+<msg time="2025-04-27T14:31:40.796170" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.796289" level="INFO">${tech_link} = [data-testid="menu-tech-link"]</msg>
 <var>${tech_link}</var>
 <arg>${MENU_TECH_LINK}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:45.983770" elapsed="0.002360"/>
+<status status="PASS" start="2025-04-27T14:31:40.783163" elapsed="0.013141"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${tech_menu}</arg>
@@ -264,7 +264,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:45.986208" elapsed="0.002664"/>
+<status status="PASS" start="2025-04-27T14:31:40.796540" elapsed="0.003167"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${tech_link}</arg>
@@ -275,27 +275,27 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:45.988955" elapsed="0.003350"/>
+<status status="PASS" start="2025-04-27T14:31:40.799812" elapsed="0.002578"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:45.994480" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:45.994546" level="INFO">${hype_menu} = [data-testid="menu-hype"]</msg>
+<msg time="2025-04-27T14:31:40.804249" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.804318" level="INFO">${hype_menu} = [data-testid="menu-hype"]</msg>
 <var>${hype_menu}</var>
 <arg>${MENU_HYPE}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:45.992465" elapsed="0.002091"/>
+<status status="PASS" start="2025-04-27T14:31:40.802540" elapsed="0.001791"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:45.996409" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:45.996476" level="INFO">${hype_link} = [data-testid="menu-hype-link"]</msg>
+<msg time="2025-04-27T14:31:40.806631" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.806698" level="INFO">${hype_link} = [data-testid="menu-hype-link"]</msg>
 <var>${hype_link}</var>
 <arg>${MENU_HYPE_LINK}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:45.994639" elapsed="0.001849"/>
+<status status="PASS" start="2025-04-27T14:31:40.804421" elapsed="0.002287"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${hype_menu}</arg>
@@ -306,7 +306,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:45.996567" elapsed="0.003313"/>
+<status status="PASS" start="2025-04-27T14:31:40.806808" elapsed="0.082956"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${hype_link}</arg>
@@ -317,27 +317,27 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:46.000004" elapsed="0.003674"/>
+<status status="PASS" start="2025-04-27T14:31:40.889911" elapsed="0.003119"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:46.005755" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:46.005878" level="INFO">${korea_menu} = [data-testid="menu-korea"]</msg>
+<msg time="2025-04-27T14:31:40.894816" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.894888" level="INFO">${korea_menu} = [data-testid="menu-korea"]</msg>
 <var>${korea_menu}</var>
 <arg>${MENU_KOREA}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:46.003782" elapsed="0.002114"/>
+<status status="PASS" start="2025-04-27T14:31:40.893137" elapsed="0.001762"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:46.008535" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:46.008614" level="INFO">${korea_link} = [data-testid="menu-korea-link"]</msg>
+<msg time="2025-04-27T14:31:40.896940" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.897013" level="INFO">${korea_link} = [data-testid="menu-korea-link"]</msg>
 <var>${korea_link}</var>
 <arg>${MENU_KOREA_LINK}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:46.006014" elapsed="0.002611"/>
+<status status="PASS" start="2025-04-27T14:31:40.894984" elapsed="0.002040"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${korea_menu}</arg>
@@ -348,7 +348,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:46.008727" elapsed="0.003430"/>
+<status status="PASS" start="2025-04-27T14:31:40.897116" elapsed="0.003289"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${korea_link}</arg>
@@ -359,27 +359,27 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:46.012269" elapsed="0.004667"/>
+<status status="PASS" start="2025-04-27T14:31:40.900509" elapsed="0.002586"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:46.019034" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:46.019098" level="INFO">${life_menu} = [data-testid="menu-life"]</msg>
+<msg time="2025-04-27T14:31:40.904882" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.904930" level="INFO">${life_menu} = [data-testid="menu-life"]</msg>
 <var>${life_menu}</var>
 <arg>${MENU_LIFE}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:46.017077" elapsed="0.002030"/>
+<status status="PASS" start="2025-04-27T14:31:40.903208" elapsed="0.001731"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:46.020751" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:46.020809" level="INFO">${life_link} = [data-testid="menu-life-link"]</msg>
+<msg time="2025-04-27T14:31:40.906369" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.906422" level="INFO">${life_link} = [data-testid="menu-life-link"]</msg>
 <var>${life_link}</var>
 <arg>${MENU_LIFE_LINK}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:46.019224" elapsed="0.001595"/>
+<status status="PASS" start="2025-04-27T14:31:40.905031" elapsed="0.001402"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${life_menu}</arg>
@@ -390,7 +390,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:46.020903" elapsed="0.002702"/>
+<status status="PASS" start="2025-04-27T14:31:40.906515" elapsed="0.002847"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${life_link}</arg>
@@ -401,27 +401,27 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:46.023710" elapsed="0.003048"/>
+<status status="PASS" start="2025-04-27T14:31:40.909472" elapsed="0.002938"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:46.028401" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:46.028461" level="INFO">${health_menu} = [data-testid="menu-health-link"]</msg>
+<msg time="2025-04-27T14:31:40.914066" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.914114" level="INFO">${health_menu} = [data-testid="menu-health"]</msg>
 <var>${health_menu}</var>
 <arg>${MENU_HEALTH}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:46.026861" elapsed="0.001612"/>
+<status status="PASS" start="2025-04-27T14:31:40.912525" elapsed="0.001598"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:46.030095" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:46.030153" level="INFO">${health_link} = [data-testid="menu-health"]</msg>
+<msg time="2025-04-27T14:31:40.915537" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:40.915611" level="INFO">${health_link} = [data-testid="menu-health-link"]</msg>
 <var>${health_link}</var>
 <arg>${MENU_HEALTH_LINK}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:46.028555" elapsed="0.001607"/>
+<status status="PASS" start="2025-04-27T14:31:40.914194" elapsed="0.001433"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${health_menu}</arg>
@@ -432,7 +432,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:46.030244" elapsed="0.003056"/>
+<status status="PASS" start="2025-04-27T14:31:40.915697" elapsed="0.002777"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${health_link}</arg>
@@ -443,27 +443,259 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:46.033435" elapsed="0.002640"/>
+<status status="PASS" start="2025-04-27T14:31:40.918568" elapsed="0.002760"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-04-27T14:31:41.009230" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-27T14:31:40.921475" elapsed="0.087836"/>
+</kw>
+<status status="PASS" start="2025-04-27T14:31:37.182198" elapsed="3.827237"/>
+</test>
+<test id="s1-t2" name="Check Menu # (GenZMemilih) Link" line="70">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-27T14:31:41.013425" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/3462d6bd-d602-4a78-927c-99a0bd1659c5"}</msg>
+<msg time="2025-04-27T14:31:41.265510" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/3462d6bd-d602-4a78-927c-99a0bd1659c5"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-27T14:31:41.013048" elapsed="0.253003"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-04-27T14:31:41.268771" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  }
+}</msg>
+<msg time="2025-04-27T14:31:41.272874" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-27T14:31:41.272938" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-04-27T14:31:41.266460" elapsed="0.006521"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-27T14:31:42.150650" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com/</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-27T14:31:41.273200" elapsed="0.877765"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:46.037664" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:46.037718" level="INFO">${community_menu} = [data-testid="menu-community"]</msg>
+<msg time="2025-04-27T14:31:42.278808" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:42.278918" level="INFO">${genz_link} = a[href="https://genzmemilih.idntimes.com"]</msg>
+<var>${genz_link}</var>
+<arg>${GENZ_MEMILIH_LINK}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-27T14:31:42.151125" elapsed="0.127807"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<arg>${genz_link}</arg>
+<arg>style.display</arg>
+<arg>!=</arg>
+<arg>none</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.279059" elapsed="0.074919"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2025-04-27T14:31:42.358624" level="INFO">Property: 'https://genzmemilih.idntimes.com/'</msg>
+<msg time="2025-04-27T14:31:42.358695" level="INFO">${href} = https://genzmemilih.idntimes.com/</msg>
+<var>${href}</var>
+<arg>${genz_link}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.354144" elapsed="0.004562"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${href}</arg>
+<arg>genzmemilih</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.358856" elapsed="0.000256"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-27T14:31:42.359496" level="INFO">Clicks the element 'a[href="https://genzmemilih.idntimes.com"]'.</msg>
+<arg>${genz_link}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.359275" elapsed="0.192093"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-04-27T14:31:42.573074" level="INFO">Waited for Element with selector a[href="https://genzmemilih.idntimes.com"] at state attached</msg>
+<arg>${GENZ_MEMILIH_LINK}</arg>
+<arg>state=attached</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.551618" elapsed="0.021584"/>
+</kw>
+<kw name="Get Page Ids" owner="Browser">
+<msg time="2025-04-27T14:31:42.575534" level="INFO">@{pages} = [ page=66bbccb6-1f50-44a7-b671-28a3ab8b1d13 ]</msg>
+<var>@{pages}</var>
+<tag>BrowserControl</tag>
+<tag>Getter</tag>
+<doc>Returns a list of page ids based on the context and browser selection.
+See `Browser, Context and Page` for more information about Page and related concepts.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.573374" elapsed="0.002181"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-27T14:31:42.575803" level="INFO">${last_page} = page=66bbccb6-1f50-44a7-b671-28a3ab8b1d13</msg>
+<var>${last_page}</var>
+<arg>${pages}[-1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.575664" elapsed="0.000191"/>
+</kw>
+<kw name="Switch Page" owner="Browser">
+<msg time="2025-04-27T14:31:42.576647" level="INFO">Switching to page page=66bbccb6-1f50-44a7-b671-28a3ab8b1d13,context CURRENT, browser CURRENT</msg>
+<msg time="2025-04-27T14:31:42.592382" level="INFO">Successfully changed active page: page=66bbccb6-1f50-44a7-b671-28a3ab8b1d13</msg>
+<arg>${last_page}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.576155" elapsed="0.016712"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-27T14:31:42.597671" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:42.597788" level="INFO">${link_element} = a[href="https://genzmemilih.idntimes.com"]</msg>
+<var>${link_element}</var>
+<arg>${GENZ_MEMILIH_LINK}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-04-27T14:31:42.593370" elapsed="0.004430"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2025-04-27T14:31:42.608005" level="INFO">Property: 'https://genzmemilih.idntimes.com/'</msg>
+<msg time="2025-04-27T14:31:42.608084" level="INFO">${href} = https://genzmemilih.idntimes.com/</msg>
+<var>${href}</var>
+<arg>${link_element}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.597938" elapsed="0.010158"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-27T14:31:42.608423" level="INFO">${href} = https://genzmemilih.idntimes.com/</msg>
+<var>${href}</var>
+<arg>${href}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.608258" elapsed="0.000178"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-04-27T14:31:42.608589" level="INFO">${expected_url} = https://genzmemilih.idntimes.com/</msg>
+<var>${expected_url}</var>
+<arg>${GENZ_MEMILIH_URL}</arg>
+<arg>https://www.</arg>
+<arg>https://</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.608508" elapsed="0.000090"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${href}</arg>
+<arg>${expected_url}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.608653" elapsed="0.000099"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-04-27T14:31:42.696307" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.608813" elapsed="0.087575"/>
+</kw>
+<status status="PASS" start="2025-04-27T14:31:41.012347" elapsed="1.684160"/>
+</test>
+<test id="s1-t3" name="Check MenuBar Community" line="97">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-27T14:31:42.699156" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/66d2699f-4274-44dc-9520-8defd886bddb"}</msg>
+<msg time="2025-04-27T14:31:42.931038" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/henrico/Documents/henrico/Learning/IDN_Assignment/Tests/../results/browser/traces/temp/66d2699f-4274-44dc-9520-8defd886bddb"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.698832" elapsed="0.232334"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-04-27T14:31:42.932371" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  }
+}</msg>
+<msg time="2025-04-27T14:31:42.940072" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-27T14:31:42.940143" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.931422" elapsed="0.008820"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-27T14:31:43.904170" level="INFO">Successfully initialized new page object and opened url: https://www.idntimes.com/</msg>
+<arg>${URL}</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-27T14:31:42.940415" elapsed="0.963954"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-27T14:31:43.950923" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:43.951632" level="INFO">${community_menu} = [data-testid="menu-community"]</msg>
 <var>${community_menu}</var>
 <arg>${MENU_COMMUNITY}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:46.036166" elapsed="0.001561"/>
+<status status="PASS" start="2025-04-27T14:31:43.904814" elapsed="0.046879"/>
 </kw>
 <kw name="Get Element" owner="Browser">
-<msg time="2025-04-26T14:28:46.039422" level="INFO">Locator found successfully.</msg>
-<msg time="2025-04-26T14:28:46.039487" level="INFO">${community_link} = [data-testid="menu-community-link"]</msg>
+<msg time="2025-04-27T14:31:43.967780" level="INFO">Locator found successfully.</msg>
+<msg time="2025-04-27T14:31:43.968130" level="INFO">${community_link} = [data-testid="menu-community-link"]</msg>
 <var>${community_link}</var>
 <arg>${MENU_COMMUNITY_LINK}</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-04-26T14:28:46.037798" elapsed="0.001699"/>
+<status status="PASS" start="2025-04-27T14:31:43.952006" elapsed="0.016153"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${community_menu}</arg>
@@ -474,7 +706,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:46.039575" elapsed="0.002883"/>
+<status status="PASS" start="2025-04-27T14:31:43.968432" elapsed="0.095841"/>
 </kw>
 <kw name="Get Property" owner="Browser">
 <arg>${community_link}</arg>
@@ -485,27 +717,44 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-04-26T14:28:46.042587" elapsed="0.003050"/>
+<status status="PASS" start="2025-04-27T14:31:44.064577" elapsed="0.004638"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-27T14:31:44.069601" level="INFO">Clicks the element '[data-testid="menu-community-link"]'.</msg>
+<arg>${MENU_COMMUNITY_LINK}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-27T14:31:44.069353" elapsed="0.649875"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>*=</arg>
+<arg>${IDN_CONNECT_URL}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-04-27T14:31:44.719365" elapsed="0.001231"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2025-04-26T14:28:46.131837" level="INFO">Closed browser</msg>
+<msg time="2025-04-27T14:31:44.795565" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-26T14:28:46.045732" elapsed="0.086183"/>
+<status status="PASS" start="2025-04-27T14:31:44.720684" elapsed="0.074972"/>
 </kw>
-<status status="PASS" start="2025-04-26T14:28:42.439712" elapsed="3.692324"/>
+<status status="PASS" start="2025-04-27T14:31:42.698198" elapsed="2.097582"/>
 </test>
-<status status="PASS" start="2025-04-26T14:28:42.370902" elapsed="3.763840"/>
+<status status="PASS" start="2025-04-27T14:31:37.092823" elapsed="7.705660"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="MenuBar" id="s1" pass="1" fail="0" skip="0">MenuBar</stat>
+<stat name="MenuBar" id="s1" pass="3" fail="0" skip="0">MenuBar</stat>
 </suite>
 </statistics>
 <errors>

@@ -1,5 +1,6 @@
 *** Settings ***
 Library    Browser
+Library    String
 Resource   ../Resource/MenuBar.resource
 
 *** Test Cases ***
@@ -64,10 +65,45 @@ Check Menu Bar Visibility
     Get Property    ${health_menu}    style.display    !=    none
     Get Property    ${health_link}    style.display    !=    none
 
+    Close Browser
+
+Check Menu # (GenZMemilih) Link
+    New Browser    chromium    headless=false
+    New Context    viewport={'width': 1920, 'height': 1080}   
+    New Page    ${URL}    wait_until=domcontentloaded
+
+    # Check GenZMemilih Link
+    ${genz_link}=    Get Element    ${GENZ_MEMILIH_LINK}
+    Get Property    ${genz_link}    style.display    !=    none
+    ${href}=    Get Property    ${genz_link}    href
+    Should Contain    ${href}    genzmemilih
+
+    Click    ${genz_link}
+
+    Wait For Elements State    ${GENZ_MEMILIH_LINK}    state=attached    timeout=10s
+
+    @{pages}=    Browser.Get Page Ids
+    ${last_page}=    Set Variable    ${pages}[-1]
+    Switch Page    ${last_page}
+
+    ${link_element}=    Get Element    ${GENZ_MEMILIH_LINK}
+    ${href}=    Get Property    ${link_element}    href
+    ${href}=    Replace String    ${href}    https://www.    https://
+    ${expected_url}=    Replace String    ${GENZ_MEMILIH_URL}    https://www.    https://
+    
+    Should Be Equal    ${href}    ${expected_url}
+
+    Close Browser
+Check MenuBar Community
+    New Browser    chromium    headless=false
+    New Context    viewport={'width': 1920, 'height': 1080}   
+    New Page    ${URL}    wait_until=domcontentloaded
     # Check Community Menu
     ${community_menu}=    Get Element    ${MENU_COMMUNITY}
     ${community_link}=    Get Element    ${MENU_COMMUNITY_LINK}
     Get Property    ${community_menu}    style.display    !=    none
     Get Property    ${community_link}    style.display    !=    none
+    Click    ${MENU_COMMUNITY_LINK}
+    Get Url    *=    ${IDN_CONNECT_URL}
 
     Close Browser
