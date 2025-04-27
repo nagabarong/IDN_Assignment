@@ -1,6 +1,6 @@
 *** Settings ***
 Library    Browser
-Resource   ../Resource/Account.robot
+Resource   ../Resource/Account.resource
 
 *** Test Cases ***
 Check Sign button clickable

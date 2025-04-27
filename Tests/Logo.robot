@@ -1,6 +1,6 @@
 *** Settings ***
 Library    Browser
-Resource   ../Resource/PageOverview.robot
+Resource   ../Resource/PageOverview.resource
 
 *** Test Cases ***
 Check IDN Times Logo Is Visible/Clickable
